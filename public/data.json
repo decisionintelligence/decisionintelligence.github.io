@@ -1,0 +1,162 @@
+{
+  "data": [
+    {
+      "section": "1. 时间序列分析(预测，异常检测)",
+      "desc": "时间序列是数字化转型带来的一种常见数据类型。时序数据中蕴含了大量的信息，对时序数据的有效分析能够为不同应用场景提供有效的决策支持。比如道路交通状况预测可以帮助司机提早进行分流，负载预测可以帮助适配器提早做好调整的准备，机器运行状况检测可以提早发现可能发生的故障，进而开展预测性维护等。我们的研究主要集中在两大类分析——预测和异常检测。在达到高精度的同时，还关注其时效性，鲁棒性，可解释性，以及自动化。",
+      "content": [
+        {
+          "subsection": "1.1 多元时间序列预测",
+          "content": [
+            {
+              "title": "Model-agnostic plugin",
+              "papers": [
+                "Razvan-Gabriel Cirstea, Bin Yang, Chenjuan Guo, Tung Kieu, Shirui Pan: Towards Spatio-Temporal Aware Traffic Time Series Forecasting. ICDE 2022: 2900-2913",
+                "Razvan-Gabriel Cirstea, Tung Kieu, Chenjuan Guo, Bin Yang, Sinno Jialin Pan: EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting. ICDE 2021: 1739-1750"
+              ]
+            },
+            {
+              "title": "Automated correlated time series forecasting:",
+              "papers": [
+                "Xinle Wu, Dalin Zhang, Chenjuan Guo, Chaoyang He, Bin Yang, Christian S. Jensen: AutoCTS:Automated Correlated Time Series Forecasting. Proc. VLDB Endow. 15(4): 971-983 (2021)",
+                "Xinle Wu，AutoCTS 2.0"
+              ]
+            },
+            {
+              "title": "Transformer-based forecasting:",
+              "papers": [
+                "Razvan-Gabriel Cirstea, Tung Kieu, Chenjuan Guo, Bin Yang, Sinno Jialin Pan: EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting. ICDE 2021: 1739-1750"
+              ]
+            },
+            {
+              "title": "Neural ODE-based forecasting：",
+              "papers": [
+                "Multivariate Time Series Forecasting with Dynamic Graph Neural ODEs. Ming Jin, Yu Zheng Yuan-Fang Li, Siheng Chen, Bin Yang, Shirui Pan. TKDE, 2022."
+              ]
+            },
+            {
+              "title": "Markov Model-based forecasting:",
+              "papers": [
+                "Bin Yang, Chenjuan Guo, Christian S. Jensen: Travel Cost Inference from Sparse, SpatioTemporally Correlated Time Series Using Markov Models. Proc. VLDB Endow. 6(9): 769-780 (2013)"
+              ]
+            },
+            {
+              "title": "Others:",
+              "papers": [
+                "Razvan-Gabriel Cirstea, Darius-Valer Micu, Gabriel-Marcel Muresan, Chenjuan Guo, Bin Yang: Correlated Time Series Forecasting using Multi-Task Deep Neural Networks. CIKM 2018: 1527 1530",
+                "Nicolaj Casanova Abildgaard, Casper Weiss Bang, Jonas Hansen, Tobias Lambek Jacobsen,Thomas Højriis Knudsen, Nichlas Ørts Lisby, Chenjuan Guo, Bin Yang: A Correlated Time Series Forecast System. MDM 2020: 242-24"
+              ]
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "section": "2. 时空数据分析（状态预估，偏好识别，决策）",
+      "desc": "时空数据包含随时间变化的空间信息，比如轨迹数据。我们的研究主要集中在如何有效利用大规模的时空轨迹数据，赋能智能城市，绿色交通等。具体来说，时空数据分析包括交通状态预估、偏好识别和导航决策。涉及到了表征学习、图学习、多任务学习和图算法等。",
+      "content": [
+        {
+          "subsection": "2.1 交通状态预估",
+          "content": [
+            {"title": "路径交通状态：",
+            "papers": [
+              "Sean Bin Yang, Chenjuan Guo, Jilin Hu, Bin Yang, Jian Tang, Christian S. Jensen: Weaklysupervised Temporal Path Representation Learning with Contrastive Curriculum Learning. ICDE 2022: 2873-2885",
+              "Sean Bin Yang, Chenjuan Guo, Bin Yang: Context-Aware Path Ranking in Road Networks. IEEE Trans. Knowl. Data Eng. 34(7): 3153-3168 (2022)",
+              "Sean Bin Yang, Chenjuan Guo, Jilin Hu, Jian Tang, Bin Yang: Unsupervised Path Representation Learning with Curriculum Negative Sampling. IJCAI 2021: 3286-3292 ",
+              "Sean Bin Yang, Bin Yang: Learning to Rank Paths in Spatial Networks. ICDE 2020: 2006- 2009 ",
+              "Jilin Hu, Bin Yang, Chenjuan Guo, Christian S. Jensen: Risk-aware path selection with time-varying, uncertain travel costs: a time series approach. VLDB J. 27(2): 179-200 (2018)",
+              "Jian Dai, Bin Yang, Chenjuan Guo, Christian S. Jensen, Jilin Hu: Path Cost Distribution Estimation Using Trajectory Data. Proc. VLDB Endow. 10(3): 85-96 (2016)"
+            ]
+            },
+            {
+              "title": "路网交通状态:",
+              "papers": [
+                "Jilin Hu, Bin Yang, Chenjuan Guo, Christian S. Jensen, Hui Xiong: Stochastic OriginDestination Matrix Forecasting Using Dual-Stage Graph Convolutional, Recurrent Neural Networks. ICDE 2020: 1417-1428",
+                "Razvan-Gabriel Cirstea, Hilmar Gústafsson, Rasmus Riis Grønbæk Pedersen, Rolf Hakon Verder Sehested, Tamas Imre Winkler, Bin Yang: A Road Segment Attribute Completion System. MDM 2020: 236-237",
+                "Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen: Stochastic Weight Completion for Road Networks Using Graph Convolutional Networks. ICDE 2019: 1274-12",
+                "Bin Yang, Manohar Kaul, Christian S. Jensen: Using Incomplete Information for Complete Weight Annotation of Road Networks. IEEE Trans. Knowl. Data Eng. 26(5): 1267-1279 (2014) "
+              ]
+            }
+          ]
+        },
+        {
+          "subsection": "2.2 偏好识别",
+          "content": [
+            {"title": null,
+            "papers": [
+              "Chenjuan Guo, Bin Yang, Jilin Hu, Christian S. Jensen, Lu Chen: Context-aware, preference-based vehicle routing. VLDB J. 29(5): 1149-1170 (2020)",
+              "Chenjuan Guo, Bin Yang, Jilin Hu, Christian S. Jensen: Learning to Route with Sparse Trajectory Sets. ICDE 2018: 1073-1084 ",
+              "Bin Yang, Chenjuan Guo, Yu Ma, Christian S. Jensen: Toward personalized, context-aware routing. VLDB J. 24(2): 297-318 (2015)",
+              "Jian Dai, Bin Yang, Chenjuan Guo, Zhiming Ding: Personalized route recommendation using big trajectory data. ICDE 2015: 543-554"
+            ]
+            }
+          ]
+
+        },
+        {
+          "subsection": "2.3 数据驱动的导航决策",
+          "content": [
+            {
+              "title": "不确定性下的决策",
+              "papers": [
+                "Simon Aagaard Pedersen, Bin Yang, Christian S. Jensen: A Hybrid Learning Approach to Stochastic Routing. ICDE 2020: 1910-1913",
+                "Simon Aagaard Pedersen, Bin Yang, Christian S. Jensen: Anytime Stochastic Routing with Hybrid Learning. Proc. VLDB Endow. 13(9): 1555-1567 (2020)",
+                "Simon Aagaard Pedersen, Bin Yang, Christian S. Jensen: Fast stochastic routing under time-varying uncertainty. VLDB J. 29(4): 819-839 (2020)",
+                "Jilin Hu, Bin Yang, Chenjuan Guo, Christian S. Jensen: Risk-aware path selection with time-varying, uncertain travel costs: a time series approach. VLDB J. 27(2): 179-200 (2018)",
+                "Bin Yang, Jian Dai, Chenjuan Guo, Christian S. Jensen, Jilin Hu: PACE: a PAth-CEntric paradigm for stochastic path finding. VLDB J. 27(2): 153-178 (2018)",
+                "Georgi Andonov, Bin Yang: Stochastic Shortest Path Finding in Path-Centric Uncertain Road Networks. MDM 2018: 40-45"
+              ]
+            },
+            {
+              "title": "基于学习的决策",
+              "papers": [
+                "Simon Aagaard Pedersen, Bin Yang, Christian S. Jensen: A Hybrid Learning Approach to Stochastic Routing. ICDE 2020: 1910-1913",
+                "Simon Aagaard Pedersen, Bin Yang, Christian S. Jensen: Anytime Stochastic Routing with Hybrid Learning. Proc. VLDB Endow. 13(9): 1555-1567 (2020)"
+              ]
+            },
+            {
+              "title": "多元决策",
+              "papers": [
+                "Chenjuan Guo, Bin Yang, Jilin Hu, Christian S. Jensen, Lu Chen: Context-aware, preference-based vehicle routing. VLDB J. 29(5): 1149-1170 (2020)",
+                "Bin Yang, Chenjuan Guo, Yu Ma, Christian S. Jensen: Toward personalized, context-aware routing. VLDB J. 24(2): 297-318 (2015) ",
+                "Bin Yang, Chenjuan Guo, Christian S. Jensen, Manohar Kaul, Shuo Shang: Stochastic skyline route planning under time-varying uncertainty. ICDE 2014: 136-147"
+              ]
+            },
+            {
+              "title": "Top-K 决策:",
+              "papers": [
+                "Huiping Liu, Cheqing Jin, Bin Yang, Aoying Zhou: Finding Top-k Shortest Paths with Diversity. IEEE Trans. Knowl. Data Eng. 30(3): 488-502 (2018)",
+                "Huiping Liu, Cheqing Jin, Bin Yang, Aoying Zhou: Finding Top-k Optimal Sequenced Routes. ICDE 2018: 569-580",
+                "Huiping Liu, Cheqing Jin, Bin Yang, Aoying Zhou: Finding Top-k Shortest Paths with Diversity. ICDE 2018: 1761-1762"
+              ]
+            },
+            {
+              "title": "Eco-routing：",
+              "papers": [
+                "Jilin Hu, Bin Yang, Christian S. Jensen, Yu Ma: Enabling time-dependent uncertain eco-weights for road networks. GeoInformatica 21(1): 57-88 (2017)",
+                "Chenjuan Guo, Bin Yang, Ove Andersen, Christian S. Jensen, Kristian Torp: EcoMark 2.0: empowering eco-routing with vehicular environmental models and actual vehicle fuel consumption data. GeoInformatica 19(3): 567-599 (2015)",
+                "Chenjuan Guo, Bin Yang, Ove Andersen, Christian S. Jensen, Kristian Torp: EcoSky: Reducing vehicular environmental impact through eco-routing. ICDE 2015: 1412-1415 ",
+                "Ove Andersen, Christian S. Jensen, Kristian Torp, Bin Yang: EcoTour: Reducing the Environmental Footprint of Vehicles Using Eco-routes. MDM (1) 2013: 338-3",
+                "Chenjuan Guo, Yu Ma, Bin Yang, Christian S. Jensen, Manohar Kaul: EcoMark: evaluating models of vehicular environmental impact. SIGSPATIAL/GIS 2012: 269-278"
+              ]
+            }
+          ]
+        },
+        {
+          "subsection": "2.4 其他",
+          "content": [
+            {
+              "title": null,
+              "papers": [
+                "Tung Kieu, Bin Yang, Chenjuan Guo, Christian S. Jensen: Distinguishing Trajectories from Different Drivers using Incompletely Labeled Trajectories. CIKM 2018: 863-872",
+                "Nicklas K. Breum, Martin N. Joergensen, Christian A. Knudsen, Laerke B. Kristensen, Bin Yang: A Charging Scheduling System for Electric Vehicles using Vehicle-to-Grid. MDM 2019: 351-352 ",
+                "Marc Beuchert, Steffen Hald Jensen, Omar Ali Sheikh-Omar, Mathias Bach Svendsen, Bin Yang: aSTEP: Aau's Spatio-TEmporal Data Analytics Platform. MDM 2018: 278-279",
+                "Asger Gitz-Johansen, Mikkel Elkjaer Holm, Laurids Vinther Kirkeby, Dan Kristiansen, Alexander Stoica Ostenfeld, Morten Konggaard Schou, Bin Yang: A Practical Delivery Route Planning System. MDM 2019: 349-350 "
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
