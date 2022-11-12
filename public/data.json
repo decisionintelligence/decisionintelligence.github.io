@@ -157,6 +157,191 @@
           ]
         }
       ]
+    },
+    {"section": "3. 图分析",
+      "desc": null,
+      "content": [
+        {
+          "subsection": "3.1 路径表征学习 ",
+          "content": [
+            {
+              "title": null,
+              "papers": [
+                "Sean Bin Yang, Chenjuan Guo, Jilin Hu, Bin Yang, Jian Tang, Christian S. Jensen: Weaklysupervised Temporal Path Representation Learning with Contrastive Curriculum Learning. ICDE 2022: 2873-2885 ",
+                "Sean Bin Yang, Chenjuan Guo, Bin Yang: Context-Aware Path Ranking in Road Networks. IEEE Trans. Knowl. Data Eng. 34(7): 3153-3168 (2022)",
+                "Sean Bin Yang, Chenjuan Guo, Jilin Hu, Jian Tang, Bin Yang: Unsupervised Path Representation Learning with Curriculum Negative Sampling. IJCAI 2021: 3286-3292 （Robustness）",
+                "Sean Bin Yang, Bin Yang: Learning to Rank Paths in Spatial Networks. ICDE 2020: 2006- 2009 "
+              ]
+            }
+          ]
+        },
+        {"subsection": "3.2 图属性预测 ",
+          "content": [
+            {
+              "title": null,
+              "papers": [
+                "Jilin Hu, Bin Yang, Chenjuan Guo, Christian S. Jensen, Hui Xiong: Stochastic OriginDestination Matrix Forecasting Using Dual-Stage Graph Convolutional, Recurrent Neural Networks. ICDE 2020: 1417-1428",
+                "Razvan-Gabriel Cirstea, Hilmar Gústafsson, Rasmus Riis Grønbæk Pedersen, Rolf Hakon Verder Sehested, Tamas Imre Winkler, Bin Yang: A Road Segment Attribute Completion System. MDM 2020: 236-237",
+                "Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen: Stochastic Weight Completion for Road Networks Using Graph Convolutional Networks. ICDE 2019: 1274-12",
+                "Bin Yang, Manohar Kaul, Christian S. Jensen: Using Incomplete Information for Complete Weight Annotation of Road Networks. IEEE Trans. Knowl. Data Eng. 26(5): 1267-1279 (2014) "
+              ]
+            }
+          ]
+        },
+        {"subsection": "3.3 时空序列关联性学习",
+          "content": [
+            {
+              "title": null,
+              "papers": [
+                "Razvan-Gabriel Cirstea, Bin Yang, Chenjuan Guo, Tung Kieu, Shirui Pan: Towards Spatio-Temporal Aware Traffic Time Series Forecasting. ICDE 2022: 2900-2913  ",
+                "Razvan-Gabriel Cirstea, Bin Yang, Chenjuan Guo, Tung Kieu, Shirui Pan: Towards Spatio-Temporal Aware Traffic Time Series Forecasting. ICDE 2022: 2900-2913  ",
+                "Xinle Wu, Dalin Zhang, Chenjuan Guo, Chaoyang He, Bin Yang, Christian S. Jensen: AutoCTS: Automated Correlated Time Series Forecasting. Proc. VLDB Endow. 15(4): 971-983 (2021)"
+              ]
+            }
+          ]
+        }
+
+
+
+      ]
+    },
+    {"section": "4. 自动机器学习（AutoML） ",
+      "desc": null,
+      "content": [
+        {
+          "subsection": null,
+          "content": [
+            {
+              "title": null,
+              "papers": [
+                "Miao Zhang, Shirui Pan, Xiaojun Chang, Steven Su, Jilin Hu, Gholamreza Haffari, Bin Yang: BaLeNAS: Differentiable Architecture Search via the Bayesian Learning Rule. CVPR 2022: 11861- 11870",
+                "Miao Zhang, Wei Huang, and Bin Yang. Interpreting Operation Selection in Differentiable Architecture Search: A Perspective from Influence-Directed Explanations. NeurIPS 2022. ",
+                "Xinle Wu, Dalin Zhang, Chenjuan Guo, Chaoyang He, Bin Yang, Christian S. Jensen: AutoCTS: Automated Correlated Time Series Forecasting. Proc. VLDB Endow. 15(4): 971-983 (2021). ",
+                "Xinle Wu, Dalin Zhang, Miao Zhang, Chenjuan Guo, Shuai Zhao, Huai Wang, and Bin Yang. AutoPINN: When AutoML Meets Physics-Informed Neural Networks. CoRR. "
+              ]
+            }
+          ]
+        }
+
+      ]
+
+    },
+    {
+      "section": "5. AI for Science",
+      "desc": null,
+      "content": [
+        {
+          "subsection": null,
+          "content": [
+            {
+              "title": null,
+              "papers": [
+                " Frederik Baymler Mathiesen, Bin Yang, Jilin Hu: Hyperverlet: A Symplectic Hypersolver for Hamiltonian Systems. AAAI 2022: 4575-4582 ",
+                " Frederik Baymler Mathiesen, Bin Yang, Jilin Hu: Hyperverlet: A Symplectic Hypersolver for Hamiltonian Systems. AAAI 2022: 4575-4582 ",
+                " Frederik Baymler Mathiesen, Bin Yang, Jilin Hu: Hyperverlet: A Symplectic Hypersolver for Hamiltonian Systems. AAAI 2022: 4575-4582 "
+              ]
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "section": "6. 模型轻量化 ",
+      "desc": null,
+      "content": [
+        {
+          "subsection": null,
+          "content": [
+            {
+              "title": null,
+              "papers": [
+                "Miao Zhang, Li Wang, David Campos, Wei Huang, Chenjuan Guo, and Bin Yang. Weighted Mutual Learning with Diversity-Driven Model Compression. NeurIPS 2022."
+              ]
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "section": "7. 异常检测 ",
+      "desc": null,
+      "content": [
+        {
+          "subsection": null,
+          "content": [
+            {
+              "title": "Ensemble learning based outlier detection：",
+              "papers": [
+                "David Campos, Tung Kieu, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, Christian S. Jensen: Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles. Proc. VLDB Endow. 15(3): 611-623 (2021)",
+                "Tung Kieu, Bin Yang, Chenjuan Guo, Christian S. Jensen: Outlier Detection for Time Series with Recurrent Autoencoder Ensembles. IJCAI 2019: 2725-2732 "
+              ]
+            },
+            {
+              "title": "Robust outlier detection：",
+              "papers": [
+                "Tung Kieu, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, Kai Zheng: Robust and Explainable Autoencoders for Unsupervised Time Series Outlier Detection. ICDE 2022: 3038-3050",
+                "Tung Kieu, Bin Yang, Chenjuan Guo, Razvan-Gabriel Cirstea, Yan Zhao, Yale Song, Christian S. Jensen: Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders. ICDE 2022: 1342-1354"
+              ]
+            },
+            {
+              "title": "Explainable outlier detection:  ",
+              "papers":[
+                "Tung Kieu, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, Kai Zheng: Robust and Explainable Autoencoders for Unsupervised Time Series Outlier Detection. ICDE 2022: 3038-3050"
+              ]
+            },
+            {
+              "title": "Other topics：",
+              "papers": [
+                "Tung Kieu, Bin Yang, Christian S. Jensen: Outlier Detection for Multidimensional Time Series Using Deep Neural Networks. MDM 2018: 125-134"
+              ]
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "section": "8. 预测",
+      "desc": null,
+      "content": [
+        {
+          "subsection": null,
+          "content": [
+            {
+              "title": "时间序列预测：",
+              "papers": [
+                "Razvan-Gabriel Cirstea, Bin Yang, Chenjuan Guo, Tung Kieu, Shirui Pan: Towards SpatioTemporal Aware Traffic Time Series Forecasting. ICDE 2022: 2900-2913",
+                "Razvan-Gabriel Cirstea, Tung Kieu, Chenjuan Guo, Bin Yang, Sinno Jialin Pan: EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting. ICDE 2021: 1739-1750",
+                "Xinle Wu, Dalin Zhang, Chenjuan Guo, Chaoyang He, Bin Yang, Christian S. Jensen: AutoCTS: Automated Correlated Time Series Forecasting. Proc. VLDB Endow. 15(4): 971-983 (2021)",
+                "Xinle Wu，AutoCTS 2.0 ",
+                "Razvan-Gabriel Cirstea, Tung Kieu, Chenjuan Guo, Bin Yang, Sinno Jialin Pan: EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting. ICDE 2021: 1739-1750",
+                "Multivariate Time Series Forecasting with Dynamic Graph Neural ODEs. Ming Jin, Yu Zheng, Yuan-Fang Li, Siheng Chen, Bin Yang, Shirui Pan. TKDE, 2022.",
+                "Bin Yang, Chenjuan Guo, Christian S. Jensen: Travel Cost Inference from Sparse, SpatioTemporally Correlated Time Series Using Markov Models. Proc. VLDB Endow. 6(9): 769-780 (2013)"
+              ]
+            },
+            {
+              "title": "基于图预测：",
+              "papers": [
+              "Sean Bin Yang, Chenjuan Guo, Jilin Hu, Bin Yang, Jian Tang, Christian S. Jensen: Weaklysupervised Temporal Path Representation Learning with Contrastive Curriculum Learning. ICDE 2022: 2873-2885",
+                "Sean Bin Yang, Chenjuan Guo, Bin Yang: Context-Aware Path Ranking in Road Networks. IEEE Trans. Knowl. Data Eng. 34(7): 3153-3168 (2022)",
+                "Sean Bin Yang, Chenjuan Guo, Jilin Hu, Jian Tang, Bin Yang: Unsupervised Path Representation Learning with Curriculum Negative Sampling. IJCAI 2021: 3286-3292",
+                "Sean Bin Yang, Bin Yang: Learning to Rank Paths in Spatial Networks. ICDE 2020: 2006- 2009",
+                "Jian Dai, Bin Yang, Chenjuan Guo, Christian S. Jensen, Jilin Hu: Path Cost Distribution Estimation Using Trajectory Data. Proc. VLDB Endow. 10(3): 85-96 (2016)",
+                "Jilin Hu, Bin Yang, Chenjuan Guo, Christian S. Jensen, Hui Xiong: Stochastic OriginDestination Matrix Forecasting Using Dual-Stage Graph Convolutional, Recurrent Neural Networks. ICDE 2020: 1417-1428",
+                "Razvan-Gabriel Cirstea, Hilmar Gústafsson, Rasmus Riis Grønbæk Pedersen, Rolf Hakon Verder Sehested, Tamas Imre Winkler, Bin Yang: A Road Segment Attribute Completion System. MDM 2020: 236-237",
+                "Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen: Stochastic Weight Completion for Road Networks Using Graph Convolutional Networks. ICDE 2019: 1274-12",
+                " Bin Yang, Manohar Kaul, Christian S. Jensen: Using Incomplete Information for Complete Weight Annotation of Road Networks. IEEE Trans. Knowl. Data Eng. 26(5): 1267-1279 (2014)"
+              ]
+            }
+          ]
+        }
+
+      ]
     }
+
+
+
   ]
 }

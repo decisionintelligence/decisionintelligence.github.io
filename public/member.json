@@ -1,0 +1,82 @@
+{
+  "teacher": [
+    {
+      "name": "杨彬",
+      "pic": "http://localhost:8000/yang.jpg",
+      "tag": ["tag_1" ,"tag_2","tag_3"],
+      "desc": "......................................................................................"
+    },
+    {
+      "name": "郭晨娟",
+      "pic": "http://localhost:8000/guo.jpg",
+      "tag": ["tag_1" ,"tag_2","tag_3"],
+      "desc": "..................................................................................................................................."
+    }
+  ],
+  "doctor": [
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    }
+  ],
+  "master":[
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    },
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    },
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    },
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    },
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    },
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    }
+  ],
+  "alumni": [
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    },
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    },
+    {
+      "name": "XXX",
+      "pic": "https://cdn.quasar.dev/img/boy-avatar.png",
+      "tag": ["tag_1","tag_2"],
+      "desc": "XXXXXXX"
+    }
+  ]
+}

@@ -3,15 +3,20 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
+    redirect:'index',
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') },
+      { path: 'index', component: () => import('pages/IndexPage.vue') },
       {path:'papers',component:()=>import('pages/PaperPage.vue')},
+      {
+        path:'member',component:()=>import('pages/MemberPage.vue')
+      }
     ]
   },
   {
     path: '/space',component: () => import('layouts/SpaceLayout.vue'),
     children: [
-      {path:'',component: () => import('pages/filePage.vue')},
+      {path:'file',component: () => import('pages/filePage.vue')},
+      {path:'blog',component: () => import('pages/blogPage.vue')}
     ]
   },
 
