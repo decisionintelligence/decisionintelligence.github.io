@@ -14,11 +14,13 @@ const routes = [
   },
   {
     path: '/space',component: () => import('layouts/SpaceLayout.vue'),
+    name:'space',
     children: [
       {path:'file',component: () => import('pages/filePage.vue')},
       {path:'blog',component: () => import('pages/blogPage.vue')}
     ]
   },
+  {path:'/login',component:()=>import('pages/login.vue')},
 
   // Always leave this as last one,
   // but you can also remove it
