@@ -51,7 +51,7 @@ module.exports = configure(function (ctx) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-build
     build: {
-      vueRouterMode: 'history', // available values: 'hash', 'history'
+      vueRouterMode: 'hash', // available values: 'hash', 'history'
 
       // transpile: false,
       // publicPath: '/',
@@ -107,9 +107,9 @@ module.exports = configure(function (ctx) {
       plugins: ['Notify']
     },
 
-    // animations: 'all', // --- includes all animations
+    animations: 'all', // --- includes all animations
     // https://quasar.dev/options/animations
-    animations: [],
+    // animations: [],
 
     // https://v2.quasar.dev/quasar-cli-webpack/developing-ssr/configuring-ssr
     ssr: {
@@ -152,9 +152,9 @@ module.exports = configure(function (ctx) {
 
 
       manifest: {
-        name: `ex-site`,
-        short_name: `ex-site`,
-        description: `ex-site`,
+        name: `华东师范大学XXX实验室`,
+        short_name: `华东师范大学XXX实验室`,
+        description: `华东师范大学XXX实验室`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',

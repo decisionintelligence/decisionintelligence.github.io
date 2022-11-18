@@ -1,7 +1,7 @@
-import { route } from 'quasar/wrappers'
-import { createRouter, createMemoryHistory, createWebHistory, createWebHashHistory } from 'vue-router'
+import {route} from 'quasar/wrappers'
+import {createRouter, createMemoryHistory, createWebHistory, createWebHashHistory} from 'vue-router'
 import routes from './routes'
-import { api } from "boot/axios";
+import {api} from "boot/axios";
 
 /*
  * If not building with SSR mode, you can
@@ -26,20 +26,19 @@ export default route(function (/* { store, ssrContext } */) {
     history: createHistory(process.env.MODE === 'ssr' ? void 0 : process.env.VUE_ROUTER_BASE)
   })
   Router.beforeEach((to, from, next) => {
-    if (to.name === 'space'){
-      if (localStorage.getItem('access_token') === null){
+    if (to.name === 'space' || to.name === 'spaceIndex' || to.name === 'spaceFile' || to.name === 'spaceBlog' || to.name === 'spaceUpload') {
+      if (localStorage.getItem('access_token') === null) {
         next('/login')
-      }else{
-        api.get('/v1/hello').then(res=>{
-          if(res.status === 200){
+      } else {
+        api.get('/v1/hello').then(res => {
+          if (res.status === 200) {
             next()
-          }else{
+          } else {
             next('/login')
           }
         })
       }
-    }
-    else{
+    } else {
       next()
     }
 

@@ -75,7 +75,6 @@ export default {
         }
 
       }).then(res => {
-        console.log(res);
         if (res.status === 200) {
           let access_token = res.data.access_token
           let token_type = res.data.token_type
