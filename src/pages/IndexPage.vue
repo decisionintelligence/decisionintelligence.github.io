@@ -86,15 +86,15 @@ import {api} from "boot/axios";
 
 let $q = useQuasar();
 let screen = ref($q.screen)
-let research = ref([{name: '时间序列分析', url: '#/papers#1'},
-  {name: '时空数据分析', url: '#/papers#2'},
-  {name: '图分析', url: '#/papers#3'},
-  {name: '自动机器学习(AutoML)', url: '#/papers#4'},
-  {name: 'AI for Science', url: '#/papers#5'},
-  {name: '模型轻量化', url: '#/papers#6'},
-  {name: '异常检测', url: '#/papers#7'},
-  {name: '预测', url: '#/papers#8'},
-  {name: '智能决策', url: '#/papers#9'},
+let research = ref([{name: '时间序列分析', url: 'papers#1'},
+  {name: '时空数据分析', url: 'papers#2'},
+  {name: '图分析', url: 'papers#3'},
+  {name: '自动机器学习(AutoML)', url: 'papers#4'},
+  {name: 'AI for Science', url: 'papers#5'},
+  {name: '模型轻量化', url: 'papers#6'},
+  {name: '异常检测', url: 'papers#7'},
+  {name: '预测', url: 'papers#8'},
+  {name: '智能决策', url: 'papers#9'},
 ])
 let news = ref(null)
 api.get('/news').then(res => {

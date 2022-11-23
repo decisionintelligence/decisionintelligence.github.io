@@ -6,8 +6,10 @@
       enter-active-class="animated  fadeInDown"
       leave-active-class="animated  fadeOutUp"
     >
-    <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element">成果</div>
+    <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element">科研成果</div>
     </transition>
+      <div class="tw-flex tw-justify-center tw-m-2 ">
+        实验室科研成果应用于智能交通、智慧城市、AIOps、数字能源、智能水资源管理、数字孪生、分子设计和药物设计等领域。</div>
     <div v-if="data" class="md:tw-m-auto tw-pt-6">
       <div class="tw-grid  tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-y-5 tw-gap-x-10
        tw-m-auto" style="height: 70vh">

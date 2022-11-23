@@ -16,7 +16,7 @@
         <span class="tw-text-gray-400 tw-mr-2 " v-for="(t,idx) in tag" :key="idx">{{ t }}</span>
       </div>
       <div class="tw-pl-2 tw-ml-2 tw-tracking-wider tw-leading-7">
-        {{ desc }},
+        {{ desc }}
       </div>
     </div>
 
