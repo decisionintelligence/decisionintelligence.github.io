@@ -1,32 +1,28 @@
 <template>
   <q-page padding class="md:tw-container md:tw-m-auto tw-leading-8">
-    <div v-if="data" class="md:tw-w-2/3 md:tw-m-auto tw-m-2">
-      <blockquote class="tw-m-5 ">时间序列分析，时空数据分析，图分析，自动机器学习（AutoML ）, AI for
-        Science，智能决策，异常检测，预测，模型轻量化
-      </blockquote>
-      <div class="tw-grid ">
-        <q-expansion-item class="q-mt-md tw-shadow-md
-          tw-p-4 tw-my-4
-          hover:tw-bg-gray-50
-          tw-bg-gray-50 tw-border-l-4 tw-border-gray-300 dark:border-gray-500 dark:bg-gray-800"
-                          v-for="(item,idx) in data" :key="idx+4567" :label="item.section" v-model="toggle[idx]"
-                          :id="idx"
 
+    <transition
+      appear
+      enter-active-class="animated  fadeInDown"
+      leave-active-class="animated  fadeOutUp"
+    >
+    <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element">成果</div>
+    </transition>
+    <div v-if="data" class="md:tw-m-auto tw-pt-6">
+      <div class="tw-grid  tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-y-5 tw-gap-x-10
+       tw-m-auto" style="height: 70vh">
+        <div  class="tw-shadow-md tw-border-gray-200 tw-border
+        hover:tw-cursor-pointer
+         hover:tw-scale-105
+         tw-text-center tw-flex-col tw-flex  tw-justify-center  tw-rounded-2xl "
+                v-for="(item,idx) in data" :key="idx+4567"
+                :id="idx"
+        @click="()=>{router.push('/paper/'+idx)}"
         >
-          <q-card>
-            <q-card-section>
-              {{ item.desc }}
-            </q-card-section>
-            <q-card-section>
-              <button type="button"
-                      class="tw-text-white tw-bg-blue-700 hover:tw-bg-blue-800 focus:tw-outline-none focus:tw-ring-4 focus:tw-ring-blue-300 tw-font-medium tw-rounded-full tw-text-sm
-                        tw-px-5 tw-py-2.5 tw-text-center tw-mr-2 tw-mb-2 dark:tw-bg-blue-600 dark:tw-hover:bg-blue-700 dark:focus:ring-blue-800"
-                      @click="()=>{router.push('/paper/'+idx)}"
-              >Read More
-              </button>
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
+          <div class="tw-text-xl tw-text-gray-900" >
+            {{ item.section.slice(2, item.section.length) }}
+          </div>
+        </div>
       </div>
     </div>
   </q-page>
@@ -37,6 +33,7 @@ import {onMounted, ref, nextTick} from 'vue'
 import {api} from "boot/axios";
 import {useRouter} from "vue-router";
 import State from '../state'
+
 let router = useRouter();
 let data = ref(null)
 
@@ -64,6 +61,9 @@ State.getPaper().then(d => {
 <style scoped>
 ul {
   list-style-type: dot;
+}
+.my-element {
+  animation-duration: 1.5s; /* don't forget to set a duration! */
 }
 
 

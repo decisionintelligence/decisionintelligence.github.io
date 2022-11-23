@@ -47,7 +47,7 @@
           地址：上海市普陀区中山北路3663号
         </div>
         <div>
-          邮箱：XXXX[at]mail[dot]com
+          邮箱：byang[at]dase[dot]ecnu.edu[dot]cn
         </div>
         <div>
           电话：021-XXXXXXX

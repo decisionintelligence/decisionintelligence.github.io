@@ -1,7 +1,7 @@
 <template>
-  <q-page padding class="md:tw-w-2/3 tw-m-auto">
+  <q-page padding class="md:tw-w-2/3 tw-m-auto ">
 
-    <div class="tw-mt-5">
+    <div class="tw-mt-5 tw-h-full ">
       <transition
         appear
         enter-active-class="animated  fadeInDown"
@@ -9,15 +9,9 @@
       >
         <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element"> 导师</div>
       </transition>
-      <div v-if="screen.width>1400"  class="tw-grid tw-grid-cols-1 tw-gap-6  md:tw-flex md:tw-justify-evenly">
-        <div v-for="(item,idx) in teacher" :key="idx"  >
-          <my-card  :pic="item.pic" :name="item.name" :link="item.link" :tag="item.tag.split(',')"
-                   :desc="item.desc" ></my-card>
-        </div>
-      </div>
-      <div v-else  class="tw-grid  tw-grid-cols-1 tw-gap-6 tw-flex tw-justify-center tw-content-center">
-        <div v-for="(item,idx) in teacher" :key="idx"  >
-          <my-card  :pic="item.pic" :name="item.name" :link="item.link" :tag="item.tag.split(',')"
+      <div class="tw-grid tw-grid-cols-1 tw-gap-6  md:tw-flex md:tw-justify-evenly tw-h-full">
+        <div v-for="(item,idx) in teacher" :key="idx" id="teacher">
+          <my-card class="tw-h-full" :pic="item.pic" :name="item.name" :link="item.link" :tag="item.tag.split(',')"
                    :desc="item.desc"></my-card>
         </div>
       </div>
@@ -33,16 +27,14 @@
       >
         <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element">博士生</div>
       </transition>
-      <div v-if="screen.width>1200" class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-4 md:tw-gap-3" >
+      <div
+           class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-3 md:tw-gap-3">
         <div v-for="(item,idx) in doctor" :key="idx+1214" class="tw-h-full">
-          <my-card  class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'" :tag="item.tag.split(',')"
-                    :desc="item.desc" mode="vertical"></my-card>
-        </div>
-      </div>
-      <div v-else class="tw-grid tw-grid-cols-1  tw-gap-3" >
-        <div v-for="(item,idx) in doctor" :key="idx+1214" >
-          <my-card   class="md:tw-w-5/6 tw-m-auto" :pic="item.pic" :name="item.name" :link="'#'" :tag="item.tag.split(',')"
-                     :desc="item.desc" :mode="screen.width>1200?'vertical':'sm_std'"></my-card>
+          <my-card  class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
+                   :tag="item.tag.split(',')"
+                   :desc="item.desc" mode="vertical">
+          </my-card>
+
         </div>
       </div>
     </div>
@@ -55,18 +47,15 @@
       >
         <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element">硕士生</div>
       </transition>
-      <div v-if="screen.width>1200" class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-4 md:tw-gap-3" >
+      <div
+           class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-3 md:tw-gap-3">
         <div v-for="(item,idx) in master" :key="idx+1214" class="tw-h-full">
-          <my-card  class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'" :tag="item.tag.split(',')"
-                    :desc="item.desc" mode="vertical"></my-card>
+          <my-card class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
+                   :tag="item.tag.split(',')"
+                   :desc="item.desc" mode="vertical"></my-card>
         </div>
       </div>
-      <div v-else class="tw-grid tw-grid-cols-1  tw-gap-3" >
-        <div v-for="(item,idx) in master" :key="idx+1214" >
-          <my-card   class="md:tw-w-5/6 tw-m-auto" :pic="item.pic" :name="item.name" :link="'#'" :tag="item.tag.split(',')"
-                     :desc="item.desc" :mode="screen.width>1200?'vertical':'sm_std'"></my-card>
-        </div>
-      </div>
+
     </div>
 
     <q-separator class="tw-m-10"/>
@@ -79,16 +68,12 @@
       >
         <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element">alumni</div>
       </transition>
-      <div v-if="screen.width>1200" class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-4 md:tw-gap-3" >
+      <div
+           class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-3 md:tw-gap-3">
         <div v-for="(item,idx) in alumni" :key="idx+1214" class="tw-h-full">
-          <my-card  class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'" :tag="item.tag.split(',')"
-                    :desc="item.desc" mode="vertical"></my-card>
-        </div>
-      </div>
-      <div v-else class="tw-grid tw-grid-cols-1  tw-gap-3" >
-        <div v-for="(item,idx) in alumni" :key="idx+1214" >
-          <my-card   class="md:tw-w-5/6 tw-m-auto" :pic="item.pic" :name="item.name" :link="'#'" :tag="item.tag.split(',')"
-                     :desc="item.desc" :mode="screen.width>1200?'vertical':'sm_std'"></my-card>
+          <my-card class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
+                   :tag="item.tag.split(',')"
+                   :desc="item.desc" mode="vertical"></my-card>
         </div>
       </div>
     </div>
@@ -99,7 +84,7 @@
 
 <script setup>
 
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 import MyCard from "../components/MyCard"
 import {api} from "boot/axios";
 import {useQuasar} from "quasar";
@@ -116,6 +101,10 @@ api.get('/members').then(res => res.data).then(d => {
   master.value = d['master']
   alumni.value = d['alumni']
 })
+  .then(() => {
+    let myElement = document.getElementById('teacher')
+  })
+
 
 
 </script>
