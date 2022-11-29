@@ -80,6 +80,7 @@ export default {
           let token_type = res.data.token_type
           localStorage.setItem('access_token',access_token)
           localStorage.setItem('token_type',token_type)
+          localStorage.setItem('username',username.value)
           router.push('/space')
         }
       }).catch(err=>{
