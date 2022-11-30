@@ -9,20 +9,26 @@
     <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element">科研成果</div>
     </transition>
       <div class="tw-flex tw-justify-center tw-m-2 ">
-        实验室科研成果应用于智能交通、智慧城市、AIOps、数字能源、智能水资源管理、数字孪生、分子设计和药物设计等领域。</div>
+        实验室科研成果应用于绿色交通、智能运维、智慧城市、AIOps、数字能源、智能水资源管理、数字孪生、分子设计和药物设计等领域。 </div>
     <div v-if="data" class="md:tw-m-auto tw-pt-6">
       <div class="tw-grid  tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-y-5 tw-gap-x-10
-       tw-m-auto" style="height: 70vh">
+       tw-m-auto 0" style="height: 70vh">
         <div  class="tw-shadow-md tw-border-gray-200 tw-border
         hover:tw-cursor-pointer
          hover:tw-scale-105
+         hover:tw-bg-blue-50
+         tw-transition-all tw-duration-500 tw-ease-in-out
+         my-element
          tw-text-center tw-flex-col tw-flex  tw-justify-center  tw-rounded-2xl "
                 v-for="(item,idx) in data" :key="idx+4567"
                 :id="idx"
         @click="()=>{router.push('/paper/'+idx)}"
         >
-          <div class="tw-text-xl tw-text-gray-900" >
+          <div class="tw-text-lg tw-text-gray-800" >
             {{ item.section.slice(2, item.section.length) }}
+          </div>
+          <div class="tw-m-3 tw-text-gray-400 ">
+            {{item.tag}}
           </div>
         </div>
       </div>

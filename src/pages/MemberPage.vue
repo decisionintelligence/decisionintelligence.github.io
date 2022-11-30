@@ -70,9 +70,10 @@
       </transition>
       <div
            class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-3 md:tw-gap-3">
-        <div v-for="(item,idx) in alumni" :key="idx+1214" class="tw-h-full">
+        <div v-for="(item,idx) in alumni" :key="idx+1214" class="tw-h-full" >
           <my-card class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
-                   :tag="item.tag.split(',')"
+                   :tag="item.tag?.split(',')"
+                   type="alumni"
                    :desc="item.desc" mode="vertical"></my-card>
         </div>
       </div>

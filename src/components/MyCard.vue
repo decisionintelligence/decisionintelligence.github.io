@@ -23,7 +23,8 @@
 
     <div v-else-if="mode==='vertical'"
          class="tw-bg-white  tw-h-full tw-rounded-lg tw-border tw-border-gray-200 tw-shadow-md tw-text-center">
-      <img class="tw-object-contain rounded-l-lg tw-w-full tw-h-2/3" :src="pic">
+      <img v-if="type!=='alumni'" class="tw-object-contain rounded-l-lg tw-w-full tw-h-2/3" :src="pic">
+      <img v-else class="tw-object-contain tw-mt-2 rounded-l-lg tw-w-full tw-h-1/2" :src="pic">
       <div>
         <div class="tw-mt-1">
           {{ name }}
@@ -71,6 +72,7 @@ export default {
     tag: Array,
     desc: String,
     link: String,
+    type:String,
     mode: {
       type: String,
       default: 'horizontal'
