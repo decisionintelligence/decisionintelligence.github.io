@@ -28,9 +28,9 @@
         <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element">博士生</div>
       </transition>
       <div
-           class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-3 md:tw-gap-3">
-        <div v-for="(item,idx) in doctor" :key="idx+1214" class="tw-h-full">
-          <my-card  class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
+           class="tw-grid tw-grid-cols-1 tw-grid-rows-[300px] sm:tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-3 tw-relative">
+        <div v-for="(item,idx) in doctor" :key="idx+1214" class="tw-h-72  tw-w-full">
+          <my-card  class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
                    :tag="item.tag.split(',')"
                    :desc="item.desc" mode="vertical">
           </my-card>
@@ -48,9 +48,9 @@
         <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element">硕士生</div>
       </transition>
       <div
-           class="tw-grid  tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-3 md:tw-gap-3">
-        <div v-for="(item,idx) in master" :key="idx+1214" class="tw-h-full">
-          <my-card class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
+           class="tw-grid tw-grid-cols-1 tw-m-auto sm:tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-5 tw-relative">
+        <div v-for="(item,idx) in master" :key="idx+5511" class="tw-h-72  tw-w-full">
+          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
                    :tag="item.tag.split(',')"
                    :desc="item.desc" mode="vertical"></my-card>
         </div>
@@ -73,10 +73,12 @@
         <div v-for="(item,idx) in alumni" :key="idx+1214" class="tw-h-full" >
           <div class="tw-text-lg tw-font-semibold">
             <span class="tw-text-lg">{{ item.name }}</span>
-            <span class="tw-text-base tw-ml-2 tw-text-gray-400"> {{item.desc}}</span>
+            <span class="tw-text-base  tw-ml-2 tw-text-gray-400">{{item.desc}}</span>
           </div>
           <div v-if="item.tag">
-            {{item.tag.split(',').join(' | ')}}
+            <p v-if="item.link">{{item.link}}</p>
+<!--            <p class="tw-m-0 tw-p-0" v-if="item.tag.split(',')[0]>15">{{item.tag.split(',')[0]}}</p>-->
+            <p>{{item.tag.split(',').join(' | ')}}</p>
           </div>
 
         </div>

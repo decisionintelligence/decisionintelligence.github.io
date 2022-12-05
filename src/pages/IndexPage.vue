@@ -8,7 +8,7 @@
       >
         <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element">NEWS</div>
       </transition>
-      <div v-if="news" class="tw-overflow-y-scroll tw-overflow-hidden" style="height: 30vh">
+      <div v-if="news" class="tw-overflow-y-scroll tw-overflow-hidden" style="height: 32vh">
 
         <div class="q-mt-md tw-shadow-md tw-p-4 tw-my-2 tw-bg-gray-50 tw-border-l-4 tw-border-gray-300 dark:border-gray-500 dark:bg-gray-800
           "

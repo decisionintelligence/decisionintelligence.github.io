@@ -22,42 +22,21 @@
 
 
     <div v-else-if="mode==='vertical'"
-         class="tw-bg-white  tw-h-full tw-rounded-lg tw-border tw-border-gray-200 tw-text-center">
-      <img v-if="type!=='alumni'" class="tw-object-contain rounded-l-lg tw-w-full tw-h-2/3" :src="pic">
-      <img v-else class="tw-object-contain tw-mt-2 rounded-l-lg tw-w-full tw-h-1/2" :src="pic">
+         class="tw-bg-white tw-m-auto  tw-h-full  tw-border tw-border-gray-200 tw-text-center" style="max-width: 230px;">
+      <img style="width:160px;height: 160px" v-if="type!=='alumni'" class="tw-object-contain tw-rounded-l-lg tw-m-auto tw-pt-1" :src="pic">
       <div>
         <div class="tw-mt-1">
           {{ name }}
         </div>
         <div class="tw-mt-1">{{ desc }}</div>
-        <div class="tw-mt-1">
-        <div v-for="(t,idx) in tag" class="tw-text-gray-400 tw-pl-1" :key=idx+100>
-          {{ t }}
-        </div>
+        <div class="tw-text-gray-400 tw-break-all ">
+          {{tag.join(',')}}
+<!--        <span v-for="(t,idx) in tag" class="tw-text-gray-400 tw-pl-1" :key=idx+100>-->
+<!--          {{ t }}-->
+<!--        </span>-->
         </div>
       </div>
     </div>
-
-    <a v-else-if="mode === 'sm_std' " href="#" class="tw-flex tw-flex-row tw-items-center
-    tw-bg-white tw-rounded-lg tw-border tw-shadow-md tw-max-w-xl hover:bg-gray-100 tw-h-full tw-w-full">
-      <img :src="pic" class="tw-object-contain tw-w-1/3 tw-h-5/6 rounded-none rounded-l-lg"/>
-      <div class="tw-w-2/3 tw-grid tw-grid-rows-6 tw-ml-4">
-        <div class="tw-row-start-2  tw-mb-2 tw-text-xl  tw-font-bold tw-tracking-tight tw-text-gray-900">
-          {{ name }}
-        </div>
-        <div class="tw-row-start-3">
-        <span class="tw-text-gray-400" v-for="(t,idx) in tag" :key="idx">
-          {{ t }}
-        </span>
-        </div>
-        <div class="tw-row-start-4 tw-row-end-6 tw-break-all tw-break-words tw-overflow-hidden">
-          <div>
-            {{ desc }}
-          </div>
-        </div>
-      </div>
-    </a>
-
 
   </div>
 
