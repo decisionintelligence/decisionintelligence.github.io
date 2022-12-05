@@ -48,7 +48,7 @@
         <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element">硕士生</div>
       </transition>
       <div
-           class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-3 md:tw-gap-3">
+           class="tw-grid  tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-3 md:tw-gap-3">
         <div v-for="(item,idx) in master" :key="idx+1214" class="tw-h-full">
           <my-card class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
                    :tag="item.tag.split(',')"
@@ -69,12 +69,16 @@
         <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element">alumni</div>
       </transition>
       <div
-           class="tw-grid tw-grid-rows-[300px] tw-grid-cols-1 tw-gap-3 md:tw-grid-cols-3 md:tw-gap-3">
+           class="tw-grid  tw-grid-cols-1 tw-gap-4 md:tw-pl-10">
         <div v-for="(item,idx) in alumni" :key="idx+1214" class="tw-h-full" >
-          <my-card class="md:tw-w-2/3 tw-m-auto tw-h-full" :pic="item.pic" :name="item.name" :link="'#'"
-                   :tag="item.tag?.split(',')"
-                   type="alumni"
-                   :desc="item.desc" mode="vertical"></my-card>
+          <div class="tw-text-lg tw-font-semibold">
+            <span class="tw-text-lg">{{ item.name }}</span>
+            <span class="tw-text-base tw-ml-2 tw-text-gray-400"> {{item.desc}}</span>
+          </div>
+          <div v-if="item.tag">
+            {{item.tag.split(',').join(' | ')}}
+          </div>
+
         </div>
       </div>
     </div>

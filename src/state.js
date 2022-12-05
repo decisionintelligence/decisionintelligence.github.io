@@ -10,7 +10,7 @@ class State {
   getPaper() {
     return api.get('/papers').then(res => {
       this.papers = res.data
-      console.log(this.papers)
+      // console.log(this.papers)
       return res.data
     })
   }

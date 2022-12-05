@@ -7,7 +7,7 @@
     <!--      <div class=" tw-grid tw-grid-rows-5">-->
     <div style="min-height: 220px" v-if="mode==='horizontal'"
          @click="goTo(link)"
-         class="tw-rounded-lg tw-border tw-border-gray-200 tw-shadow-md tw-h-full hover:tw-cursor-pointer">
+         class="tw-rounded-lg tw-border tw-border-gray-200  tw-h-full hover:tw-cursor-pointer">
       <img :src="pic" style="width:150px;height: 200px" class="tw-float-left  tw-mr-4 tw-object-contain tw-mt-2"/>
       <div class="row tw-mt-2   tw-mb-2 tw-text-xl tw-font-bold tw-tracking-tight tw-text-gray-900">
         {{ name }}
@@ -22,7 +22,7 @@
 
 
     <div v-else-if="mode==='vertical'"
-         class="tw-bg-white  tw-h-full tw-rounded-lg tw-border tw-border-gray-200 tw-shadow-md tw-text-center">
+         class="tw-bg-white  tw-h-full tw-rounded-lg tw-border tw-border-gray-200 tw-text-center">
       <img v-if="type!=='alumni'" class="tw-object-contain rounded-l-lg tw-w-full tw-h-2/3" :src="pic">
       <img v-else class="tw-object-contain tw-mt-2 rounded-l-lg tw-w-full tw-h-1/2" :src="pic">
       <div>
@@ -31,9 +31,9 @@
         </div>
         <div class="tw-mt-1">{{ desc }}</div>
         <div class="tw-mt-1">
-        <span v-for="(t,idx) in tag" class="tw-text-gray-400 tw-mr-2 tw-pl-2" :key=idx+100>
+        <div v-for="(t,idx) in tag" class="tw-text-gray-400 tw-pl-1" :key=idx+100>
           {{ t }}
-        </span>
+        </div>
         </div>
       </div>
     </div>

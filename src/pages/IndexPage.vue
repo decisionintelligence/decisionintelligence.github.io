@@ -8,9 +8,9 @@
       >
         <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element">NEWS</div>
       </transition>
-      <div v-if="news" class="tw-overflow-y-scroll tw-overflow-hidden" style="height: 50vh">
+      <div v-if="news" class="tw-overflow-y-scroll tw-overflow-hidden" style="height: 30vh">
 
-        <div class="q-mt-md tw-shadow-md tw-p-4 tw-my-4 tw-bg-gray-50 tw-border-l-4 tw-border-gray-300 dark:border-gray-500 dark:bg-gray-800
+        <div class="q-mt-md tw-shadow-md tw-p-4 tw-my-2 tw-bg-gray-50 tw-border-l-4 tw-border-gray-300 dark:border-gray-500 dark:bg-gray-800
           "
              v-for="(item,idx) in news " :key="idx"
         >
@@ -38,7 +38,7 @@
       <div v-if="screen.width>768" class="row flex justify-evenly">
         <div class="col-3">
           <ul class="tw-list-disc">
-            <li class="tw-m-4 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research.slice(0,3)"
+            <li class="tw-m-6 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research.slice(0,3)"
                 :key="idx+1243">
               <a :href="item.url" target="_blank" class="tw-w-full"
                  style="display: inline-block;width: 100%">{{ item.name }}</a>
@@ -47,7 +47,7 @@
         </div>
         <div class="col-3">
           <ul class="tw-list-disc">
-            <li class="tw-m-4 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research.slice(3,6)"
+            <li class="tw-m-6 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research.slice(3,6)"
                 :key="idx+12432">
               <a :href="item.url" target="_blank" style="display: inline-block;width: 100%">{{ item.name }}</a>
             </li>
@@ -55,7 +55,7 @@
         </div>
         <div class="col-3">
           <ul class="tw-list-disc">
-            <li class="tw-m-4 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research.slice(6,9)"
+            <li class="tw-m-6 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research.slice(6,9)"
                 :key="idx+12432">
               <a :href="item.url" target="_blank" style="display: inline-block;width: 100%">{{ item.name }}</a>
             </li>
