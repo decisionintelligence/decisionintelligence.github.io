@@ -40,7 +40,7 @@
           <ul class="tw-list-disc">
             <li class="tw-m-6 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research.slice(0,3)"
                 :key="idx+1243">
-              <a :href="item.url" target="_blank" class="tw-w-full"
+              <a :href="item.destination" target="_blank" class="tw-w-full"
                  style="display: inline-block;width: 100%">{{ item.name }}</a>
             </li>
           </ul>
@@ -49,7 +49,7 @@
           <ul class="tw-list-disc">
             <li class="tw-m-6 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research.slice(3,6)"
                 :key="idx+12432">
-              <a :href="item.url" target="_blank" style="display: inline-block;width: 100%">{{ item.name }}</a>
+              <a :href="item.destination" target="_blank" style="display: inline-block;width: 100%">{{ item.name }}</a>
             </li>
           </ul>
         </div>
@@ -57,7 +57,7 @@
           <ul class="tw-list-disc">
             <li class="tw-m-6 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research.slice(6,9)"
                 :key="idx+12432">
-              <a :href="item.url" target="_blank" style="display: inline-block;width: 100%">{{ item.name }}</a>
+              <a :href="item.destination" target="_blank" style="display: inline-block;width: 100%">{{ item.name }}</a>
             </li>
           </ul>
         </div>
@@ -68,7 +68,7 @@
         <ul class="tw-list-disc">
           <li class="tw-m-4 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(item,idx) in research"
               :key="idx+1243">
-            <a :href="item.url" target="_blank" style="display: inline-block;width: 100%"> {{ item.name }}</a>
+            <a :href="item.destination" target="_blank" style="display: inline-block;width: 100%"> {{ item.name }}</a>
           </li>
         </ul>
       </div>
@@ -86,16 +86,15 @@ import {api} from "boot/axios";
 
 let $q = useQuasar();
 let screen = ref($q.screen)
-let research = ref([{name: '时间序列分析', url: 'papers#1'},
-  {name: '时空数据分析', url: 'papers#2'},
-  {name: '图分析', url: 'papers#3'},
-  {name: '自动机器学习(AutoML)', url: 'papers#4'},
-  {name: 'AI for Science', url: 'papers#5'},
-  {name: '模型轻量化', url: 'papers#6'},
-  {name: '异常检测', url: 'papers#7'},
-  {name: '预测', url: 'papers#8'},
-  {name: '智能决策', url: 'papers#9'},
-])
+let research = ref([{name: '时间序列分析', url: 'papers#1',destination:'/paper/0'},
+  {name: '时空数据分析', url: 'papers#2',destination:'/paper/1'},
+  {name: '图分析', url: 'papers#3',destination:'/paper/2'},
+  {name: '自动机器学习(AutoML)', url: 'papers#4',destination:'/paper/3'},
+  {name: 'AI for Science', url: 'papers#5',destination:'/paper/4'},
+  {name: '模型轻量化', url: 'papers#6',destination:'/paper/5'},
+  {name: '异常检测', url: 'papers#7',destination:'/paper/6'},
+  {name: '预测', url: 'papers#8',destination:'/paper/7'},
+  {name: '智能决策', url: 'papers#9',destination:'/paper/8'}]);
 let news = ref(null)
 api.get('/news').then(res => {
   if (res.status === 200) {

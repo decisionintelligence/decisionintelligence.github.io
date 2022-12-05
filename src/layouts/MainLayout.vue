@@ -22,7 +22,7 @@
         </router-link>
         <router-link to="/recruit"
                      class="tw-m-4 tw-text-gray-400 hover:tw-bg-amber-500 hover:tw-text-black tw-rounded tw-w-14 tw-h-8 tw-text-center"
-                     active-class="tw-text-black">招聘
+                     active-class="tw-text-black">加入我们
         </router-link>
       </q-tabs>
       <div v-else style="float: right">

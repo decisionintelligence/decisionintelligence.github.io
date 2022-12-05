@@ -7,7 +7,7 @@
     >
     <div class="flex flex-center tw-font-bold tw-text-3xl tw-m-4 my-element">项目</div>
     </transition>
-      <div class="q-pa-md tw-h-full md:tw-w-2/3 tw-m-auto">
+      <div class="q-pa-md tw-h-full md:tw-w-5/6 tw-m-auto">
         <q-table
           flat
           bordered
