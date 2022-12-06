@@ -1,23 +1,11 @@
 <template>
   <q-page padding>
-    <!-- content -->
-    <!--    <transition-->
-    <!--      appear-->
-    <!--      enter-active-class="animated  fadeInDown"-->
-    <!--      leave-active-class="animated  fadeOutUp"-->
-    <!--    >-->
-    <!--      <div class="flex flex-center tw-font-bold tw-text-3xl my-element">招聘信息</div>-->
-    <!--    </transition>-->
     <div class=" tw-leading-10">
-
       <div class="typography">
-        <div class="section_1">
-          <transition-group
-          appear
-          enter-active-class="animated  fadeInDown"
-          leave-active-class="animated fadeOut"
-          >
-          <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-4">决策智能实验室诚邀海内外学生、学者加入！</div>
+        <div class="section">
+          <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-4">
+            决策智能实验室诚邀海内外学生、学者加入！
+          </div>
           <div class="tw-flex tw-justify-center tw-text-zinc-300">we are looking forward to your joining!</div>
           <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-4">研究方向</div>
           <div class="tw-flex tw-justify-center tw-text-zinc-300">research interests</div>
@@ -34,25 +22,22 @@
             <li class="tw-list-disc tw-pl-4 tw-flex tw-justify-center tw-place-content-start">自拟方向（不局限于以上）
             </li>
           </ul>
-          </transition-group>
         </div>
-        <transition-group
-        appear
-        enter-active-class="animated  fadeInDown"
-        leave-active-class="animated fadeOut"
-        >
-        <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-4">欢迎本科生加入实验室实习！ </div>
-        <div class="tw-flex tw-justify-center tw-text-zinc-300">we are welcome the b.s student to join us! </div>
-        </transition-group>
+        <div class="section">
+          <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-4">欢迎本科生加入实验室实习！</div>
+          <div class="tw-flex tw-justify-center tw-text-zinc-300">we are welcome the b.s student to join us!</div>
+        </div>
+
         <div class="tw-grid tw-grid-cols-2 tw-content-center">
-          <transition-group
-          appear
-          enter-active-class="animated  fadeInUp"
-          leave-active-class="animated fadeOut"
-          >
-          <div key="1" class="tw-flex tw-justify-center tw-text-2xl tw-mt-10 tw-col-span-2 text-weight-bold tw-mt-4 ">博士、硕士招生</div>
-          <div key="2" class="tw-flex tw-justify-center tw-text-zinc-300 tw-mb-5 tw-col-span-2">phd,master,recruitment</div>
-          <div key="3" class="tw-w-1/2 tw-m-auto tw-mt-0">
+          <div class="section tw-col-span-2">
+            <div
+              class="tw-flex tw-justify-center tw-text-2xl tw-mt-10  text-weight-bold tw-mt-4 ">
+              博士、硕士招生
+            </div>
+            <div class="tw-flex tw-justify-center tw-text-zinc-300 tw-mb-5 ">phd,master,recruitment
+            </div>
+          </div>
+          <div class="tw-w-1/2 tw-m-auto tw-mt-0 section">
             <div class="text-weight-bold">对学生的期望</div>
             <ul class="tw-list-disc text-gray ">
               <li>具有自我驱动能、对自己未来有目标</li>
@@ -61,7 +46,7 @@
               <li>踏实、有责任心、善于沟通、有团队合作精神</li>
             </ul>
           </div>
-          <div key="4" class="tw-w-1/2 tw-m-auto tw-mt-0">
+          <div key="4" class="tw-w-1/2 tw-m-auto tw-mt-0 section">
             <div class="text-weight-bold">培养方法</div>
             <ul class="tw-list-disc text-gray">
               <li>提供科研与应用结合的科研环境</li>
@@ -70,19 +55,23 @@
               <li>注重国际化，积极提供各类国际交流机会</li>
             </ul>
           </div>
-          </transition-group>
-          <transition-group>
-          <div key="1" class="tw-flex tw-justify-center tw-text-2xl tw-mt-10 tw-col-span-2  text-weight-bold  tw-mt-4">博士后岗位招聘:</div>
-          <div key="2" class="tw-flex tw-justify-center tw-text-zinc-300 tw-mb-5 tw-col-span-2">postdoc recruitment</div>
+          <div class="section tw-col-span-2">
+            <div key="1"
+                 class="tw-flex text-weight-bold tw-justify-center tw-text-2xl tw-mt-10text-weight-bold  tw-mt-4">
+              博士后岗位招聘:
+            </div>
+            <div key="2" class="tw-flex tw-justify-center tw-text-zinc-300 tw-mb-5 ">postdoc recruitment
+            </div>
+          </div>
 
-          <div key="3" class="tw-w-1/2 tw-m-auto tw-mt-0">
+          <div key="3" class="tw-w-1/2 tw-m-auto tw-mt-0 section">
             <div class="text-weight-bold">岗位描述</div>
             <ul class="tw-list-disc tw-pl-4">
               <li>独立承担课题研究</li>
               <li>协助指导研究生</li>
             </ul>
           </div>
-          <div key="4" class="tw-w-1/2 tw-m-auto tw-mt-0">
+          <div key="4" class="tw-w-1/2 tw-m-auto tw-mt-0 section">
             <div class="text-weight-bold">岗位要求</div>
             <ul class="tw-list-disc tw-pl-4">
               <li>具有或即将获得计算机等相关信息科学相关的博士学位，或其他理工科博士学位（主要针对AI for Science方向）
@@ -92,7 +81,7 @@
             </ul>
           </div>
 
-          <div key="5" class="tw-w-1/2 tw-m-auto tw-mt-4">
+          <div key="5" class="tw-w-1/2 tw-m-auto tw-mt-4 section">
             <div class="text-weight-bold">待遇</div>
             <ul>
               <li class="tw-list-decimal" v-for="(item,idx) in message.data" :key="idx + 1247" :id="idx">
@@ -105,18 +94,15 @@
               </li>
             </ul>
           </div>
-          <div key="6" class="tw-w-1/2 tw-m-auto tw-mt-4">
+          <div key="6" class="tw-w-1/2 tw-m-auto tw-mt-4 section">
             <div class="text-weight-bold ">联系人</div>
-            <div >
-              <div>杨彬：byang@dase.ecnu.edu.cn</div>
-              <div>郭晨娟：cjguo@dase.ecnu.edu.cn</div>
+            <div>
+              <div>杨彬：<a href="mailto:byang@dase.ecnu.edu.cn" class="text-blue">byang@dase.ecnu.edu.cn </a></div>
+              <div>郭晨娟：<a href="mailto:cjguo@dase.ecnu.edu.cn" class="text-blue">cjguo@dase.ecnu.edu.cn</a></div>
             </div>
-            <img src="http://106.75.239.46:9000/picbed/join-us.png" />
+            <img class="tw-mt-10" src="http://106.75.239.46:9000/picbed/join-us.png" />
           </div>
-          </transition-group>
         </div>
-
-
       </div>
 
 
@@ -161,13 +147,42 @@ const message = ref({
 //detect the url in  message covert to a tag
 onMounted(() => {
   let a = document.getElementById("0").children[0].innerHTML = message.value.data[0].item.replace("website", "<a class='text-blue' href='http://postdoctor.ecnu.edu.cn/34/1e/c14591a275486/page.htm' target='_blank'>http://postdoctor.ecnu.edu.cn/34/1e/c14591a275486/page.htm</a>");
+  let sectionList = document.querySelectorAll(".section");
+  sectionList = Array.from(sectionList);
+
+  // 检查sectionList中的哪些元素是可见的,移除可见元素
+  function checkVisible() {
+    for (let i = 0; i < sectionList.length; i++) {
+      let rect = sectionList[i].getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        sectionList.splice(i, 1);
+        i--;
+      }
+    }
+  }
+
+  checkVisible();
+  console.log(sectionList);
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log(entry.target);
+        entry.target.classList.add("animated", "fadeInUp", "my-element");
+      }
+    });
+  });
+  sectionList.forEach(section => {
+    observer.observe(section);
+  });
+
 
 });
+
 
 </script>
 <style scoped>
 .my-element {
-  animation-duration: 1.5s; /* don't forget to set a duration! */
+  animation-duration: 1s; /* don't forget to set a duration! */
 }
 
 .text-gray {
