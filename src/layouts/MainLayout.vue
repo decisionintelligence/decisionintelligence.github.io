@@ -5,24 +5,24 @@
     >
       <q-tabs align="center" v-if="screen.width>640">
         <router-link exact to="/index"
-                     class="tw-m-4 tw-text-gray-400 hover:tw-bg-amber-500 hover:tw-text-black tw-rounded tw-w-14 tw-h-8 tw-text-center"
-                     active-class="tw-text-black">主页
+                     class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
+                     active-class=" tw-border-b-2 active-text-color tw-border-blue-500  	">主页
         </router-link>
         <router-link to="/papers"
-                     class="tw-m-4 tw-text-gray-400 hover:tw-bg-amber-500 hover:tw-text-black tw-rounded tw-w-14 tw-h-8 tw-text-center"
-                     active-class="tw-text-black">成果
+                     class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
+                     active-class=" tw-border-b-2  active-text-color tw-border-blue-500 ">成果
         </router-link>
         <router-link to="/member"
-                     class="tw-m-4 tw-text-gray-400 hover:tw-bg-amber-500 hover:tw-text-black tw-rounded tw-w-14 tw-h-8 tw-text-center"
-                     active-class="tw-text-black">成员
+                     class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
+                     active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">成员
         </router-link>
         <router-link to="/project"
-                     class="tw-m-4 tw-text-gray-400 hover:tw-bg-amber-500 hover:tw-text-black tw-rounded tw-w-14 tw-h-8 tw-text-center"
-                     active-class="tw-text-black">项目
+                     class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
+                     active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">项目
         </router-link>
         <router-link to="/recruit"
-                     class="tw-m-4 tw-text-gray-400 hover:tw-bg-amber-500 hover:tw-text-black tw-rounded tw-w-14 tw-h-8 tw-text-center"
-                     active-class="tw-text-black">加入我们
+                     class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
+                     active-class="tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">加入我们
         </router-link>
       </q-tabs>
       <div v-else style="float: right">
@@ -42,15 +42,12 @@
 
 
     <div class="tw-w-full  tw-h-24" style="background-color: #FAFAFA">
-      <div class="tw-grid tw-pt-5 tw-mt-auto md:tw-grid-cols-3 tw-gap-3 tw-place-items-center">
+      <div class="tw-grid tw-pt-5 tw-mt-auto md:tw-grid-cols-2 tw-gap-3 tw-place-items-center">
         <div>
           地址：上海市普陀区中山北路3663号
         </div>
         <div>
           邮箱：byang[at]dase[dot]ecnu.edu[dot]cn
-        </div>
-        <div>
-          电话：021-XXXXXXX
         </div>
       </div>
     </div>
@@ -65,3 +62,10 @@ let screen = $q.screen;
 
 
 </script>
+<style >
+.active-text-color {
+
+  color: #3370ff !important;
+}
+
+</style>

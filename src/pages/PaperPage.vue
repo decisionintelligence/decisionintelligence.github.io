@@ -6,7 +6,7 @@
         enter-active-class="animated  fadeInDown"
         leave-active-class="animated  fadeOutUp"
       >
-        <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element">科研成果</div>
+        <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">科研成果</div>
       </transition>
       <div class="tw-flex tw-justify-center tw-m-2 ">
         实验室科研成果应用于绿色交通、智能运维、智慧城市、AIOps、数字能源、智能水资源管理、数字孪生、分子设计和药物设计等领域。

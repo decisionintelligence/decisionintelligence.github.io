@@ -3,11 +3,11 @@
     <div class=" tw-leading-10">
       <div class="typography">
         <div class="section">
-          <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-4">
-            决策智能实验室诚邀海内外学生、学者加入！
+          <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-4 typewriter" style="color: #4e83fd">
+            <div>决策智能实验室诚邀海内外学生、学者加入！</div >
           </div>
-          <div class="tw-flex tw-justify-center tw-text-zinc-300">we are looking forward to your joining!</div>
-          <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-4">研究方向</div>
+          <div class="tw-flex tw-justify-center tw-text-zinc-300 typewriter"><div>we are looking forward to your joining!</div></div>
+          <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-20" style="color: #4e83fd">研究方向</div>
           <div class="tw-flex tw-justify-center tw-text-zinc-300">research interests</div>
           <ul>
             <li class="tw-list-disc tw-pl-4 tw-flex tw-justify-center tw-place-content-start">
@@ -24,17 +24,17 @@
           </ul>
         </div>
         <div class="section">
-          <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-4">欢迎本科生加入实验室实习！</div>
-          <div class="tw-flex tw-justify-center tw-text-zinc-300">we are welcome the b.s student to join us!</div>
+          <div class="tw-flex tw-justify-center text-weight-bold tw-text-2xl tw-mt-20 " style="color: #4e83fd">欢迎本科生加入实验室实习！</div>
+          <div class="tw-flex tw-justify-center tw-text-zinc-300">college student  are welcome to join us!</div>
         </div>
 
         <div class="tw-grid tw-grid-cols-2 tw-content-center">
           <div class="section tw-col-span-2">
             <div
-              class="tw-flex tw-justify-center tw-text-2xl tw-mt-10  text-weight-bold tw-mt-4 ">
+              class="tw-flex tw-justify-center tw-text-2xl tw-mt-20  text-weight-bold tw-mt-4 " style="color: #4e83fd">
               博士、硕士招生
             </div>
-            <div class="tw-flex tw-justify-center tw-text-zinc-300 tw-mb-5 ">phd,master,recruitment
+            <div class="tw-flex tw-justify-center tw-text-zinc-300 tw-mb-5 ">phd  and master student recruitment
             </div>
           </div>
           <div class="tw-w-1/2 tw-m-auto tw-mt-0 section">
@@ -57,7 +57,8 @@
           </div>
           <div class="section tw-col-span-2">
             <div key="1"
-                 class="tw-flex text-weight-bold tw-justify-center tw-text-2xl tw-mt-10text-weight-bold  tw-mt-4">
+                 style="color: #4e83fd"
+                 class="tw-flex text-weight-bold tw-justify-center tw-text-2xl tw-mt-10text-weight-bold  tw-mt-20">
               博士后岗位招聘:
             </div>
             <div key="2" class="tw-flex tw-justify-center tw-text-zinc-300 tw-mb-5 ">postdoc recruitment
@@ -81,7 +82,7 @@
             </ul>
           </div>
 
-          <div key="5" class="tw-w-1/2 tw-m-auto tw-mt-4 section">
+          <div key="5" class="tw-w-1/2 tw-m-auto tw-mt-20 section">
             <div class="text-weight-bold">待遇</div>
             <ul>
               <li class="tw-list-decimal" v-for="(item,idx) in message.data" :key="idx + 1247" :id="idx">
@@ -94,11 +95,12 @@
               </li>
             </ul>
           </div>
-          <div key="6" class="tw-w-1/2 tw-m-auto tw-mt-4 section">
-            <div class="text-weight-bold ">联系人</div>
+          <div key="6" class="tw-w-1/2 tw-m-auto tw-mt-20 section">
+            <div class="text-weight-bold ">联系我们</div>
             <div>
               <div>杨彬：<a href="mailto:byang@dase.ecnu.edu.cn" class="text-blue">byang@dase.ecnu.edu.cn </a></div>
               <div>郭晨娟：<a href="mailto:cjguo@dase.ecnu.edu.cn" class="text-blue">cjguo@dase.ecnu.edu.cn</a></div>
+              <div>地址：上海市普陀区中山北路3663号(华东师范大学中北校区)</div>
             </div>
             <img class="tw-mt-10" src="http://106.75.239.46:9000/picbed/join-us.png" />
           </div>
@@ -146,7 +148,7 @@ const message = ref({
 );
 //detect the url in  message covert to a tag
 onMounted(() => {
-  let a = document.getElementById("0").children[0].innerHTML = message.value.data[0].item.replace("website", "<a class='text-blue' href='http://postdoctor.ecnu.edu.cn/34/1e/c14591a275486/page.htm' target='_blank'>http://postdoctor.ecnu.edu.cn/34/1e/c14591a275486/page.htm</a>");
+  let a = document.getElementById("0").children[0].innerHTML = message.value.data[0].item.replace("website", "<a class='text-blue' style='display: inline-block' href='http://postdoctor.ecnu.edu.cn/34/1e/c14591a275486/page.htm' target='_blank'>http://postdoctor.ecnu.edu.cn/34/1e/c14591a275486/page.htm</a>");
   let sectionList = document.querySelectorAll(".section");
   sectionList = Array.from(sectionList);
 
@@ -162,11 +164,9 @@ onMounted(() => {
   }
 
   checkVisible();
-  console.log(sectionList);
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.log(entry.target);
         entry.target.classList.add("animated", "fadeInUp", "my-element");
       }
     });
@@ -174,8 +174,6 @@ onMounted(() => {
   sectionList.forEach(section => {
     observer.observe(section);
   });
-
-
 });
 
 
@@ -187,5 +185,25 @@ onMounted(() => {
 
 .text-gray {
   color: #646a73
+}
+.typewriter div {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 4s steps(21),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20em }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: gray; }
 }
 </style>

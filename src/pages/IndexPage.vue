@@ -6,19 +6,21 @@
         enter-active-class="animated  fadeInDown"
         leave-active-class="animated  fadeOutUp"
       >
-        <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element">NEWS</div>
+        <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">NEWS</div>
       </transition>
       <div v-if="news" class="tw-overflow-y-scroll tw-overflow-hidden" style="height: 32vh">
-
-        <div class="q-mt-md tw-shadow-md tw-p-4 tw-my-2 tw-bg-gray-50 tw-border-l-4 tw-border-gray-300 dark:border-gray-500 dark:bg-gray-800
-          "
+        <div class="q-mt-md tw-shadow-md tw-p-4 tw-my-2 tw-bg-gray-50 tw-border-l-4 tw-border-gray-300 dark:border-gray-500 dark:bg-gray-800"
              v-for="(item,idx) in news " :key="idx"
         >
           <span class="tw-font-semibold"> {{ item.date }}</span>
-          &nbsp;
           {{ item.content }}
         </div>
-
+      </div>
+      <div v-else  class="tw-overflow-y-scroll tw-overflow-hidden " style="height: 32vh;">
+        <div class="tw-animate-pulse tw-bg-white tw-w-full tw-h-1/3 tw-mt-10 tw-border tw-p-4 tw-rounded tw-my-2 tw-border-gray-300"  v-for="(item,idx) in 4" :key="idx+56751">
+          <div class="tw-w-11/12 tw-ml-4 tw-bg-slate-100 tw-h-1/5 tw-mt-2  tw-rounded "></div>
+          <div class="tw-w-1/3 tw-ml-4 tw-bg-slate-100 tw-h-1/5 tw-mt-1 "></div>
+        </div>
       </div>
     </div>
 
@@ -30,7 +32,7 @@
         enter-active-class="animated  fadeInDown"
         leave-active-class="animated  fadeOutUp"
       >
-        <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element">决策智能实验室（Decision Intelligence
+        <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd;">决策智能实验室（Decision Intelligence
           Lab）
         </div>
       </transition>
