@@ -1,41 +1,18 @@
-# ex-site (ex-site)
 
-ex-site
-
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+## TODO
+### 功能一
+[http://101.43.58.240](http://101.43.58.240)
+1. 主页照片待更换
+2. 主页类似新闻功能没有
+3. 成员信息补充
+4. 项目补充
+5. 招聘细节
 
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
+### 功能二
 
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
+网址:[http://101.43.58.240/#/space](http://101.43.58.240/#/space)这是后台的界面，即在网址后面加space，有权限
+1. 用户添加 目前只有 `username:zzh password:zzh0117`
+2. 个人信息修改待添加
+3. 文件模块：上传文件`username:admin password:admin`
+4. 随笔tex公式还不支持

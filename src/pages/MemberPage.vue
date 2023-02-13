@@ -185,8 +185,24 @@ api.get('/members').then(res => res.data).then(d => {
   alumni.value = d['alumni']
 })
   .then(() => {
-    let myElement = document.getElementById('teacher')
+    // let cardList = document.querySelectorAll('.card')
+    // const observer = new IntersectionObserver(entries => {
+    //   entries.forEach(entry => {
+    //     if (entry.isIntersecting) {
+    //       entry.target.classList.add('animated', 'fadeInUp','my-element')
+    //     }
+    //   })
+    // }, {
+    //   threshold: [0, 0.25, 0.5, 0.75, 1]
+    // })
+    // cardList.forEach(card => {
+    //   observer.observe(card)
+    // })
   })
+
+onMounted(()=>{
+
+})
 
 
 </script>

@@ -1,6 +1,6 @@
 <template>
 
-  <div class="tw-h-full">
+  <div class="tw-h-full card">
 
     <!--    <a v-if="mode==='horizontal'" :href="link" target="_blank" class="tw-bg-white tw-w-full-->
     <!--    tw-rounded-lg tw-border tw-border-gray-200 tw-shadow-md" style="height: 20vw;">-->
