@@ -1,5 +1,5 @@
 <template>
-  <q-page padding>
+  <q-page>
     <div class="md:tw-w-2/3 md:tw-m-auto">
       <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
         <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">NEWS</div>
@@ -23,45 +23,48 @@
     </div>
 
     <q-separator class="tw-m-10" />
+    <div class="tw-w-full  tw-m-0 tw-q-0">
 
-    <div class="md:tw-w-2/3 tw-m-auto">
-      <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
-        <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd;">
-          决策智能实验室（Decision Intelligence
-          Lab）
-        </div>
-      </transition>
+      <div class="md:tw-w-2/3 tw-m-auto">
+        <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
+          <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd;">
+            决策智能实验室（Decision Intelligence
+            Lab）
+          </div>
+        </transition>
 
-      <div>
+        <div>
 
-        <p class="tw-flex tw-justify-center tw-m-5 tw-font-light">
-          {{ lab_desc }}
-        </p>
-        <ol class="tw-list-disc
+          <p class="tw-flex tw-justify-center tw-m-5 tw-font-light">
+            {{ lab_desc }}
+          </p>
+          <ol class="tw-list-disc
         md:tw-list-none
         md:tw-grid
-        md:tw-grid-cols-3
+        md:tw-grid-cols-5
         md:tw-justify-center
-        md:tw-w-5/6
+        md:tw-w-full
+
         md:tw-m-auto
       ">
-          <li class="
+            <li class="
         tw-m-4 
         hover:tw-bg-slate-100 
         hover:tw-cursor-pointer
         " v-for="(i, idx) in research" :key="idx">
-            <a :href="i.destination">
-              <div class="row">
-                <div class="col-6">
-                  <div class="tw-pt-3">{{ i.name }} </div>
+              <a :href="i.destination">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="tw-pt-3">{{ i.name }} </div>
+                  </div>
+                  <div class="col-6 tw-m-0">
+                    <q-icon :name="outlinedArrowRightAlt" color="primary" size="md" class="tw-m-2 arrow my-element" />
+                  </div>
                 </div>
-                <div class="col-6 tw-m-0">
-                  <q-icon :name="outlinedArrowRightAlt" color="primary" size="md" class="tw-m-2 arrow my-element" />
-                </div>
-              </div>
-            </a>
-          </li>
-        </ol>
+              </a>
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
 
@@ -85,7 +88,8 @@ let research = ref([{ name: '时间序列分析', url: 'papers#1', destination: 
 { name: '模型轻量化', url: 'papers#6', destination: '/paper/5', id: 7 },
 { name: '异常检测', url: 'papers#7', destination: '/paper/6', id: 2 },
 { name: '预测', url: 'papers#8', destination: '/paper/7', id: 5 },
-{ name: '智能决策', url: 'papers#9', destination: '/paper/8', id: 8 }
+{ name: '智能决策', url: 'papers#9', destination: '/paper/8', id: 8 },
+{ name: '迁移学习与模型泛化性', url: 'papers#10', destination: '/paper/9', id: 9 },
 ]);
 // sort research by id
 research.value.sort((a, b) => a.id - b.id)
