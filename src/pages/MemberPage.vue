@@ -153,7 +153,7 @@ import { onMounted, ref } from "vue";
 import MyCard from "../components/MyCard"
 import { api } from "boot/axios";
 import { useQuasar } from "quasar";
-
+import * as data from '../assets/member_table.json'
 let $q = useQuasar();
 let screen = $q.screen
 let teacher = ref(null)
@@ -162,8 +162,8 @@ let doctor = ref(null)
 let alumni = ref(null)
 
 
-fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/member_table.json").then(res => res.json()).then(res => {
-  teacher.value = res.filter(item => {
+let res = data.default
+teacher.value = res.filter(item => {
     return item.type === 'teacher'
   })
   doctor.value = res.filter(item => {
@@ -175,7 +175,22 @@ fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/member_
   alumni.value = res.filter(item => {
     return item.type === 'alumni'
   })
-})
+
+//
+// fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/member_table.json").then(res => res.json()).then(res => {
+//   teacher.value = res.filter(item => {
+//     return item.type === 'teacher'
+//   })
+//   doctor.value = res.filter(item => {
+//     return item.type === 'doctor'
+//   })
+//   master.value = res.filter(item => {
+//     return item.type === 'master'
+//   })
+//   alumni.value = res.filter(item => {
+//     return item.type === 'alumni'
+//   })
+// })
 
 
 // api.get('/members').then(res => res.data).then(d => {

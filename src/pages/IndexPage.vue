@@ -48,8 +48,8 @@
         md:tw-m-auto
       ">
             <li class="
-        tw-m-4 
-        hover:tw-bg-slate-100 
+        tw-m-4
+        hover:tw-bg-slate-100
         hover:tw-cursor-pointer
         " v-for="(i, idx) in research" :key="idx">
               <a :href="i.destination">
@@ -77,7 +77,7 @@ import { ref } from "vue";
 import { useQuasar } from "quasar";
 import { api } from "boot/axios";
 import { outlinedArrowRight, outlinedArrowRightAlt } from "@quasar/extras/material-icons-outlined";
-
+import * as data from  '../assets/news.json'
 let $q = useQuasar();
 let screen = ref($q.screen)
 let research = ref([{ name: '时间序列分析', url: 'papers#1', destination: '/paper/0', id: 0 },
@@ -96,23 +96,40 @@ research.value.sort((a, b) => a.id - b.id)
 
 let news = ref(null)
 
-fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/news.json").then(res => res.json()).then(res => {
-  res.forEach(item => {
+data.default.forEach(item => {
     item.date = item.new_time.replace('年', '-').replace('月', '-').split('-')
   })
-  news.value = res
-  news.value.sort((a, b) => {
-    if (a.date[0] == b.date[0]) {
-      if (a.date[1] == b.date[1]) {
-        return b.date[2] - a.date[2]
-      } else {
-        return b.date[1] - a.date[1]
-      }
+news.value = data.default
+news.value.sort((a, b) => {
+  if (a.date[0] === b.date[0]) {
+    if (a.date[1] === b.date[1]) {
+      return b.date[2] - a.date[2]
     } else {
-      return b.date[0] - a.date[0]
+      return b.date[1] - a.date[1]
     }
-  })
+  } else {
+    return b.date[0] - a.date[0]
+  }
 })
+
+
+// fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/news.json").then(res => res.json()).then(res => {
+//   res.forEach(item => {
+//     item.date = item.new_time.replace('年', '-').replace('月', '-').split('-')
+//   })
+//   news.value = res
+//   news.value.sort((a, b) => {
+//     if (a.date[0] == b.date[0]) {
+//       if (a.date[1] == b.date[1]) {
+//         return b.date[2] - a.date[2]
+//       } else {
+//         return b.date[1] - a.date[1]
+//       }
+//     } else {
+//       return b.date[0] - a.date[0]
+//     }
+//   })
+// })
 
 let lab_desc = ref("决策智能实验室依托华东师范大学，数据科学与工程学院，具有一只国际化，高水平导师团队，一人入选国家级领军人才，一人入选国家级青年人才。主要研究方向涵盖人工智能、机器学习和数据管理。通过对复杂异构数据（例如时间序列、时空数据、图、图像和分子结构等）进行高精度、高效率、自动的、高鲁棒性、可解释的分析和管理，助力不同行业的数字化转型和不同应用领域的决策支持。")
 

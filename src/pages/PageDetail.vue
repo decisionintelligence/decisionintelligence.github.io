@@ -37,27 +37,21 @@
 import { useRoute } from "vue-router";
 import { ref } from "vue";
 import { api } from "boot/axios";
-import State from '../state'
-
+import * as pageData from '../assets/paper_table.json'
 export default {
   // name: 'PageName',
   props: {
     id: Number,
   },
+
   setup(props) {
     // get router params
     const router = useRoute();
     let id = ref(router.params.id)
     let data = ref()
-
-    State.getPaper().then(d => {
-      let all = d['data']['data']
-      data.value = all[id.value]
-
-    })
-
-
-
+    let d = pageData.default[0]
+    let all = d['data']['data']
+    data.value = all[id.value]
     return {
       data
     }

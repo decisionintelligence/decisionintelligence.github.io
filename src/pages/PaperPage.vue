@@ -15,7 +15,7 @@
          hover:tw-bg-blue-50
          tw-transition-all tw-duration-700 tw-ease-in-out
          tw-text-center tw-flex-col tw-flex  tw-justify-center  tw-rounded-2xl " v-for="(item, idx) in data"
-            :key="idx + 4567" :id="idx" @click="() => { router.push('/paper/' + idx) }">
+               :key="idx + 4567" :id="idx" @click="() => { router.push('/paper/' + idx) }">
             <div class="tw-text-lg tw-text-gray-800">
               {{ item.section.slice(2, item.section.length) }}
             </div>
@@ -30,7 +30,7 @@
           <div class="tw-border-gray-300 tw-border
          tw-animate-pulse
          tw-text-center tw-flex-col tw-flex  tw-justify-center  tw-rounded-2xl " v-for="(item, idx) in 9"
-            :key="idx + 4567" :id="idx">
+               :key="idx + 4567" :id="idx">
             <div class="tw-bg-slate-200 tw-m-auto tw-w-1/3 tw-h-3.5  tw-rounded-2xl"></div>
             <div class="tw-bg-slate-200 tw-mt-3 tw-m-auto tw-w-1/2 tw-h-3.5  tw-rounded-2xl"></div>
           </div>
@@ -41,29 +41,27 @@
 </template>
 
 <script setup>
-import { onMounted, ref, nextTick } from 'vue'
-import { api } from "boot/axios";
-import { useRouter } from "vue-router";
-import State from '../state'
+import {onMounted, ref, nextTick} from 'vue'
+import {api} from "boot/axios";
+import {useRouter} from "vue-router";
+import * as paperData from '../assets/paper_table.json'
+
 
 let router = useRouter();
 let data = ref(null)
 
 let toggle = ref([].fill(false, 0, 10))
-State.getPaper().then(d => {
-  data.value = d['data']['data']
-}).then(() => {
-  nextTick(() => {
-    let hash = router.currentRoute.value.hash
-    if (hash) {
-      let el = document.getElementById(hash.slice(1).toString()).getBoundingClientRect().top
-      let offsetPosition = el - 100
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }
-  })
+data.value = paperData.default[0]['data']['data']
+nextTick(() => {
+  let hash = router.currentRoute.value.hash
+  if (hash) {
+    let el = document.getElementById(hash.slice(1).toString()).getBoundingClientRect().top
+    let offsetPosition = el - 100
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
 
 })
 

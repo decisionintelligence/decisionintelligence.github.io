@@ -1,0 +1,46 @@
+[
+  {
+    "new_time": "2022年11月",
+    "content": "AutoCTS+: Joint Neural Architecture and Hyperparameter Search for Correlated Time Series Forecasting被SIGMOD 2023（CCF A类）录用。首次提出了网络架构和超参数联合搜索框架，用于自动构建高精度关联时序预测模型。  "
+  },
+  {
+    "new_time": "2022年11月",
+    "content": "Multivariate Time Series Forecasting with Dynamic Graph Neural ODEs被IEEE TKDE（CCF A类）录用。提出一种连续型时空建模架构，用于多维时序预测。"
+  },
+  {
+    "new_time": "2022年11月",
+    "content": "Profit Optimization in Spatial Crowdsourcing: Effectiveness and Efficiency 被IEEE TKDE（CCF A类）录用。"
+  },
+  {
+    "new_time": "2022年9月",
+    "content": "Interpreting Operation Selection in Differentiable Architecture Search: A Perspective from Influence-Directed Explanations被NeurIPS 2022（CCF A类）录用。提出一种解释可微分架构搜索中操作选择的方法。  "
+  },
+  {
+    "new_time": "2022年9月",
+    "content": "Weighted Mutual Learning with Diversity-Driven Model Compression 被NeurIPS 2022（CCF A类）录用。提出一种新的在线蒸馏方法，用于模型压缩。"
+  },
+  {
+    "new_time": "2022年9月",
+    "content": "欢迎2022级研究生魏涵玥、宋晏如、欧阳彪、庄志豪、田锦东、陈鹏、王赫、张布昂加入实验室！"
+  },
+  {
+    "new_time": "2023年2月",
+    "content": "LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation被SIGMOD 2023（CCF A类）录用。LightTS可以有效地对大型集成学习Ensemble模型进行压缩，并自动配置出满足不同资源限制下的小模型，用于时间序列分类。"
+  },
+  {
+    "new_time": "2023年2月",
+    "content": "CGF: A Category Guidance Based PM2.5 Sequence Forecasting Training Framework被IEEE TKDE （CCF A类）录用，提出一种弱监督，自步学习的时序预测框架，用于PM2.5值的预测。"
+  },
+  {
+    "new_time": "2023年5月",
+    "content": "LightPath: Lightweight and Scalable Path Representation Learning被SIGKDD 2023（CCF A类）录用。提出一种新颖的轻量化无监督路径表征学习方法。其核心基于稀疏自编码器和知识蒸馏，并采用基于关系推理的自监督方式进行训练。"
+  },
+  {
+    "new_time": "2023年5月",
+    "content": "MagicScaler: Uncertainty-aware, Predictive Autoscaling被PVLDB 2023（CCF A类）Industrial Track录用。提出一种不确定性感知的，预测性自动伸缩方法，可用于云计算资源的自动扩缩容。"
+  },
+  {
+    "new_time": "2023年5月",
+    "content": "Origin-Destination Travel Time Oracle for Map-based Services被SIGMOD 2024（CCF A类）录用。提出一种新颖的基于Diffusion模型的OD旅行时间预测方法，达到高精度和可解释性。"
+  }
+]
