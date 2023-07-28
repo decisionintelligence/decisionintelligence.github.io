@@ -8,10 +8,9 @@ class State {
     this.papers = reactive([])
   }
   getPaper() {
-    return api.get('/papers').then(res => {
-      this.papers = res.data
-      // console.log(this.papers)
-      return res.data
+    return fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/paper_table.json").then(res=>res.json())
+    .then(res=>{
+      return res[0]
     })
   }
 }

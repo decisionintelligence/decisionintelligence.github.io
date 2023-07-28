@@ -17,19 +17,6 @@ const routes = [
       }
     ]
   },
-  {
-    path: '/space', component: () => import('layouts/SpaceLayout.vue'),
-    redirect: '/space/index',
-    name: 'space',
-    children: [
-      {path: 'index', component: () => import('pages/spaceIndex.vue'), name: 'spaceIndex'},
-      {path: 'file', component: () => import('pages/filePage.vue'), name: 'spaceFile'},
-      {path: 'blog', component: () => import('pages/blogPage.vue'), name: 'spaceBlog'},
-      {path: 'upload', component: () => import('pages/releasePage.vue'), name: 'spaceUpload'},
-    ]
-  },
-  {path: '/login', component: () => import('pages/login.vue')},
-  {path: '/blog/:id', name: 'blog', component: () => import('pages/article.vue')},
   // Always leave this as last one,
   // but you can also remove it
   {

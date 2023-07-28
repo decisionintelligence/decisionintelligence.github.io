@@ -51,7 +51,7 @@ let data = ref(null)
 
 let toggle = ref([].fill(false, 0, 10))
 State.getPaper().then(d => {
-  data.value = d['data']
+  data.value = d['data']['data']
 }).then(() => {
   nextTick(() => {
     let hash = router.currentRoute.value.hash

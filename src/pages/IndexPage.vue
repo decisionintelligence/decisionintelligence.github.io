@@ -8,7 +8,7 @@
         <div
           class="q-mt-md tw-shadow-md tw-p-4 tw-my-2 tw-bg-gray-50 tw-border-l-4 tw-border-gray-300 dark:border-gray-500 dark:bg-gray-800"
           v-for="(item, idx) in news " :key="idx">
-          <span class="tw-font-semibold"> {{ item.date }}</span>
+          <span class="tw-font-semibold"> {{ item.new_time }}</span>
           {{ item.content }}
         </div>
       </div>
@@ -95,12 +95,24 @@ let research = ref([{ name: '时间序列分析', url: 'papers#1', destination: 
 research.value.sort((a, b) => a.id - b.id)
 
 let news = ref(null)
-api.get('/news').then(res => {
-  if (res.status === 200) {
-    news.value = res.data
-  }
-})
 
+fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/news.json").then(res => res.json()).then(res => {
+  res.forEach(item => {
+    item.date = item.new_time.replace('年', '-').replace('月', '-').split('-')
+  })
+  news.value = res
+  news.value.sort((a, b) => {
+    if (a.date[0] == b.date[0]) {
+      if (a.date[1] == b.date[1]) {
+        return b.date[2] - a.date[2]
+      } else {
+        return b.date[1] - a.date[1]
+      }
+    } else {
+      return b.date[0] - a.date[0]
+    }
+  })
+})
 
 let lab_desc = ref("决策智能实验室依托华东师范大学，数据科学与工程学院，具有一只国际化，高水平导师团队，一人入选国家级领军人才，一人入选国家级青年人才。主要研究方向涵盖人工智能、机器学习和数据管理。通过对复杂异构数据（例如时间序列、时空数据、图、图像和分子结构等）进行高精度、高效率、自动的、高鲁棒性、可解释的分析和管理，助力不同行业的数字化转型和不同应用领域的决策支持。")
 

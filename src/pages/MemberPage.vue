@@ -160,27 +160,45 @@ let teacher = ref(null)
 let master = ref(null)
 let doctor = ref(null)
 let alumni = ref(null)
-api.get('/members').then(res => res.data).then(d => {
-  teacher.value = d['teacher']
-  doctor.value = d['doctor']
-  master.value = d['master']
-  alumni.value = d['alumni']
-})
-  .then(() => {
-    // let cardList = document.querySelectorAll('.card')
-    // const observer = new IntersectionObserver(entries => {
-    //   entries.forEach(entry => {
-    //     if (entry.isIntersecting) {
-    //       entry.target.classList.add('animated', 'fadeInUp','my-element')
-    //     }
-    //   })
-    // }, {
-    //   threshold: [0, 0.25, 0.5, 0.75, 1]
-    // })
-    // cardList.forEach(card => {
-    //   observer.observe(card)
-    // })
+
+
+fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/member_table.json").then(res => res.json()).then(res => {
+  teacher.value = res.filter(item => {
+    return item.type === 'teacher'
   })
+  doctor.value = res.filter(item => {
+    return item.type === 'doctor'
+  })
+  master.value = res.filter(item => {
+    return item.type === 'master'
+  })
+  alumni.value = res.filter(item => {
+    return item.type === 'alumni'
+  })
+})
+
+
+// api.get('/members').then(res => res.data).then(d => {
+//   teacher.value = d['teacher']
+//   doctor.value = d['doctor']
+//   master.value = d['master']
+//   alumni.value = d['alumni']
+// })
+//   .then(() => {
+//     // let cardList = document.querySelectorAll('.card')
+//     // const observer = new IntersectionObserver(entries => {
+//     //   entries.forEach(entry => {
+//     //     if (entry.isIntersecting) {
+//     //       entry.target.classList.add('animated', 'fadeInUp','my-element')
+//     //     }
+//     //   })
+//     // }, {
+//     //   threshold: [0, 0.25, 0.5, 0.75, 1]
+//     // })
+//     // cardList.forEach(card => {
+//     //   observer.observe(card)
+//     // })
+//   })
 
 onMounted(() => {
 
