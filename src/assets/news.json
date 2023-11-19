@@ -50,5 +50,13 @@
   {
     "new_time": "2023年9月",
     "content":"欢迎2023级研究生陈宇轩、樊亦文、高洪帆、胡诗彦、黄姗姗、李北步、李修文、刘思聪、梅杰源、邱翔飞、邱钰莹、申屠琦超、王海臣、王益杭、魏永富、吴行健、徐榕荟、张滕雪、张馨元、郑朴辰、钟青松加入实验室！"
+  },
+  {
+    "new_time":"2023年11月",
+    "content":"Weakly Guided Adaptation for Robust Time Series Forecasting被PVLDB 2024（CCF A类）录用。提出一种基于节假日等易获取的弱监督信号进行训练的对抗学习方法，可以有效提高时序预测的鲁棒性。"
+  },
+  {
+    "new_time":"2023年11月",
+    "content":"Multiple Time Series Forecasting with Dynamic Graph Modeling被PVLDB 2024（CCF A类）录用。提出一种能够有效估计多条时间序列的未来关联关系的方法，并结合动态图神经网络进行有效的时序预测。"
   }
 ]
