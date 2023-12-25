@@ -321,7 +321,8 @@
                                     "title": null,
                                     "papers": [
                                         "Miao Zhang, Li Wang, David Campos, Wei Huang, Chenjuan Guo, and Bin Yang. Weighted Mutual Learning with Diversity-Driven Model Compression. NeurIPS 2022.",
-                                        "David Campos, Miao Zhang, Bin Yang, Tung Kieu, Chenjuan Guo, Christian S. Jensen: LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation. SIGMOD 2023. "
+                                        "David Campos, Miao Zhang, Bin Yang, Tung Kieu, Chenjuan Guo, Christian S. Jensen: LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation. SIGMOD 2023. ",
+                                        "Sean Bin Yang, Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen: LightPath: Lightweight and Scalable Path Representation Learning. KDD 2023: 2999-3010"
                                     ]
                                 }
                             ],
@@ -490,7 +491,13 @@
                                     "papers": [
                                         "Yang Shu, Zhangjie Cao, Mingsheng Long, Jianmin Wang: Transferable Curriculum for Weakly-Supervised Domain Adaptation. AAAI 2019: 4951-4958"
                                     ]
-                                }
+                                },
+                               {
+                                    "title": "弹性伸缩、自动扩缩容（AutoScaling）",
+                                    "papers":[
+                                      "Zhicheng Pan, Yihang Wang, Yingying Zhang, Sean Bin Yang, Yunyao Cheng, Peng Chen, Chenjuan Guo, Qingsong Wen, Xiduo Tian, Yunliang Dou, Zhiqiang Zhou, Chengcheng Yang, Aoying Zhou, Bin Yang:MagicScaler: Uncertainty-aware, Predictive Autoscaling. Proc. VLDB Endow. 16(12): 3808-3821 (2023)"
+                                    ]
+                               }
                             ]
                         }
                     ],
