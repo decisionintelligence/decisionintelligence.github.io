@@ -459,7 +459,13 @@
                                         "Ove Andersen, Christian S. Jensen, Kristian Torp, Bin Yang: EcoTour: Reducing the Environmental Footprint of Vehicles Using Eco-routes. MDM (1) 2013: 338-3 ",
                                         "Chenjuan Guo, Yu Ma, Bin Yang, Christian S. Jensen, Manohar Kaul: EcoMark: evaluating models of vehicular environmental impact. SIGSPATIAL/GIS 2012: 269-278 "
                                     ]
-                                }
+                                },
+                                {
+                                    "title": "弹性伸缩、自动扩缩容（AutoScaling）",
+                                    "papers":[
+                                      "Zhicheng Pan, Yihang Wang, Yingying Zhang, Sean Bin Yang, Yunyao Cheng, Peng Chen, Chenjuan Guo, Qingsong Wen, Xiduo Tian, Yunliang Dou, Zhiqiang Zhou, Chengcheng Yang, Aoying Zhou, Bin Yang:MagicScaler: Uncertainty-aware, Predictive Autoscaling. Proc. VLDB Endow. 16(12): 3808-3821 (2023)"
+                                    ]
+                               }
                             ]
                         }
                     ],
@@ -491,13 +497,7 @@
                                     "papers": [
                                         "Yang Shu, Zhangjie Cao, Mingsheng Long, Jianmin Wang: Transferable Curriculum for Weakly-Supervised Domain Adaptation. AAAI 2019: 4951-4958"
                                     ]
-                                },
-                               {
-                                    "title": "弹性伸缩、自动扩缩容（AutoScaling）",
-                                    "papers":[
-                                      "Zhicheng Pan, Yihang Wang, Yingying Zhang, Sean Bin Yang, Yunyao Cheng, Peng Chen, Chenjuan Guo, Qingsong Wen, Xiduo Tian, Yunliang Dou, Zhiqiang Zhou, Chengcheng Yang, Aoying Zhou, Bin Yang:MagicScaler: Uncertainty-aware, Predictive Autoscaling. Proc. VLDB Endow. 16(12): 3808-3821 (2023)"
-                                    ]
-                               }
+                                }
                             ]
                         }
                     ],
