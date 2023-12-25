@@ -228,7 +228,8 @@
                                         "Jilin Hu, Bin Yang, Chenjuan Guo, Christian S. Jensen, Hui Xiong: Stochastic OriginDestination Matrix Forecasting Using Dual-Stage Graph Convolutional, Recurrent Neural Networks. ICDE 2020: 1417-1428",
                                         "Razvan-Gabriel Cirstea, Hilmar Gústafsson, Rasmus Riis Grønbæk Pedersen, Rolf Hakon Verder Sehested, Tamas Imre Winkler, Bin Yang: A Road Segment Attribute Completion System. MDM 2020: 236-237",
                                         "Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen: Stochastic Weight Completion for Road Networks Using Graph Convolutional Networks. ICDE 2019: 1274-12",
-                                        "Bin Yang, Manohar Kaul, Christian S. Jensen: Using Incomplete Information for Complete Weight Annotation of Road Networks. IEEE Trans. Knowl. Data Eng. 26(5): 1267-1279 (2014) "
+                                        "Bin Yang, Manohar Kaul, Christian S. Jensen: Using Incomplete Information for Complete Weight Annotation of Road Networks. IEEE Trans. Knowl. Data Eng. 26(5): 1267-1279 (2014) ",
+                                        "Sean Bin Yang, Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen: LightPath: Lightweight and Scalable Path Representation Learning. KDD 2023: 2999-3010"
                                     ]
                                 }
                             ],
