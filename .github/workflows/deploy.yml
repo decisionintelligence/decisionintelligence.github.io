@@ -20,6 +20,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.ACCESSTOKEN }}
+          personal_token: ${{ secrets.DC }}
           publish_dir: ./dist/spa
           
