@@ -38,9 +38,9 @@ const columns = [
   { name: 'time', label: '起止时间', field: 'time' ,align: 'left',sortable: true},
 ]
 const rows = [
-  {"category":"1","name":"可解释的自动时间序列异常点预测","number":"国家自然科学基金","time":"" },
-  {"category":"2","name":"时间序列分析基础模型","number":"华为校企合作项目","time":"" },
-  {"category":"3","name":"多源异构数据的异常检测和根因分析","number":"阿里巴巴校企合作项目","time":"" },
+  {"category":"1","name":"可解释的自动时间序列异常点预测","number":"国家自然科学基金","time":"2024-2027" },
+  {"category":"2","name":"时间序列分析基础模型","number":"华为校企合作项目","time":"2023-2025" },
+  {"category":"3","name":"多源异构数据的异常检测和根因分析","number":"阿里巴巴校企合作项目","time":"2023-2024" },
   {'category':"4","name":"基于负载预测的云计算资源调度优化算法","number":"阿里巴巴AIR","time":"2022-2023"},
   {'category':"5","name":"时空数据管理与分析","number":"国家自然科学基金","time":"2022-2025 "},
   {'category':"6","name":"Explainable AI for Complex Microbial Community Interactions and Predictions","number":"Villum Synergy Programme","time":"2021-2023"},
