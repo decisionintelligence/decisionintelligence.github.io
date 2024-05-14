@@ -51,19 +51,16 @@
           </div>
           <div>
             <div class="tw-flex tw-place-items-center">
-              <a class="active-text-color "
-                href="weixin://dl/businessWebview/?url=https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkwMjYyMjgzOA==#wechat_redirect">
+              <span class="active-text-color "
+                >
                 微信公众号
-              </a>
+              </span>
               <img style="height: 100px;width: 100px;" :src=qr />
             </div>
           </div>
         </div>
       </div>
     </q-footer>
-    <!-- <div class="tw-w-full  tw-h-24" style="background-color: #FAFAFA">
-    </div> -->
-
   </q-layout>
 </template>
 <script setup>
