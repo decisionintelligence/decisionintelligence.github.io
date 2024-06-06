@@ -70,5 +70,13 @@
   {
     "new_time": "2024年4月",
     "content": "TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods被PVLDB 2024 （CCF A）录用。提出了一套全面的时间序列预测方法的评测基准。"
+  },
+  {
+    "new_time": "2024年5月",
+    "content": "A Crystal Knowledge-enhanced Pre-training Framework for Crystal Property Estimation被ECML PKDD 2024录用。提出了用于晶体性质预测的预训练框架，可以有效降低标注数据的需求量，并融入了相关晶体知识。"
+  },
+  {
+    "new_time": "2024年5月",
+    "content": "What Can Large Language Models Tell Us about Time Series Analysis被ICML 2024 （CCF A） Position Paper Track录用。展望了大模型和时间序列分析结合的前景。"
   }
 ]
