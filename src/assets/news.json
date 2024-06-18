@@ -78,5 +78,9 @@
   {
     "new_time": "2024年5月",
     "content": "What Can Large Language Models Tell Us about Time Series Analysis被ICML 2024 （CCF A） Position Paper Track录用。展望了大模型和时间序列分析结合的前景。"
+  },
+  {
+    "new_time": "2024年6月",
+    "content": "Efficient Stochastic Routing in Path-Centric Uncertain Road Networks被PVLDB 2024 （CCF A类）录用。基于能对旅行时间的不确定性进行准确建模的路径中心不确定图，提出了高效的随机路由导航算法。"
   }
 ]
