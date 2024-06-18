@@ -12,6 +12,7 @@ jobs:
 
       - name: Install and Build
         run: |
+          sudo apt-get update
           sudo apt install nodejs npm
           npm install
           npx quasar build
