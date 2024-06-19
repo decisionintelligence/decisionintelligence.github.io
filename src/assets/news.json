@@ -82,5 +82,9 @@
   {
     "new_time": "2024年6月",
     "content": "Efficient Stochastic Routing in Path-Centric Uncertain Road Networks被PVLDB 2024 （CCF A类）录用。基于能对旅行时间的不确定性进行准确建模的路径中心不确定图，提出了高效的随机路由导航算法。"
+  },
+  {
+    "new_time": "2024年6月",
+    "content": "QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models被PVLDB 2024 （CCF A类）录用。针对端侧量化模型，提出了数据高效的持续模型校准方法，可以高效支撑边端智能。"
   }
 ]
