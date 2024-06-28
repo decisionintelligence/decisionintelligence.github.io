@@ -27,7 +27,33 @@
                                 {
                                     "title": "Transformer-based forecasting:",
                                     "papers": [
-                                        "Razvan-Gabriel Cirstea, Chenjuan Guo, Bin Yang, Tung Kieu, Xuanyi Dong, and Shirui Pan. Triformer: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting. IJCAI 2022."
+                                        "Razvan-Gabriel Cirstea, Chenjuan Guo, Bin Yang, Tung Kieu, Xuanyi Dong, and Shirui Pan. Triformer: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting. IJCAI 2022.",
+                                        "Peng Chen, Yingying Zhang, Yunyao Cheng, Yang Shu, Yihang Wang, Qingsong Wen, Bin Yang, Chenjuan Guo: Pathformer: Multi-scale Transformers with Adaptive Pathways for Time Series Forecasting. ICLR 2024. "
+                                    ]
+                                },
+                                {
+                                    "title": "Robust forecasting: ",
+                                    "papers":[
+                                        "Yunyao Cheng, Peng Chen, Chenjuan Guo, Kai Zhao, Qingsong Wen, Bin Yang, Christian S. Jensen: Weakly Guided Adaptation for Robust Time Series Forecasting. PVLDB 2023."
+                                    ]
+                                },
+                                {
+                                    "title": "Graph neural network based forecasting: ",
+                                    "papers": [
+                                        "Kai Zhao, Chenjuan Guo, Yunyao Cheng, Peng Han, Miao Zhang, Bin Yang: Multiple Time Series Forecasting with Dynamic Graph Modeling. PVLDB 2023."
+                                    ]
+                                },
+                                {
+                                    "title": "Forecasting benchmarking: ",
+                                    "papers": [
+                                        "Xiangfei Qiu, Jilin Hu, Lekui Zhou, Xingjian Wu, Junyang Du, Buang Zhang, Chenjuan Guo, Aoying Zhou, Christian S. Jensen, Zhenli Sheng, Bin Yang: TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods. PVLDB 2024. "
+                                    ]
+                                },
+                                {
+                                    "title": "Continual learning for forecasting: ",
+                                    "papers" :[
+                                        "Hao Miao, Yan Zhao, Chenjuan Guo, Bin Yang, Kai Zheng, Feiteng Huang, Jiandong Xie, Christian S. Jensen: A Unified Replay-based Continuous Learning Framework for Spatio-Temporal Prediction on Streaming Data. ICDE 2024.",
+                                        "David Campos, Bin Yang, Tung Kieu, Miao Zhang, Chenjuan Guo, Christian S. Jensen: QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models. PVLDB 2024. "
                                     ]
                                 },
                                 {
@@ -100,6 +126,7 @@
                                 {
                                     "title": "路径交通状态：",
                                     "papers": [
+                                        "Sean Bin Yang, Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen: LightPath: Lightweight and Scalable Path Representation Learning. KDD 2023. ",
                                         "Sean Bin Yang, Chenjuan Guo, Jilin Hu, Bin Yang, Jian Tang, Christian S. Jensen: Weaklysupervised Temporal Path Representation Learning with Contrastive Curriculum Learning. ICDE 2022: 2873-2885",
                                         "Sean Bin Yang, Chenjuan Guo, Bin Yang: Context-Aware Path Ranking in Road Networks. IEEE Trans. Knowl. Data Eng. 34(7): 3153-3168 (2022)",
                                         "Sean Bin Yang, Chenjuan Guo, Jilin Hu, Jian Tang, Bin Yang: Unsupervised Path Representation Learning with Curriculum Negative Sampling. IJCAI 2021: 3286-3292 ",
@@ -139,6 +166,8 @@
                                 {
                                     "title": "不确定性下的决策",
                                     "papers": [
+                                        "Chenjuan Guo, Ronghui Xu, Bin Yang, Ye Yuan, Tung Kieu, Yan Zhao, Christian S. Jensen. Efficient Stochastic Routing in Path-Centric Uncertain Road Networks. PVLDB 2024. ",
+                                        "Simon Aagaard Pedersen, Bin Yang, Christian S. Jensen, Jesper Møller: Stochastic Routing with Arrival Windows. ACM TSAS, 2023. ",
                                         "Simon Aagaard Pedersen, Bin Yang, Christian S. Jensen: A Hybrid Learning Approach to Stochastic Routing. ICDE 2020: 1910-1913",
                                         "Simon Aagaard Pedersen, Bin Yang, Christian S. Jensen: Anytime Stochastic Routing with Hybrid Learning. Proc. VLDB Endow. 13(9): 1555-1567 (2020)",
                                         "Simon Aagaard Pedersen, Bin Yang, Christian S. Jensen: Fast stochastic routing under time-varying uncertainty. VLDB J. 29(4): 819-839 (2020)",
@@ -321,6 +350,7 @@
                                 {
                                     "title": null,
                                     "papers": [
+                                        "David Campos, Bin Yang, Tung Kieu, Miao Zhang, Chenjuan Guo, Christian S. Jensen: QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models. PVLDB 2024. ",
                                         "Miao Zhang, Li Wang, David Campos, Wei Huang, Chenjuan Guo, and Bin Yang. Weighted Mutual Learning with Diversity-Driven Model Compression. NeurIPS 2022.",
                                         "David Campos, Miao Zhang, Bin Yang, Tung Kieu, Chenjuan Guo, Christian S. Jensen: LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation. SIGMOD 2023. ",
                                         "Sean Bin Yang, Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen: LightPath: Lightweight and Scalable Path Representation Learning. KDD 2023: 2999-3010"
