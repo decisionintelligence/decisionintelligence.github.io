@@ -108,7 +108,8 @@
                                 {
                                     "title": null,
                                     "papers": [
-                                        "David Campos, Miao Zhang, Bin Yang, Tung Kieu, Chenjuan Guo, Christian S. Jensen: LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation. SIGMOD 2023"
+                                        "David Campos, Miao Zhang, Bin Yang, Tung Kieu, Chenjuan Guo, Christian S. Jensen: LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation. SIGMOD 2023",
+                                        "David Campos, Bin Yang, Tung Kieu, Miao Zhang, Chenjuan Guo, Christian S. Jensen: QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models. PVLDB 2024. "
                                     ]
                                 }
                             ],
