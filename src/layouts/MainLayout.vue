@@ -91,7 +91,6 @@ import qr from "../assets/img/qr.png";
 import { useI18n } from "vue-i18n"
 import { ref } from "vue";
 const { t } = useI18n()
-import Darkmode from 'darkmode-js';
 const $q = useQuasar();
 let screen = $q.screen;
 const { locale } = useI18n({ useScope: 'global' })
@@ -100,11 +99,6 @@ const localeOptions = ref([
   { value: 'zh-CN', label: '中文' }
 ])
 const pop = ref('pop')
-const darkmode = new Darkmode();
-
-const dark = () => {
-  darkmode.toggle();
-}
 
 const hangleClick = (val) => {
   locale.value = val
