@@ -1,37 +1,60 @@
 <template>
   <q-layout view="hHh lpR fff">
 
-    <q-header class="tw-bg-white tw-h-14 tw-text-black tw-border-b-2 tw-border-gray-200" height-hint="150">
+    <q-header
+      class="tw-bg-white dark:tw-bg-black tw-h-14 tw-text-black tw-border-b-2 tw-border-gray-200 tw-flex tw-justify-center"
+      height-hint="150">
       <q-tabs align="center" v-if="screen.width > 640">
-        <router-link exact to="/index"
-          class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
-          active-class=" tw-border-b-2 active-text-color tw-border-blue-500  	">主页
+        <router-link exact to="/index" class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500  tw-h-8 tw-text-center"
+          active-class=" tw-border-b-2 active-text-color tw-border-blue-500  	">
+          {{ $t('IndexPage') }}
         </router-link>
-        <router-link to="/papers"
-          class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
-          active-class=" tw-border-b-2  active-text-color tw-border-blue-500 ">成果
+        <router-link to="/papers" class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500  tw-h-8 tw-text-center"
+          active-class=" tw-border-b-2  active-text-color tw-border-blue-500 ">
+          {{ $t('publicationPage') }}
         </router-link>
-        <router-link to="/member"
-          class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
-          active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">成员
+        <router-link to="/member" class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500  tw-h-8 tw-text-center"
+          active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">
+          {{ $t('MemberPage') }}
         </router-link>
-        <router-link to="/project"
-          class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
-          active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">项目
+        <router-link to="/project" class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500  tw-h-8 tw-text-center"
+          active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">
+          {{ $t('ProjectPage') }}
         </router-link>
-        <router-link to="/recruit"
-          class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
-          active-class="tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">加入我们
+        <router-link to="/recruit" class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500  tw-h-8 tw-text-center"
+          active-class="tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">
+          {{ $t('JoinPage') }}
         </router-link>
       </q-tabs>
       <div v-else style="float: right">
         <q-fab flat external-label icon="menu" direction="down">
-          <q-fab-action class="tw-bg-white" label="首页" to="/index" />
-          <q-fab-action class="tw-bg-white" label="成果" to="/papers" />
-          <q-fab-action class="tw-bg-white" label="成员" to="/member" />
-          <q-fab-action class="tw-bg-white" label="项目" to="/project" />
-          <q-fab-action class="tw-bg-white" label="招聘" to="/recruit" />
+          <q-fab-action class="tw-bg-white" :label="$t('IndexPage')" to="/index" />
+          <q-fab-action class="tw-bg-white" :label="$t('publicationPage')" to="/papers" />
+          <q-fab-action class="tw-bg-white" :label="$t('MemberPage')" to="/member" />
+          <q-fab-action class="tw-bg-white" :label="$t('ProjectPage')" to="/project" />
+          <q-fab-action class="tw-bg-white" :label="$t('JoinPage')" to="/recruit" />
         </q-fab>
+      </div>
+
+      <div class=" tw-float-right">
+        <!-- <q-select  v-model="locale" :options="localeOptions" label="lang" dense borderless emit-value map-options
+          options-dense style="min-width: 150px" /> -->
+        <q-icon name="language" size="sm" class="tw-mt-3 tw-cursor-pointer tw-w-14">
+          <q-popup-proxy ref="pop" class=" tw-w-23 tw-mt-2">
+            <div class="tw-p-1">
+              <ul class=" tw-space-y-2 tw-text-gray-500 tw-list-inside dark:tw-text-gray-400">
+                <li class="tw-pl-3 tw-flex tw-items-center tw-cursor-pointer"
+                  :class="[locale === 'en' ? 'active-text-color tw-underline' : '']" @click="hangleClick('en')">
+                  English
+                </li>
+                <li class="tw-pl-3 tw-flex tw-items-center tw-cursor-pointer" @click="hangleClick('zh-CN')"
+                  :class="[locale === 'zh-CN' ? 'active-text-color tw-underline' : '']">
+                  简体中文
+                </li>
+              </ul>
+            </div>
+          </q-popup-proxy>
+        </q-icon>
       </div>
     </q-header>
 
@@ -51,8 +74,7 @@
           </div>
           <div>
             <div class="tw-flex tw-place-items-center">
-              <span class="active-text-color "
-                >
+              <span class="active-text-color ">
                 微信公众号
               </span>
               <img style="height: 100px;width: 100px;" :src=qr />
@@ -66,8 +88,28 @@
 <script setup>
 import { useQuasar } from "quasar";
 import qr from "../assets/img/qr.png";
+import { useI18n } from "vue-i18n"
+import { ref } from "vue";
+const { t } = useI18n()
+import Darkmode from 'darkmode-js';
 const $q = useQuasar();
 let screen = $q.screen;
+const { locale } = useI18n({ useScope: 'global' })
+const localeOptions = ref([
+  { value: 'en-US', label: 'English' },
+  { value: 'zh-CN', label: '中文' }
+])
+const pop = ref('pop')
+const darkmode = new Darkmode();
+
+const dark = () => {
+  darkmode.toggle();
+}
+
+const hangleClick = (val) => {
+  locale.value = val
+  pop.value.hide()
+}
 
 
 </script>

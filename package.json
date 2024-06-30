@@ -20,6 +20,7 @@
     "mathjax": "^3.2.2",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",
+    "vue-i18n": "^9.13.1",
     "vue-router": "^4.0.0"
   },
   "devDependencies": {
