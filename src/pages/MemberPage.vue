@@ -3,7 +3,8 @@
 
     <div class="tw-mt-5 tw-h-full ">
       <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
-        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd"> 导师
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
+           导师
         </div>
       </transition>
       <div v-if="teacher" class="tw-grid tw-grid-cols-1 tw-gap-6  md:tw-grid-cols-2 md:tw-justify-evenly tw-h-full">
@@ -42,7 +43,8 @@
 
     <div class="tw-mt-5  ">
       <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
-        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">博士生
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
+          博士生
         </div>
       </transition>
       <div v-if="doctor"

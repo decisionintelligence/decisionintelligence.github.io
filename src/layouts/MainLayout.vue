@@ -67,15 +67,19 @@
       <div style="background-color: #FAFAFA" class="tw-flex tw-justify-center tw-items-center tw-w-full">
         <div class="tw-grid tw-w-full tw-pt-5 tw-mt-auto md:tw-grid-cols-3 tw-gap-3 tw-place-items-center">
           <div>
-            <span class="active-text-color">地址</span>：上海市普陀区中山北路3663号
+            <span class="active-text-color">
+              {{ $t('address') }}
+            </span>：上海市普陀区中山北路3663号
           </div>
           <div>
-            <span class="active-text-color">邮箱</span>：byang[at]dase[dot]ecnu.edu[dot]cn
+            <span class="active-text-color">
+              {{ $t('email') }}
+            </span>：byang[at]dase[dot]ecnu.edu[dot]cn
           </div>
           <div>
             <div class="tw-flex tw-place-items-center">
               <span class="active-text-color ">
-                微信公众号
+                {{ $t('wechat') }}
               </span>
               <img style="height: 100px;width: 100px;" :src=qr />
             </div>
@@ -94,6 +98,7 @@ const { t } = useI18n()
 const $q = useQuasar();
 let screen = $q.screen;
 const { locale } = useI18n({ useScope: 'global' })
+locale.value = 'en'
 const localeOptions = ref([
   { value: 'en-US', label: 'English' },
   { value: 'zh-CN', label: '中文' }

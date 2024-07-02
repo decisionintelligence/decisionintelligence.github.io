@@ -3,7 +3,7 @@
     <div v-if="data" class="md:tw-w-2/3 md:tw-m-auto">
       <div>
         <div class="tw-text-2xl tw-mt-10 tw-leading-10 tw-p-4 tw-my-4 tw-bg-gray-50 tw-border-l-4 tw-border-gray-300">
-          {{ data.section }}
+          <span>{{ data.id }}. </span> {{ $t(data.section) }}
         </div>
 
         <p class="tw-m-5">
@@ -13,7 +13,7 @@
               d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
               fill="currentColor" />
           </svg>
-          {{ data.desc }}
+          {{ $t(data.desc) }}
         </p>
         <div v-for="(sub, sub_idx) in data.content" :key="sub_idx + 454541">
           <div class="text-h6 tw-pl-2 tw-mb-3">

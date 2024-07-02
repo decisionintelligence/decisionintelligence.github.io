@@ -36,7 +36,7 @@
         <div>
 
           <p class="tw-flex tw-justify-center tw-m-5 tw-font-light">
-            {{ lab_desc }}
+            {{ $t('desc') }}
           </p>
           <ol class="tw-list-disc
         md:tw-list-none
@@ -55,7 +55,7 @@
               <a :href="i.destination">
                 <div class="row">
                   <div class="col-6">
-                    <div class="tw-pt-3">{{ i.name }} </div>
+                    <div class="tw-pt-3">{{ $t(i.name) }} </div>
                   </div>
                   <div class="col-6 tw-m-0">
                     <q-icon :name="outlinedArrowRightAlt" color="primary" size="md" class="tw-m-2 arrow my-element" />
@@ -73,32 +73,34 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { reactive, ref } from "vue";
 import { useQuasar } from "quasar";
 import { api } from "boot/axios";
 import { outlinedArrowRight, outlinedArrowRightAlt } from "@quasar/extras/material-icons-outlined";
-import * as data from  '../assets/news.json'
+import * as data from '../assets/news.json'
+import { useI18n } from "vue-i18n"
+const { t } = useI18n()
 let $q = useQuasar();
 let screen = ref($q.screen)
-let research = ref([{ name: '时间序列分析', url: 'papers#1', destination: '/paper/0', id: 0 },
-{ name: '时空数据分析', url: 'papers#2', destination: '/paper/1', id: 3 },
-{ name: '图分析', url: 'papers#3', destination: '/paper/2', id: 6 },
-{ name: '自动机器学习(AutoML)', url: 'papers#4', destination: '/paper/3', id: 1 },
-{ name: 'AI for Science', url: 'papers#5', destination: '/paper/4', id: 4 },
-{ name: '模型轻量化', url: 'papers#6', destination: '/paper/5', id: 7 },
-{ name: '异常检测', url: 'papers#7', destination: '/paper/6', id: 2 },
-{ name: '预测', url: 'papers#8', destination: '/paper/7', id: 5 },
-{ name: '智能决策', url: 'papers#9', destination: '/paper/8', id: 8 },
-{ name: '迁移学习与模型泛化性', url: 'papers#10', destination: '/paper/9', id: 9 },
+let research = reactive([{ name: t('l1'), url: 'papers#1', destination: '/paper/0', id: 0 },
+{ name: 'l4', url: 'papers#2', destination: '/paper/1', id: 3 },
+{ name: 'l7', url: 'papers#3', destination: '/paper/2', id: 6 },
+{ name: 'l2', url: 'papers#4', destination: '/paper/3', id: 1 },
+{ name: 'l5', url: 'papers#5', destination: '/paper/4', id: 4 },
+{ name: 'l8', url: 'papers#6', destination: '/paper/5', id: 7 },
+{ name: 'l3', url: 'papers#7', destination: '/paper/6', id: 2 },
+{ name: 'l6', url: 'papers#8', destination: '/paper/7', id: 5 },
+{ name: 'l9', url: 'papers#9', destination: '/paper/8', id: 8 },
+{ name: 'l10', url: 'papers#10', destination: '/paper/9', id: 9 },
 ]);
 // sort research by id
-research.value.sort((a, b) => a.id - b.id)
+research.sort((a, b) => a.id - b.id)
 
 let news = ref(null)
 
 data.default.forEach(item => {
-    item.date = item.new_time.replace('年', '-').replace('月', '-').split('-')
-  })
+  item.date = item.new_time.replace('年', '-').replace('月', '-').split('-')
+})
 news.value = data.default
 news.value.sort((a, b) => {
   if (a.date[0] === b.date[0]) {
@@ -112,26 +114,6 @@ news.value.sort((a, b) => {
   }
 })
 
-
-// fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/news.json").then(res => res.json()).then(res => {
-//   res.forEach(item => {
-//     item.date = item.new_time.replace('年', '-').replace('月', '-').split('-')
-//   })
-//   news.value = res
-//   news.value.sort((a, b) => {
-//     if (a.date[0] == b.date[0]) {
-//       if (a.date[1] == b.date[1]) {
-//         return b.date[2] - a.date[2]
-//       } else {
-//         return b.date[1] - a.date[1]
-//       }
-//     } else {
-//       return b.date[0] - a.date[0]
-//     }
-//   })
-// })
-
-let lab_desc = ref("决策智能实验室依托华东师范大学，数据科学与工程学院，具有一支国际化，高水平导师团队，一人入选国家级领军人才，两人入选国家级青年人才。主要研究方向涵盖人工智能、机器学习和数据管理。通过对复杂异构数据（例如时间序列、时空数据、图、图像和分子结构等）进行高精度、高效率、自动的、高鲁棒性、可解释的分析和管理，助力不同行业的数字化转型和不同应用领域的决策支持。")
 
 
 </script>
