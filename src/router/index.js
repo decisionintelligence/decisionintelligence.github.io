@@ -25,25 +25,6 @@ export default route(function (/* { store, ssrContext } */) {
     // quasar.conf.js -> build -> publicPath
     history: createHistory(process.env.MODE === 'ssr' ? void 0 : process.env.VUE_ROUTER_BASE)
   })
-  Router.beforeEach((to, from, next) => {
-    if (to.name === 'space' || to.name === 'spaceIndex' || to.name === 'spaceFile' || to.name === 'spaceBlog' || to.name === 'spaceUpload') {
-      if (localStorage.getItem('access_token') === null) {
-        next('/login')
-      } else {
-        api.get('/v1/hello').then(res => {
-          if (res.status === 200) {
-            next()
-          } else {
-            next('/login')
-          }
-        })
-      }
-    } else {
-      next()
-    }
-
-
-  })
 
   return Router
 })
