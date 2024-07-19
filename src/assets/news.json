@@ -86,5 +86,18 @@
   {
     "new_time": "2024年6月",
     "content": "QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models被PVLDB 2024 （CCF A类）录用。针对端侧量化模型，提出了数据高效的持续模型校准方法，可以高效支撑边端智能。"
+  },
+  {
+    "new_time": "2024年7月",
+    "content": "AutoCTS++: Zero-shot Joint Neural Architecture and Hyperparameter Search forCorrelated Time Series Forecasting被The VLDB Journal （CCF  A类）录用。提出了Zero-shot的神经架构和超参数联合搜索框架，用于对不同时间序列数据快速构建预测模型及其合适的超参数。"
+  },
+  {
+    "new_time": "2024年7月",
+    "content":"Ocean Significant Wave Height Estimation with Spatio-temporally Aware Large Language Models被CIKM 2024录用。提出了基于时空感知大语言模型的海洋有效波高预测模型Orca。"
+  },
+  {
+    "new_time":"2024年7月",
+    "content":"Dependency-aware Differentiable Neural Architecture Search被ECCV 2024录用。提出了一种考虑神经网络架构图中边之间相关性的可微神经架构搜索方法。"
   }
+
 ]
