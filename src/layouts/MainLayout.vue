@@ -19,6 +19,10 @@
           class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
           active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">项目
         </router-link>
+        <a href="https://decisionintelligence.github.io/OpenTS/" target="_blank"
+          class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
+          active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">OpenTS
+        </a>
         <router-link to="/recruit"
           class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
           active-class="tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">加入我们
@@ -51,8 +55,7 @@
           </div>
           <div>
             <div class="tw-flex tw-place-items-center">
-              <span class="active-text-color "
-                >
+              <span class="active-text-color ">
                 微信公众号
               </span>
               <img style="height: 100px;width: 100px;" :src=qr />
