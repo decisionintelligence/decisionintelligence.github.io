@@ -98,6 +98,10 @@
   {
     "new_time":"2024年7月",
     "content":"Dependency-aware Differentiable Neural Architecture Search被ECCV 2024录用。提出了一种考虑神经网络架构图中边之间相关性的可微神经架构搜索方法。"
+  },
+  {
+    "new_time": "2024年8月",
+    "content": "TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods在VLDB 2024 （CCF A）大会上获得最佳论文提名。"
   }
 
 ]
