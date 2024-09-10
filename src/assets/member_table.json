@@ -81,9 +81,9 @@
     "name": "田锦东",
     "password": "tjd12345",
     "pic": "https://xwyzsn.site/picbed/tjd.jpg",
-    "description": "2022级硕士生",
+    "description": "2022级博士生",
     "tag": "AutoML,Knowledge embedding,AI for science",
-    "type": "master",
+    "type": "doctor",
     "username": "tjd",
     "link": null
   },
@@ -125,9 +125,9 @@
     "name": "陈鹏",
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/cp.jpg",
-    "description": "2022级硕士生",
+    "description": "2022级博士生",
     "tag": "time series forecasting ",
-    "type": "master",
+    "type": "doctor",
     "username": "cp",
     "link": null
   },
@@ -478,7 +478,7 @@
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/成涵吟.jpg",
     "description": "2024级硕士生",
-    "tag": "Time Series",
+    "tag": "时间序列",
     "type": "master",
     "username": "zqs",
     "link": null
