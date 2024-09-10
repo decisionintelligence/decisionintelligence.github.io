@@ -471,5 +471,159 @@
     "type": "master",
     "username": "zqs",
     "link": null
+  },
+  {
+    "id": 45,
+    "name": "成涵吟",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/成涵吟.jpg",
+    "description": "2024级硕士生",
+    "tag": "Time Series",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },    
+  {
+    "id": 46,
+    "name": "金建新",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/金建新.jpg",
+    "description": "2024级硕士生",
+    "tag": "异常检测",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 47,
+    "name": "雷智",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/雷智.jpg",
+    "description": "2024级硕士生",
+    "tag": "异常检测数据智能与治理",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 48,
+    "name": "李哲",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/李哲.png",
+    "description": "2024级硕士生",
+    "tag": "时空数据",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 49,
+    "name": "李正宇",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/李正宇.jpg",
+    "description": "2024级硕士生",
+    "tag": "时空预测",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 50,
+    "name": "裘王辉",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/裘王辉.png",
+    "description": "2024级硕士生",
+    "tag": "Time Series Data Analysis",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 51,
+    "name": "沈王梦",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/沈王梦.jpg",
+    "description": "2024级硕士生",
+    "tag": "时空数据",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 52,
+    "name": "汪思远",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/汪思远.jpg",
+    "description": "2024级硕士生",
+    "tag": "时间序列",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 53,
+    "name": "徐鼎力",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/徐鼎力.jpeg",
+    "description": "2024级硕士生",
+    "tag": "时空数据",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 54,
+    "name": "严思雨",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/严思雨.jpg",
+    "description": "2024级硕士生",
+    "tag": "时间序列",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 55,
+    "name": "杨柳",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/杨柳.jpg",
+    "description": "2024级硕士生",
+    "tag": "时间序列",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 55,
+    "name": "张旭",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/张旭.jpg",
+    "description": "2024级硕士生",
+    "tag": "强化学习",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 56,
+    "name": "郑兴泽",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/郑兴泽.jpg",
+    "description": "2024级硕士生",
+    "tag": "时间序列",
+    "type": "master",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 57,
+    "name": "朱林威",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/朱林威.jpg",
+    "description": "2024级硕士生",
+    "tag": "Large Multimodal Models",
+    "type": "doctor",
+    "username": "zqs",
+    "link": null
   }
 ]
