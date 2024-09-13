@@ -137,7 +137,7 @@
     "password": "12345",
     "pic": "https://xwyzsn.site/picbed/none.jpg",
     "description": "2021~2024",
-    "tag": null,
+    "tag": "ICDE 2024",
     "type": "alumni",
     "username": null,
     "link": null
@@ -170,7 +170,7 @@
     "password": "12345",
     "pic": "https://xwyzsn.site/picbed/none.jpg",
     "description": "2021~2024",
-    "tag": "PVLDB 2022,SIGMOD 2023",
+    "tag": "PVLDB 2022,SIGMOD 2023,PVLDB 2024",
     "type": "alumni",
     "username": null,
     "link": null
@@ -181,7 +181,7 @@
     "password": "12345",
     "pic": "https://xwyzsn.site/picbed/none.jpg",
     "description": "2020~2023",
-    "tag": "PVLDB 2022, SIGMOD 2023 \n",
+    "tag": "PVLDB 2022, SIGMOD 2023, VLDBJ 2024\n",
     "type": "alumni",
     "username": null,
     "link": null
