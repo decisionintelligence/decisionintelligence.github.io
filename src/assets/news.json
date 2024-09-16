@@ -106,5 +106,17 @@
   {
     "new_time":"2024年9月",
     "content": "欢迎2024级研究生成涵吟、金建新、雷智、李哲、李正宇、裘王辉、沈王梦、汪思远、徐鼎力、严思雨、杨柳、张旭、郑兴泽、朱林威加入实验室！"
+  },
+  {
+    "new_time":"2024年9月",
+    "content": "Less is More: Efficient Time Series Dataset Condensation via Two-fold Modal Matching被PVLDB 2025（CCF A类）录用。提出了时序数据压缩方法，可以大幅提高需要重复训练场景的效率，比如流式分析、模型选择和NAS等。"
+  },
+  {
+    "new_time":"2024年9月",
+    "content": "TEAM: Topological Evolution-aware Framework for Traffic Forecasting被PVLDB 2025（CCF A类）录用。提出了在交通道路网路发生动态演变情况下的高效时空交通流预测方法。"
+  },
+  {
+    "new_time":"2024年9月",
+    "content": "A Memory Guided Transformer for Time Series Forecasting被PVLDB 2025（CCF A类）录用。提出了有效建模长时间序列的动态关联性和突变关联性，有效提高长期预测精度。"
   }
 ]
