@@ -118,5 +118,9 @@
   {
     "new_time":"2024年9月",
     "content": "A Memory Guided Transformer for Time Series Forecasting被PVLDB 2025（CCF A类）录用。提出了有效建模长时间序列的动态关联性和突变关联性，有效提高长期预测精度。"
+  },
+  {
+    "new_time":"2024年10月",
+    "content":"Fully Automated Correlated Time Series Forecasting in Minutes被PVLDB 2025（CCF A类）录用。提出了高效的自动化时序预测框架，可以在分钟级别构建针对特定时序的预测模型。"
   }
 ]
