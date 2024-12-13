@@ -620,9 +620,20 @@
     "name": "朱林威",
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/朱林威.jpg",
-    "description": "2024级硕士生",
+    "description": "2024级博士生",
     "tag": "Large Multimodal Models",
     "type": "doctor",
+    "username": "zqs",
+    "link": null
+  },
+  {
+    "id": 58,
+    "name": "钱睿澄",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/钱睿澄.jpg",
+    "description": "2024级硕士生",
+    "tag": "LLM-Based Agent",
+    "type": "master",
     "username": "zqs",
     "link": null
   }
