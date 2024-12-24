@@ -122,5 +122,17 @@
   {
     "new_time":"2024年10月",
     "content":"Fully Automated Correlated Time Series Forecasting in Minutes被PVLDB 2025（CCF A类）录用。提出了高效的自动化时序预测框架，可以在分钟级别构建针对特定时序的预测模型。"
+  },
+  {
+    "new_time":"2024年11月",
+    "content":"DUET: Dual Clustering Enhanced Multivariate Time Series Forecasting被KDD2025（CCF A类）录用。提出一种时间和通道双向聚类架构，可以有效应对时序数据分布漂移并动态建模多变量时间序列中的变量相关性。"
+  },
+  {
+    "new_time":"2024年11月",
+    "content":"MM-Path: Multi-modal, Multi-granularity Path Representation Learning被KDD 2025（CCF A类）录用。提出了多模态、多尺度路径表征学习框架，进而融合道路拓扑结合和卫星图像进行通用路径表征学习。"
+  },
+  {
+    "new_time":"2024年12月",
+    "content":"Assessing Pre-trained Models for Transfer Learning through Distribution of Spectral Components被AAAI 2025（CCF A类）录用。提出了从模型库中选择出最适合下游任务的预训练模型的方法，可以灵活用于分类和回归任务。"
   }
 ]
