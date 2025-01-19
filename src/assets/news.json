@@ -134,5 +134,13 @@
   {
     "new_time":"2024年12月",
     "content":"Assessing Pre-trained Models for Transfer Learning through Distribution of Spectral Components被AAAI 2025（CCF A类）录用。提出了从模型库中选择出最适合下游任务的预训练模型的方法，可以灵活用于分类和回归任务。"
+  },
+  {
+    "new_time":"2025年1月",
+    "content":"RCRank: Multimodal Ranking of Root Causes of Slow Queries in Cloud Database Systems被VLDB 2025（CCF A类）录用。提出了一种估计和排序根因影响程度的多模态慢查询根因诊断算法，可以优先处理慢查询的重要根因。"
+  },
+  {
+    "new_time":"2025年1月",
+    "content":"2025年1月 Noise Matters: Cross Contrastive Learning for Flink Anomaly Detection被VLDB 2025（CCF A类）录用。提出了一种能够异常感知的、基于跨窗口对比学习的多元时序无监督异常检测算法。"
   }
 ]
