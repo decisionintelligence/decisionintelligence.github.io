@@ -137,14 +137,6 @@
   },
   {
     "new_time":"2025年1月",
-    "content":"RCRank: Multimodal Ranking of Root Causes of Slow Queries in Cloud Database Systems被VLDB 2025（CCF A类）录用。提出了一种估计和排序根因影响程度的多模态慢查询根因诊断算法，可以优先处理慢查询的重要根因。"
-  },
-  {
-    "new_time":"2025年1月",
-    "content":"Noise Matters: Cross Contrastive Learning for Flink Anomaly Detection被VLDB 2025（CCF A类）录用。提出了一种能够异常感知的、基于跨窗口对比学习的多元时序无监督异常检测算法。"
-  },
-  {
-    "new_time":"2025年1月",
     "content":"Path-LLM: A Multi-Modal Path Representation Learning by Aligning and Fusing with Large Language Models被The Web Conference 2025（CCF A类）录用。提出了一种基于大语言模型的多模态（路段名称和路段标号）路径表征方法，进一步提升路径表征在下游任务上的泛化能力。"
   },
   {
@@ -154,5 +146,13 @@
   {
     "new_time":"2025年1月",
     "content":"Towards a General Time Series Anomaly Detector with Adaptive Bottlenecks and Dual Adversarial Decoders被ICLR 2025（CORE A*）录用。提出首个通用时序异常检测模型，在多个数据集上zero-shot性能达到SOTA。"
+  },
+  {
+    "new_time":"2025年1月",
+    "content":"RCRank: Multimodal Ranking of Root Causes of Slow Queries in Cloud Database Systems被VLDB 2025（CCF A类）录用。提出了一种估计和排序根因影响程度的多模态慢查询根因诊断算法，可以优先处理慢查询的重要根因。"
+  },
+  {
+    "new_time":"2025年1月",
+    "content":"Noise Matters: Cross Contrastive Learning for Flink Anomaly Detection被VLDB 2025（CCF A类）录用。提出了一种能够异常感知的、基于跨窗口对比学习的多元时序无监督异常检测算法。"
   }
 ]
