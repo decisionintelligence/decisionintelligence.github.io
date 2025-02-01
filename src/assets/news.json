@@ -141,6 +141,14 @@
   },
   {
     "new_time":"2025年1月",
+    "content":"Learning Generalizable Skills from Offline Multi-Task Data for Multi-Agent Cooperation被ICLR 2025（CORE A*）录用。提出了一种基于分层策略与多视角技能学习的离线多智能体强化学习算法，实现了多任务场景中的策略迁移。"
+  },
+  {
+    "new_time":"2025年1月",
+    "content":"CATCH: Channel-Aware Multivariate Time Series Anomaly Detection via Frequency Patching被ICLR 2025（CORE A*）录用。提出了一种基于通道感知的多变量异常检测算法，通过划分不同的频段，并在每个频段中自适应地发现通道关系，增强了模型对于多变量时间序列的重构能力，显著提升了异常检测的能力。"
+  },
+  {
+    "new_time":"2025年1月",
     "content":"Towards a General Time Series Anomaly Detector with Adaptive Bottlenecks and Dual Adversarial Decoders被ICLR 2025（CORE A*）录用。提出首个通用时序异常检测模型，在多个数据集上zero-shot性能达到SOTA。"
   },
   {
