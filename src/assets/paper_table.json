@@ -5,12 +5,18 @@
             "data": [
                 {
                     "tag": "智能运维、AIOps、数字孪生、数字能源",
-                    "desc": "助力数字化转型，赋能智能运维、智能交通、智慧城市、AIOps、数字能源、智能水资源管理等。\n时间序列是数字化转型带来的一种常见数据类型。时序数据中蕴含了大量的随时间变化的动态信息，对时序数据的有效分析能够为不同应用场景提供有效的决策支持。比如道路交通状况预测可以帮助司机提早进行分流，负载预测可以帮助适配器提早做好调整的准备，机器运行状况检测可以提早发现可能发生的故障，进而开展预测性维护等。我们的研究主要集中在两大类分析——预测和异常检测。在追求高精度的同时，还关注其时效性，鲁棒性，可解释性，以及自动化。\n",
+                    "desc": "助力数字化转型，赋能智能运维、智能交通、智慧城市、AIOps、数字能源、智能水资源管理等。\n时间序列是数字化转型带来的一种常见数据类型。时序数据中蕴含了大量的随时间变化的动态信息，对时序数据的有效分析能够为不同应用场景提供有效的决策支持。比如道路交通状况预测可以帮助司机提早进行分流，负载预测可以帮助适配器提早做好调整的准备，机器运行状况检测可以提早发现可能发生的故障，进而开展预测性维护等。我们的研究主要集中在三大类分析——预测、异常检测和分类。在追求高精度的同时，还关注其时效性，鲁棒性，可解释性，以及自动化。\n",
                     "content": [
                         {
                             "content": [
                                 {
-                                    "title": "Model-agnostic plugin",
+                                    "title": "Time-frequency domain based forecasting:",
+                                    "papers": [
+                                        "Xiangfei Qiu, Xingjian Wu, Yan Lin, Chenjuan Guo, Jilin Hu, Bin Yang: DUET: Dual Clustering Enhanced Multivariate Time Series Forecasting. KDD 2025."
+                                    ]
+                                },
+                                {
+                                    "title": "Model-agnostic plugin:",
                                     "papers": [
                                         "Razvan-Gabriel Cirstea, Bin Yang, Chenjuan Guo, Tung Kieu, Shirui Pan: Towards Spatio-Temporal Aware Traffic Time Series Forecasting. ICDE 2022: 2900-2913",
                                         "Razvan-Gabriel Cirstea, Tung Kieu, Chenjuan Guo, Bin Yang, Sinno Jialin Pan: EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting. ICDE 2021: 1739-1750",
@@ -21,14 +27,17 @@
                                     "title": "Automated correlated time series forecasting:",
                                     "papers": [
                                         "Xinle Wu, Dalin Zhang, Chenjuan Guo, Chaoyang He, Bin Yang, Christian S. Jensen: AutoCTS:Automated Correlated Time Series Forecasting. Proc. VLDB Endow. 15(4): 971-983 (2021)",
-                                        "AutoCTS+: Joint Neural Architecture and Hyperparameter Search for Correlated Time Series Forecasting. SIGMOD 2023."
+                                        "AutoCTS+: Joint Neural Architecture and Hyperparameter Search for Correlated Time Series Forecasting. SIGMOD 2023.",
+                                        "Xinle Wu, Xingjian Wu, Bin Yang, Lekui Zhou, Chenjuan Guo, Xiangfei Qiu, Jilin Hu, Zhenli Sheng, Christian S. Jensen: AutoCTS++: zero-shot joint neural architecture and hyperparameter search for correlated time series forecasting. VLDB J. 33(5): 1743-1770 (2024)",
+                                        "Xinle Wu, Xingjian Wu, Bin Yang, Dalin Zhang, Miao Zhang, Chenjuan Guo, Christian S. Jensen: Fully Automated Correlated Time Series Forecasting in Minutes. PVLDB, 2025."
                                     ]
                                 },
                                 {
                                     "title": "Transformer-based forecasting:",
                                     "papers": [
                                         "Razvan-Gabriel Cirstea, Chenjuan Guo, Bin Yang, Tung Kieu, Xuanyi Dong, and Shirui Pan. Triformer: Triangular, Variable-Specific Attention for Long Sequence Multivariate Time Series Forecasting. IJCAI 2022.",
-                                        "Peng Chen, Yingying Zhang, Yunyao Cheng, Yang Shu, Yihang Wang, Qingsong Wen, Bin Yang, Chenjuan Guo: Pathformer: Multi-scale Transformers with Adaptive Pathways for Time Series Forecasting. ICLR 2024. "
+                                        "Peng Chen, Yingying Zhang, Yunyao Cheng, Yang Shu, Yihang Wang, Qingsong Wen, Bin Yang, Chenjuan Guo: Pathformer: Multi-scale Transformers with Adaptive Pathways for Time Series Forecasting. ICLR 2024.",
+                                        "A Memory Guided Transformer for Time Series Forecasting. PVLDB 2025."
                                     ]
                                 },
                                 {
@@ -59,7 +68,8 @@
                                 {
                                     "title": "Neural ODE-based forecasting：",
                                     "papers": [
-                                        "Multivariate Time Series Forecasting with Dynamic Graph Neural ODEs. Ming Jin, Yu Zheng Yuan-Fang Li, Siheng Chen, Bin Yang, Shirui Pan. TKDE, 2022."
+                                        "Multivariate Time Series Forecasting with Dynamic Graph Neural ODEs. Ming Jin, Yu Zheng Yuan-Fang Li, Siheng Chen, Bin Yang, Shirui Pan. TKDE, 2022.",
+                                        "Jindong Tian, Yuxuan Liang, Ronghui Xu, Peng Chen, Chenjuan Guo, Aoying Zhou, Lujia Pan, Zhongwen Rao, Bin Yang: Air Quality Prediction with Physics-Informed Dual Neural ODEs in Open Systems. ICLR 2025"
                                     ]
                                 },
                                 {
@@ -76,7 +86,7 @@
                                     ]
                                 }
                             ],
-                            "subsection": "1.1 多元时间序列预测"
+                            "subsection": "1.1 时间序列预测"
                         },
                         {
                             "content": [
@@ -92,6 +102,18 @@
                                     "papers": [
                                         "Tung Kieu, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, Kai Zheng: Robust and Explainable Autoencoders for Unsupervised Time Series Outlier Detection. ICDE 2022: 3038-3050 ",
                                         "Tung Kieu, Bin Yang, Chenjuan Guo, Razvan-Gabriel Cirstea, Yan Zhao, Yale Song, Christian S. Jensen: Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders. ICDE 2022: 1342-1354"
+                                    ]
+                                },
+                                {
+                                    "title": "Frequency domain based outlier detection： ",
+                                    "papers": [
+                                        "Xingjian Wu, Xiangfei Qiu, Zhengyu Li, Yihang Wang, Jilin Hu, Chenjuan Guo, Hui Xiong, Bin Yang: CATCH: Channel-Aware multivariate Time Series Anomaly Detection via Frequency Patching. ICLR 2025"
+                                    ]
+                                },
+                                {
+                                    "title": "Outlier detection foundation model： ",
+                                    "papers": [
+                                        "Qichao Shentu, Beibu Li, Kai Zhao, Yang Shu, Zhongwen Rao, Lujia Pan, Bin Yang, Chenjuan Guo: Towards a General Time Series Anomaly Detector with Adaptive Bottlenecks and Dual Adversarial Decoders. ICLR 2025"
                                     ]
                                 },
                                 {
@@ -127,6 +149,7 @@
                                 {
                                     "title": "路径交通状态：",
                                     "papers": [
+                                        "Ronghui Xu, Hanyin Cheng, Chenjuan Guo, Hongfan Gao, Jilin Hu, Sean Bin Yang, Bin Yang: MM-Path: Multi-modal, Multi-granularity Path Representation Learning. KDD 2025. ",
                                         "Sean Bin Yang, Jilin Hu, Chenjuan Guo, Bin Yang, Christian S. Jensen: LightPath: Lightweight and Scalable Path Representation Learning. KDD 2023. ",
                                         "Sean Bin Yang, Chenjuan Guo, Jilin Hu, Bin Yang, Jian Tang, Christian S. Jensen: Weaklysupervised Temporal Path Representation Learning with Contrastive Curriculum Learning. ICDE 2022: 2873-2885",
                                         "Sean Bin Yang, Chenjuan Guo, Bin Yang: Context-Aware Path Ranking in Road Networks. IEEE Trans. Knowl. Data Eng. 34(7): 3153-3168 (2022)",
