@@ -48,7 +48,7 @@
       <div v-if="doctor"
         class="tw-grid tw-grid-cols-1 tw-grid-rows-[300px] sm:tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-3 tw-relative">
         <div v-for="(item, idx) in doctor" :key="idx + 1214" class="tw-h-72  tw-w-full">
-          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link ? item.link : '#'" :tag="item.tag.split(',')"
+          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link" :tag="item.tag.split(',')"
             :desc="item.desc" mode="vertical">
           </my-card>
 
@@ -84,7 +84,7 @@
       <div v-if="master"
         class="tw-grid tw-grid-cols-1  tw-m-auto sm:tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-5 tw-relative">
         <div v-for="(item, idx) in master" :key="idx + 5511" class="tw-h-72  tw-w-full">
-          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link ? item.link : '#'" :tag="item.tag.split(',')"
+          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link" :tag="item.tag.split(',')"
             :desc="item.desc" mode="vertical"></my-card>
         </div>
       </div>

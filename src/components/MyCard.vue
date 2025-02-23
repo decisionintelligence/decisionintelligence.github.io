@@ -21,11 +21,11 @@
 
 
     <div v-else-if="mode === 'vertical'"
-      class="tw-bg-white tw-m-auto  tw-h-full  tw-border tw-border-gray-200 tw-text-center" style="max-width: 230px;" @click="goTo(link)">
+      class="tw-bg-white tw-m-auto  tw-h-full  tw-border tw-border-gray-200 tw-text-center" style="max-width: 230px;" @click="link ? goTo(link) : null">
       <img style="width:160px;height: 160px" v-if="type !== 'alumni'"
         class="tw-object-contain tw-rounded-l-lg tw-m-auto tw-pt-1" :src="require('../assets/img/' + picUrl)">
       <div>
-        <div class="tw-mt-1">
+        <div class="tw-mt-1" :class="link ? 'tw-text-blue-500 hover:tw-cursor-pointer' : 'tw-text-gray-900'">
           {{ name }}
         </div>
         <div class="tw-mt-1">{{ desc }}</div>
