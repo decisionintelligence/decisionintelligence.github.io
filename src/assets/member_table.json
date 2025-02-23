@@ -412,10 +412,10 @@
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/wxj.jpg",
     "description": "2023级硕士生",
-    "tag": "Neural Architecture Search",
+    "tag": "Time Series Analysis",
     "type": "master",
     "username": "wxj",
-    "link": null
+    "link": "https://ccloud0525.github.io/academic/"
   },
     {
     "id": 40,
@@ -482,7 +482,7 @@
     "type": "master",
     "username": "zqs",
     "link": null
-  },    
+  },
   {
     "id": 46,
     "name": "金建新",
