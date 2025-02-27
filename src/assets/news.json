@@ -162,5 +162,9 @@
   {
     "new_time":"2025年1月",
     "content":"Noise Matters: Cross Contrastive Learning for Flink Anomaly Detection被VLDB 2025（CCF A类）录用。提出了一种能够异常感知的、基于跨窗口对比学习的多元时序无监督异常检测算法。"
+  },
+  {
+    "new_time":"2025年2月",
+    "content":"Enhancing Diversity for Data-free Quantization 被CVPR 2025（CCF-A）录用。从样本数据多样性的角度提出了一种基于生成器架构的无数据模型量化方式，提升了量化模型的精度。"
   }
 ]
