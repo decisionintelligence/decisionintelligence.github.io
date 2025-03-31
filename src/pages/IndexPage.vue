@@ -2,60 +2,48 @@
   <q-page>
     <div class="md:tw-w-2/3 md:tw-m-auto">
       <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
-        <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">NEWS</div>
+        <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
+          NEWS
+        </div>
       </transition>
       <div v-if="news" class="tw-overflow-y-scroll tw-overflow-hidden" style="height: 32vh">
         <div
           class="q-mt-md tw-shadow-md tw-p-4 tw-my-2 tw-bg-gray-50 tw-border-l-4 tw-border-gray-300 dark:border-gray-500 dark:bg-gray-800"
-          v-for="(item, idx) in news " :key="idx">
+          v-for="(item, idx) in news" :key="idx">
           <span class="tw-font-semibold"> {{ item.new_time }}</span>
           {{ item.content }}
         </div>
       </div>
-      <div v-else class="tw-overflow-y-scroll tw-overflow-hidden " style="height: 32vh;">
+      <div v-else class="tw-overflow-y-scroll tw-overflow-hidden" style="height: 32vh">
         <div
           class="tw-animate-pulse tw-bg-white tw-w-full tw-h-1/3 tw-mt-10 tw-border tw-p-4 tw-rounded tw-my-2 tw-border-gray-300"
           v-for="(item, idx) in 4" :key="idx + 56751">
-          <div class="tw-w-11/12 tw-ml-4 tw-bg-slate-100 tw-h-1/5 tw-mt-2  tw-rounded "></div>
-          <div class="tw-w-1/3 tw-ml-4 tw-bg-slate-100 tw-h-1/5 tw-mt-1 "></div>
+          <div class="tw-w-11/12 tw-ml-4 tw-bg-slate-100 tw-h-1/5 tw-mt-2 tw-rounded"></div>
+          <div class="tw-w-1/3 tw-ml-4 tw-bg-slate-100 tw-h-1/5 tw-mt-1"></div>
         </div>
       </div>
     </div>
 
     <q-separator class="tw-m-10" />
-    <div class="tw-w-full  tw-m-0 tw-q-0">
-
+    <div class="tw-w-full tw-m-0 tw-q-0">
       <div class="md:tw-w-2/3 tw-m-auto">
         <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
-          <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd;">
-            决策智能实验室（Decision Intelligence
-            Lab）
+          <div class="tw-flex tw-justify-center tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
+            {{ $t("LabName") }}
           </div>
         </transition>
 
         <div>
-
-          <p class="tw-flex tw-justify-center tw-m-5 tw-font-light">
-            {{ $t('desc') }}
+          <p class="tw-justify-center tw-m-5 tw-font-light">
+            {{ $t("desc_p1") }} <strong>{{ $t("desc_b1") }}</strong> {{ $t("desc_p2") }}
           </p>
-          <ol class="tw-list-disc
-        md:tw-list-none
-        md:tw-grid
-        md:tw-grid-cols-5
-        md:tw-justify-center
-        md:tw-w-full
-
-        md:tw-m-auto
-      ">
-            <li class="
-        tw-m-4
-        hover:tw-bg-slate-100
-        hover:tw-cursor-pointer
-        " v-for="(i, idx) in research" :key="idx">
+          <ol
+            class="tw-list-disc md:tw-list-none md:tw-grid md:tw-grid-cols-5 md:tw-justify-center md:tw-w-full md:tw-m-auto">
+            <li class="tw-m-4 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(i, idx) in research" :key="idx">
               <a :href="i.destination">
                 <div class="row">
                   <div class="col-6">
-                    <div class="tw-pt-3">{{ $t(i.name) }} </div>
+                    <div class="tw-pt-3">{{ $t(i.name) }}</div>
                   </div>
                   <div class="col-6 tw-m-0">
                     <q-icon :name="outlinedArrowRightAlt" color="primary" size="md" class="tw-m-2 arrow my-element" />
@@ -67,8 +55,6 @@
         </div>
       </div>
     </div>
-
-
   </q-page>
 </template>
 
@@ -76,48 +62,48 @@
 import { reactive, ref } from "vue";
 import { useQuasar } from "quasar";
 import { api } from "boot/axios";
-import { outlinedArrowRight, outlinedArrowRightAlt } from "@quasar/extras/material-icons-outlined";
-import * as data from '../assets/news.json'
-import { useI18n } from "vue-i18n"
-const { t } = useI18n()
+import {
+  outlinedArrowRight,
+  outlinedArrowRightAlt,
+} from "@quasar/extras/material-icons-outlined";
+import * as data from "../assets/news.json";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 let $q = useQuasar();
-let screen = ref($q.screen)
-let research = reactive([{ name: t('l1'), url: 'papers#1', destination: '/paper/0', id: 0 },
-{ name: 'l4', url: 'papers#2', destination: '/paper/1', id: 3 },
-{ name: 'l7', url: 'papers#3', destination: '/paper/2', id: 6 },
-{ name: 'l2', url: 'papers#4', destination: '/paper/3', id: 1 },
-{ name: 'l5', url: 'papers#5', destination: '/paper/4', id: 4 },
-{ name: 'l8', url: 'papers#6', destination: '/paper/5', id: 7 },
-{ name: 'l3', url: 'papers#7', destination: '/paper/6', id: 2 },
-{ name: 'l6', url: 'papers#8', destination: '/paper/7', id: 5 },
-{ name: 'l9', url: 'papers#9', destination: '/paper/8', id: 8 },
-{ name: 'l10', url: 'papers#10', destination: '/paper/9', id: 9 },
+let screen = ref($q.screen);
+let research = reactive([
+  { name: t("l1"), url: "papers#1", destination: "/paper/0", id: 0 },
+  { name: "l4", url: "papers#2", destination: "/paper/1", id: 3 },
+  { name: "l7", url: "papers#3", destination: "/paper/2", id: 6 },
+  { name: "l2", url: "papers#4", destination: "/paper/3", id: 1 },
+  { name: "l5", url: "papers#5", destination: "/paper/4", id: 4 },
+  { name: "l8", url: "papers#6", destination: "/paper/5", id: 7 },
+  { name: "l3", url: "papers#7", destination: "/paper/6", id: 2 },
+  { name: "l6", url: "papers#8", destination: "/paper/7", id: 5 },
+  { name: "l9", url: "papers#9", destination: "/paper/8", id: 8 },
+  { name: "l10", url: "papers#10", destination: "/paper/9", id: 9 },
 ]);
 // sort research by id
-research.sort((a, b) => a.id - b.id)
+research.sort((a, b) => a.id - b.id);
 
-let news = ref(null)
+let news = ref(null);
 
-data.default.forEach(item => {
-  item.date = item.new_time.replace('年', '-').replace('月', '-').split('-')
-})
-news.value = data.default
+data.default.forEach((item) => {
+  item.date = item.new_time.replace("年", "-").replace("月", "-").split("-");
+});
+news.value = data.default;
 news.value.sort((a, b) => {
   if (a.date[0] === b.date[0]) {
     if (a.date[1] === b.date[1]) {
-      return b.date[2] - a.date[2]
+      return b.date[2] - a.date[2];
     } else {
-      return b.date[1] - a.date[1]
+      return b.date[1] - a.date[1];
     }
   } else {
-    return b.date[0] - a.date[0]
+    return b.date[0] - a.date[0];
   }
-})
-
-
-
+});
 </script>
-
 
 <style scoped>
 ::-webkit-scrollbar {
@@ -129,7 +115,6 @@ news.value.sort((a, b) => {
   animation-duration: 1.5s;
   /* don't forget to set a duration! */
 }
-
 
 .arrow {
   animation: bounce 1s infinite;
@@ -166,7 +151,7 @@ news.value.sort((a, b) => {
 }
 
 .block::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -175,7 +160,7 @@ news.value.sort((a, b) => {
 }
 
 .block::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 1px;
   background: transparent;

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography')],
-  prefix:'tw-',
+  plugins: [require("@tailwindcss/typography")],
+  prefix: "tw-",
   important: true,
-}
+};
