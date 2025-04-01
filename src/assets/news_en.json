@@ -1,0 +1,170 @@
+[
+  {
+    "new_time": "November 2022",
+    "content": "[SIGMOD 2023] AutoCTS+: Joint Neural Architecture and Hyperparameter Search for Correlated Time Series Forecasting."
+  },
+  {
+    "new_time": "November 2022",
+    "content": "[IEEE TKDE] Multivariate Time Series Forecasting with Dynamic Graph Neural ODEs."
+  },
+  {
+    "new_time": "November 2022",
+    "content": "[IEEE TKDE] Profit Optimization in Spatial Crowdsourcing: Effectiveness and Efficiency."
+  },
+  {
+    "new_time": "September 2022",
+    "content": "[NeurIPS 2022] Interpreting Operation Selection in Differentiable Architecture Search: A Perspective from Influence-Directed Explanations."
+  },
+  {
+    "new_time": "September 2022",
+    "content": "[NeurIPS 2022] Weighted Mutual Learning with Diversity-Driven Model Compression."
+  },
+  {
+    "new_time": "September 2022",
+    "content": "Welcome to the lab, 2022 graduate students 魏涵玥、宋晏如、欧阳彪、庄志豪、田锦东、陈鹏、王赫、张布昂！"
+  },
+  {
+    "new_time": "February 2023",
+    "content": "[SIGMOD 2023] LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation."
+  },
+  {
+    "new_time": "February 2023",
+    "content": "[IEEE TKDE] CGF: A Category Guidance Based PM2.5 Sequence Forecasting Training Framework."
+  },
+  {
+    "new_time": "May 2023",
+    "content": "[SIGKDD 2023] LightPath: Lightweight and Scalable Path Representation Learning."
+  },
+  {
+    "new_time": "May 2023",
+    "content": "[PVLDB 2023] MagicScaler: Uncertainty-aware, Predictive Autoscaling."
+  },
+  {
+    "new_time": "May 2023",
+    "content": "[SIGMOD 2024] Origin-Destination Travel Time Oracle for Map-based Services."
+  },
+  {
+    "new_time": "September 2023",
+    "content": "Professor Hu Jilin has been awarded the 2023 ACM SIGSPATIAL China Rising Star Award. Combining big data technology with artificial intelligence methods, Professor Hu Jilin conducts in-depth research in spatiotemporal data management, big data management, and analysis. He has proposed a series of new theories, technologies, and methods, contributing to the advancement of digital cities and intelligent transportation."
+  },
+  {
+    "new_time": "September 2023",
+    "content": "Welcome to the lab, 2023 graduate students 陈宇轩、樊亦文、高洪帆、胡诗彦、黄姗姗、李北步、李修文、刘思聪、梅杰源、邱翔飞、邱钰莹、申屠琦超、王海臣、王益杭、魏永富、吴行健、徐榕荟、张滕雪、张馨元、郑朴辰、钟青松！"
+  },
+  {
+    "new_time": "November 2023",
+    "content": "[PVLDB 2024] Weakly Guided Adaptation for Robust Time Series Forecasting."
+  },
+  {
+    "new_time": "November 2023",
+    "content": "[PVLDB 2024] Multiple Time Series Forecasting with Dynamic Graph Modeling."
+  },
+  {
+    "new_time": "January 2024",
+    "content": "[ICLR 2024] Multi-scale Transformers with Adaptive Pathways for Time Series Forecasting."
+  },
+  {
+    "new_time": "February 2024",
+    "content": "The lab's project, “Cloud Computing Resource Scheduling Optimization Algorithm Based on Workload Prediction,“ has been awarded the 2024 Alibaba Outstanding Academic Collaboration Project Award."
+  },
+  {
+    "new_time": "April 2024",
+    "content": "[PVLDB 2024] TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods."
+  },
+  {
+    "new_time": "May 2024",
+    "content": "[ECML PKDD] A Crystal Knowledge-enhanced Pre-training Framework for Crystal Property Estimation."
+  },
+  {
+    "new_time": "May 2024",
+    "content": "[ICML 2024] What Can Large Language Models Tell Us about Time Series Analysis."
+  },
+  {
+    "new_time": "June 2024",
+    "content": "[PVLDB 2024] Efficient Stochastic Routing in Path-Centric Uncertain Road Networks."
+  },
+  {
+    "new_time": "June 2024",
+    "content": "[PVLDB 2024] QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models."
+  },
+  {
+    "new_time": "July 2024",
+    "content": "[VLDBJ 2024] AutoCTS++: Zero-shot Joint Neural Architecture and Hyperparameter Search forCorrelated Time Series Forecasting."
+  },
+  {
+    "new_time": "July 2024",
+    "content":"[CIKM 2024] Ocean Significant Wave Height Estimation with Spatio-temporally Aware Large Language Models."
+  },
+  {
+    "new_time":"July 2024",
+    "content":"[ECCV 2024] Dependency-aware Differentiable Neural Architecture Search."
+  },
+  {
+    "new_time": "August 2024",
+    "content": "[PVLDB 2024] TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods. Best paper nomination."
+  },
+  {
+    "new_time":"September 2024",
+    "content": "Welcome to the lab, 2024 graduate students 成涵吟、金建新、雷智、李哲、李正宇、裘王辉、沈王梦、汪思远、徐鼎力、严思雨、杨柳、张旭、郑兴泽、朱林威！"
+  },
+  {
+    "new_time":"September 2024",
+    "content": "[PVLDB 2025] Less is More: Efficient Time Series Dataset Condensation via Two-fold Modal Matching."
+  },
+  {
+    "new_time":"September 2024",
+    "content": "[PVLDB 2025] TEAM: Topological Evolution-aware Framework for Traffic Forecasting."
+  },
+  {
+    "new_time":"September 2024",
+    "content": "[PVLDB 2025] A Memory Guided Transformer for Time Series Forecasting."
+  },
+  {
+    "new_time":"September 2024",
+    "content":"[PVLDB 2025] Fully Automated Correlated Time Series Forecasting in Minutes."
+  },
+  {
+    "new_time":"November 2024",
+    "content":"[KDD 2025] DUET: Dual Clustering Enhanced Multivariate Time Series Forecasting."
+  },
+  {
+    "new_time":"November 2024",
+    "content":"[KDD 2025] MM-Path: Multi-modal, Multi-granularity Path Representation Learning."
+  },
+  {
+    "new_time":"December 2024",
+    "content":"[AAAI 2025] Assessing Pre-trained Models for Transfer Learning through Distribution of Spectral Components."
+  },
+  {
+    "new_time":"January 2025",
+    "content":"[ICLR 2025] Air-DualODE: Air Quality Prediction with Physics-guided Dual Neural ODEs in Open Systems."
+  },
+  {
+    "new_time":"January 2025",
+    "content":"[ICLR 2025] Learning Generalizable Skills from Offline Multi-Task Data for Multi-Agent Cooperation."
+  },
+  {
+    "new_time":"January 2025",
+    "content":"[ICLR 2025] CATCH: Channel-Aware Multivariate Time Series Anomaly Detection via Frequency Patching."
+  },
+  {
+    "new_time":"January 2025",
+    "content":"[ICLR 2025] Towards a General Time Series Anomaly Detector with Adaptive Bottlenecks and Dual Adversarial Decoders."
+  },
+  {
+    "new_time":"January 2025",
+    "content":"[WWW 2025] Path-LLM: A Multi-Modal Path Representation Learning by Aligning and Fusing with Large Language Models."
+  },
+  {
+    "new_time":"January 2025",
+    "content":"[PVLDB 2025] RCRank: Multimodal Ranking of Root Causes of Slow Queries in Cloud Database Systems."
+  },
+  {
+    "new_time":"January 2025",
+    "content":"[PVLDB 2025] Noise Matters: Cross Contrastive Learning for Flink Anomaly Detection."
+  },
+  {
+    "new_time":"February 2025",
+    "content":"[CVPR 2025] Enhancing Diversity for Data-free Quantization."
+  }
+]
