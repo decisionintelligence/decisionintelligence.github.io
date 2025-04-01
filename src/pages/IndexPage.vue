@@ -157,6 +157,13 @@ updateNews();
   /* don't forget to set a duration! */
 }
 
+strong {
+  font-weight: 800;
+  /* Increased from default 700 */
+  color: #000000;
+  /* Adding a slightly darker blue color for emphasis */
+}
+
 .arrow {
   animation: bounce 1s infinite;
   /*animation-duration: 3s;*/

@@ -74,7 +74,7 @@
         <div class="tw-grid tw-w-full tw-pt-5 tw-mt-auto md:tw-grid-cols-3 tw-gap-3 tw-place-items-center">
           <div>
             <span class="active-text-color">
-              {{ $t("address") }} </span>：上海市普陀区中山北路3663号
+              {{ $t("address") }} </span>：{{ $t("r93") }}
           </div>
           <div>
             <span class="active-text-color">

@@ -8,24 +8,24 @@ export default {
   desc_p1: "The Decision Intelligence Lab, part of the School of Data Science and Engineering at East China Normal University, conducts cutting-edge research on artificial intelligence and data analytics, with a fouse on enabling data-driven decision making. ",
   desc_b1: "Innovating AI to impact business and society, and make AI accessible to all.",
   desc_p2: "Our research is guided by the AGREE principles—Automation, Generalization, Robustness, Explainability, and Efficiency, which we apply to fundamental tasks including, e.g., forecasting, anomaly detection, classification, ranking, searching, and decision making. These innovations have been successfully deployed across multiple domains, including Intelligent transportation, Digital energy, AI4DB, AIOps, Predictive maintainence, AI for Science, Smart ocean, Autoscaling, and Intelligent emergency response. ",
-  l1: "Time Series Analysis",
+  l1: "Time Series Analytics",
   l2: "AutoML",
   l3: "Anomaly Detection",
-  l4: "Spatial-Temporal Analysis",
+  l4: "Spatial-Temporal Analytics",
   l5: "AI for Science",
   l6: "Forecasting",
-  l7: "Graph Analysis",
+  l7: "Graph Analytics",
   l8: "Model Compression",
-  l9: "Decision Intelligence",
+  l9: "Intelligent Decision Making",
   l10: "Transfer Learning and Model Generalization",
 
   ro: "Research Outcomes",
-  roc: "Laboratory research findings are applied in fields such as sustainable Transportation, intelligent operations and maintenance (Intelligent O&M), smart cities, AIOps (Artificial Intelligence for IT Operations), digital power, intelligent water resource management, digital twins, molecular design, and drug discovery.",
+  roc: "Our research is applied in a variety of application domains, such as Intelligent Transportation, Digital Energy, AIOps, Smart Ocean, AI4DB, Predictive Maintenance, Intelligent emergency response, materials design, and drug discovery.",
 
   l1_tag:
-    "Intelligent Operations & Maintenance, AIOps, Digital Twins, Digital Power",
+    "Intelligent Operations & Maintenance, AIOps, Digital Twins, Digital Energy",
   l1_desc:
-    "Enabling digital transformation, empowering intelligent operations, smart transportation, smart cities, AIOps, digital power, smart water resource management, etc. Time series is a common data type brought by digital transformation. Time series data contains a lot of dynamic information that changes over time. Effective analysis of time series data can provide effective decision support for different application scenarios. For example, traffic condition prediction can help drivers divert in advance, load forecasting can help adapters prepare for adjustments in advance, and machine condition monitoring can detect potential failures early and carry out predictive maintenance. Our research mainly focuses on two types of analysis: forecasting and anomaly detection. While pursuing high accuracy, we also pay attention to timeliness, robustness, interpretability, and automation.",
+    "Enabling digital transformation, empowering intelligent operations, smart transportation, smart cities, AIOps, digital energy, smart water resource management, etc. Time series is a common data type brought by digital transformation. Time series data contains dynamic information that changes over time. Effective analysis of time series data can provide effective decision support for different application scenarios. For example, traffic condition prediction can help drivers divert in advance, load forecasting can help suppliers prepare for adjustments in advance, and machine condition monitoring can detect potential failures early and carry out predictive maintenance. Our research mainly focuses on two types of analysis: forecasting and anomaly detection. While pursuing high accuracy, we also pay attention to efficiency, robustness, interpretability, and automation.",
   l4_tag: "Sustainable Transportation, Smart City, Smart Logistics",
   l4_desc:
     "Effective analysis of spatiotemporal trajectory data, empowering sustainable transportation, smart cities, and autonomous driving. Spatiotemporal data includes spatial information that changes over time, such as trajectory data. Our research mainly focuses on how to effectively utilize large-scale spatiotemporal trajectory data to empower smart cities, sustainable transportation, and autonomous driving. Specifically, spatiotemporal data analysis includes traffic state estimation, preference recognition, and navigation decision-making. It involves representation learning, graph learning, multi-task learning, and graph algorithms. The research results have been applied to intelligent transportation systems of several partner units in Denmark, Germany, the Netherlands, Greece, and Cyprus. For example, the proposed Eco-routing algorithm can effectively reduce CO2 emissions in the transportation sector and has been applied in several services of FlexDanmark, the largest transportation scheduling company in North Jutland, Denmark.",
@@ -50,12 +50,66 @@ export default {
   l6_desc:
     "Many decision-making scenarios require forecasting unknown states, such as predicting future states and estimating missing parts of data. Our work mainly focuses on time series forecasting and graph data forecasting.",
   l9_tag:
-    "Uncertainty Decision-making, Learning-based Decision-making, Multivariate Decision-making",
+    "",
   l9_desc:
     "We make many decisions every day, with a typical example being route choice during travel. Decision-making can be complex as it often involves considering many factors, not just one (e.g., travel time and carbon emissions), and these factors are often uncertain. We have conducted in-depth research on these issues, using route navigation decision-making as an example. The research results have been applied to intelligent transportation systems of several partner units in Denmark, Germany, the Netherlands, Greece, and Cyprus. For example, the proposed Eco-routing algorithm can effectively reduce CO2 emissions in the transportation sector and has been applied in several services of FlexDanmark, the largest transportation scheduling company in North Jutland, Denmark.",
   l10_tag:
-    "Transfer-related Knowledge, Improve Learning Efficiency, Enhance Generalization Performance",
+    "",
   l10_desc: "Transfer Learning and Model Generalization",
+
+  ls1_1: "1.1 Time Series Forecasting",
+  ls1_2: "1.2 Time Series Anomaly Detection",
+  ls1_3: "1.3 Time Series Classification",
+  lst1_1_1: "Time-frequency domain based forecasting:",
+  lst1_1_2: "Model-agnostic plugin:",
+  lst1_1_3: "Automated correlated time series forecasting:",
+  lst1_1_4: "Transformer-based forecasting:",
+  lst1_1_5: "Robust forecasting: ",
+  lst1_1_6: "Graph neural network based forecasting:",
+  lst1_1_7: "Forecasting benchmarking:",
+  lst1_1_8: "Continual learning for forecasting:",
+  lst1_1_9: "Neural ODE-based forecasting：",
+  lst1_1_10: "Markov Model-based forecasting:",
+  lst1_1_11: "Others:",
+  lst1_2_1: "Ensemble learning based outlier detection：",
+  lst1_2_2: "Robust outlier detection：",
+  lst1_2_3: "Frequency domain based outlier detection：",
+  lst1_2_4: "Outlier detection foundation model： ",
+  lst1_2_5: "Explainable outlier detection: ",
+  lst1_2_6: "Ensemble learning based outlier detection：",
+
+  ls4_1: "2.1 Traffic State Estimation",
+  ls4_2: "2.2 Preference Identification",
+  ls4_3: "2.3 Data-Driven Navigation Decision-Making",
+  ls4_4: "2.4 Others",
+  lst4_1_1: "Route Traffic State:",
+  lst4_1_2: "Road Network Traffic State:",
+  lst4_3_1: "Decision-Making Under Uncertainty:",
+  lst4_3_2: "Learning-Based Decision-Making:",
+  lst4_3_3: "Multi-Criteria Decision-Making:",
+  lst4_3_4: "Top-K Decision-Making:",
+  lst4_3_5: "Eco-routing:",
+
+  ls7_1: "3.1 Path Representation Learning",
+  ls7_2: "3.2 Graph Attribute Prediction",
+  ls7_3: "3.3 Spatiotemporal Sequence Correlation Learning",
+  ls7_4: "3.4 Shortest Path Algorithm for Uncertain Graphs",
+
+  lst6_4_1: "Time Series Forecasting：",
+  lst6_4_2: "Graph-Based Prediction：",
+
+  lst9_1_1: "Decision-Making Under Uncertainty：",
+  lst9_1_2: "Learning-Based Decision-Making：",
+  lst9_1_3: "Multi-Criteria Decision-Making：",
+  lst9_1_4: "Top-K Decision-Making:",
+  lst9_1_5: "Eco-routing:",
+  lst9_1_6: "Elastic Scaling, Auto Scaling (AutoScaling):",
+
+  lst10_1_1: "Model Pre-training and Transfer Learning (Pre-training, Fine-tuning, Model Zoo, Few-shot Learning):",
+  lst10_1_2: "OOD Generalization:",
+  lst10_1_3: "Domain Adaptation:",
+
+
 
   r1: "Machine Learning, Artificial Intelligence, Data Management and Analysis",
   r2: "Time Series Analysis, Spatial-Temporal Analysis, Graph Analysis, AI for Science",
@@ -86,7 +140,7 @@ export default {
   r9: "Contact Us",
   r91: "Yang Bin:",
   r92: "Guo Chenjuan:",
-  r93: "Address: 3663 North Zhongshan Road, Putuo District, Shanghai (Zhongbei Campus of East China Normal University)",
+  r93: "3663 North Zhongshan Road, Putuo District, Shanghai",
 
   r10: "Benefits",
   r101: '<div class="md:tw-w-1/2 tw-w-5/6 tw-mx-auto tw-col-span-1 section animated fadeInUp my-element"> <div class="text-weight-bold">Benefits</div> <ul> <li class="tw-list-decimal" id="0"> <div class="text-gray">Salary and benefits are implemented according to the relevant regulations for postdoctoral researchers at East China Normal University, with a basic annual salary of 200,000 to 400,000 RMB. For specific regulations, refer to<a class="text-blue" style="display: inline-block" href="http://postdoctor.ecnu.edu.cn/34/1e/c14591a275486/page.htm" target="_blank">http://postdoctor.ecnu.edu.cn/34/1e/c14591a275486/page.htm</a>. Priority is given to applying for various postdoctoral programs from the national government, Shanghai, and the university. </div> <ul class="md:tw-pl-5"> <li class="tw-list-disc text-gray">National "Bo Xin Plan" (annual salary of 400,000 RMB + 230,000 RMB in funds)</li> <li class="tw-list-disc text-gray">National "Postdoctoral International Exchange Program" (annual salary of 300,000+ RMB)</li> <li class="tw-list-disc text-gray">Shanghai "Postdoctoral Innovation and Entrepreneurship Program" (annual salary of 300,000 RMB + 100,000 RMB in funds)</li> <li class="tw-list-disc text-gray">University "Excellent Postdoctoral Program" (annual salary of 250,000+ RMB), with exceptional candidates recommended for the ECNU "Guanghua" Outstanding Postdoctoral Program (annual salary of 400,000 RMB);</li> </ul> </li> <li class="tw-list-decimal" id="1"> <div class="text-gray">During their full-time postdoctoral period, the university provides social insurance and housing provident fund according to national regulations. Additionally, the university offers a one-time settlement allowance of 20,000 RMB upon joining.</div> <ul class="md:tw-pl-5"></ul> </li> <li class="tw-list-decimal" id="2"> <div class="text-gray">Research project subsidies</div> <ul class="md:tw-pl-5"></ul> </li> <li class="tw-list-decimal" id="3"> <div class="text-gray">Enjoy corresponding union benefits at East China Normal University. Housing, household registration, and other aspects are implemented according to the relevant policies of East China Normal University.</div> <ul class="md:tw-pl-5"></ul> </li> </ul> </div>',
