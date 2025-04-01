@@ -34,11 +34,13 @@
         </transition>
 
         <div>
+          <p v-if="locale === 'en'" class="tw-flex tw-justify-center tw-m-5 tw-font-light">
+            <strong>Innovating AI to impact business and society, and make AI accessible to all.</strong>
+          </p>
           <p v-if="locale === 'en'" class="tw-justify-center tw-m-5 tw-font-light">
             The Decision Intelligence Lab, part of the School of Data Science and Engineering at East China Normal
             University, conducts cutting-edge research on artificial intelligence and data analytics, with a fouse on
             enabling data-driven decision making. <br><br>
-            <strong>Innovating AI to impact business and society, and make AI accessible to all.</strong> <br><br>
             Our research is guided by the <strong>AGREE</strong> principles—<strong>A</strong>utomation,
             <strong>G</strong>eneralization,
             <strong>R</strong>obustness, <strong>E</strong>xplainability, and
