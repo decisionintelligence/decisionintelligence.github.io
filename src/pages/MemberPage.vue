@@ -47,8 +47,8 @@
       <div v-if="doctor"
         class="tw-grid tw-grid-cols-1 tw-grid-rows-[300px] sm:tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-3 tw-relative">
         <div v-for="(item, idx) in doctor" :key="idx + 1214" class="tw-h-72  tw-w-full">
-          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link" :tag="item.tag.split(',')"
-            :desc="item.desc" mode="vertical">
+          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link"
+            :tag="item.tag.split(',')" :desc="item.desc" mode="vertical">
           </my-card>
         </div>
       </div>
@@ -83,8 +83,8 @@
       <div v-if="master"
         class="tw-grid tw-grid-cols-1  tw-m-auto sm:tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-5 tw-relative">
         <div v-for="(item, idx) in master" :key="idx + 5511" class="tw-h-72  tw-w-full">
-          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link" :tag="item.tag.split(',')"
-            :desc="item.desc" mode="vertical"></my-card>
+          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link"
+            :tag="item.tag.split(',')" :desc="item.desc" mode="vertical"></my-card>
         </div>
       </div>
       <div v-else class="tw-grid tw-grid-cols-4 tw-gap-5">
@@ -169,6 +169,19 @@ const updateNews = () => {
   } else {
     res = data.default;
   }
+
+  teacher.value = res.filter((item) => {
+    return item.type === "teacher";
+  });
+  doctor.value = res.filter((item) => {
+    return item.type === "doctor";
+  });
+  master.value = res.filter((item) => {
+    return item.type === "master";
+  });
+  alumni.value = res.filter((item) => {
+    return item.type === "alumni";
+  });
 }
 // Watch for locale changes
 watch(() => locale.value, () => {
@@ -178,18 +191,7 @@ watch(() => locale.value, () => {
 // Initial update
 updateNews();
 
-teacher.value = res.filter((item) => {
-  return item.type === "teacher";
-});
-doctor.value = res.filter((item) => {
-  return item.type === "doctor";
-});
-master.value = res.filter((item) => {
-  return item.type === "master";
-});
-alumni.value = res.filter((item) => {
-  return item.type === "alumni";
-});
+
 
 //
 // fetch("https://raw.githubusercontent.com/decisionintelligence/files/main/member_table.json").then(res => res.json()).then(res => {

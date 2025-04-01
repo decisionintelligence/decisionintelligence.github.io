@@ -8,7 +8,7 @@
     "tag": "讲席教授,博士生导师,国家级领军人才",
     "type": "teacher",
     "username": null,
-    "link": "https://faculty.ecnu.edu.cn/_s37/yb2/main.psp"
+    "link": "https://binyangdk.github.io/"
   },
   {
     "id": 2,
@@ -434,7 +434,7 @@
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/ztx.jpg",
     "description": "2023级硕士生",
-    "tag": "transfer learning",
+    "tag": "Transfer learning",
     "type": "master",
     "username": "ztx",
     "link": "https://noriko-ztx01.github.io/"
@@ -467,7 +467,7 @@
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/zqs.jpg",
     "description": "2023级硕士生",
-    "tag": "AI FOR SCIENCE",
+    "tag": "AI for science",
     "type": "master",
     "username": "zqs",
     "link": null
