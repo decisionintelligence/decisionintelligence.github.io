@@ -34,7 +34,21 @@
         </transition>
 
         <div>
-          <p class="tw-justify-center tw-m-5 tw-font-light">
+          <p v-if="locale === 'en'" class="tw-justify-center tw-m-5 tw-font-light">
+            The Decision Intelligence Lab, part of the School of Data Science and Engineering at East China Normal
+            University, conducts cutting-edge research on artificial intelligence and data analytics, with a fouse on
+            enabling data-driven decision making. <br><br>
+            <strong>Innovating AI to impact business and society, and make AI accessible to all.</strong> <br><br>
+            Our research is guided by the <strong>AGREE</strong> principles—<strong>A</strong>utomation,
+            <strong>G</strong>eneralization,
+            <strong>R</strong>obustness, <strong>E</strong>xplainability, and
+            <strong>E</strong>fficiency, which we apply to fundamental tasks including, e.g., forecasting, anomaly
+            detection,
+            classification, ranking, searching, and decision making. These innovations have been successfully deployed
+            across multiple domains, including Intelligent transportation, Digital energy, AI4DB, AIOps, Predictive
+            maintainence, AI for Science, Smart ocean, Autoscaling, and Intelligent emergency response.
+          </p>
+          <p v-else class="tw-justify-center tw-m-5 tw-font-light">
             {{ $t("desc_p1") }} <strong>{{ $t("desc_b1") }}</strong> {{ $t("desc_p2") }}
           </p>
           <ol

@@ -1,5 +1,5 @@
 export default {
-  IndexPage: "Index",
+  IndexPage: "Home",
   publicationPage: "Research",
   MemberPage: "Members",
   ProjectPage: "Projects",
