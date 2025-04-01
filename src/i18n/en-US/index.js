@@ -93,4 +93,8 @@ export default {
   address: "Address",
   email: "Email",
   wechat: "Wechat Official Account",
+
+  mp1: "Faculty",
+  mp2: "Ph.D. students",
+  mp3: "Master Students",
 };

@@ -98,4 +98,8 @@ export default {
   address: "地址",
   email: "邮箱",
   wechat: "微信公众号",
+
+  mp1: "导师",
+  mp2: "博士生",
+  mp3: "硕士生",
 };

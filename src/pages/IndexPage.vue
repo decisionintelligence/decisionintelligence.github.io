@@ -59,7 +59,7 @@
 </template>
 
 <script setup>
-import { reactive, ref } from "vue";
+import { reactive, ref, watch } from "vue";
 import { useQuasar } from "quasar";
 import { api } from "boot/axios";
 import {
@@ -67,8 +67,9 @@ import {
   outlinedArrowRightAlt,
 } from "@quasar/extras/material-icons-outlined";
 import * as data from "../assets/news.json";
+import * as data_en from "../assets/news_en.json";
 import { useI18n } from "vue-i18n";
-const { t } = useI18n();
+const { t, locale } = useI18n();
 let $q = useQuasar();
 let screen = ref($q.screen);
 let research = reactive([
@@ -88,21 +89,45 @@ research.sort((a, b) => a.id - b.id);
 
 let news = ref(null);
 
-data.default.forEach((item) => {
-  item.date = item.new_time.replace("年", "-").replace("月", "-").split("-");
-});
-news.value = data.default;
-news.value.sort((a, b) => {
-  if (a.date[0] === b.date[0]) {
-    if (a.date[1] === b.date[1]) {
-      return b.date[2] - a.date[2];
-    } else {
-      return b.date[1] - a.date[1];
-    }
+// Function to update news based on locale
+const updateNews = () => {
+  if (locale.value === "en") {
+    news.value = data_en.default;
+    news.value.forEach((item) => {
+      // Parse English date format (e.g., "May 2023")
+      const [month, year] = item.new_time.split(' ');
+      const monthMap = {
+        'January': 1, 'February': 2, 'March': 3, 'April': 4, 'May': 5, 'June': 6,
+        'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12
+      };
+      item.date = [parseInt(year), monthMap[month]];
+    });
   } else {
-    return b.date[0] - a.date[0];
+    news.value = data.default;
+    news.value.forEach((item) => {
+      // Parse Chinese date format (e.g., "2022年11月")
+      const [year, month] = item.new_time.replace('年', ' ').replace('月', '').split(' ');
+      item.date = [parseInt(year), parseInt(month)];
+    });
   }
+
+  // Sort by year and month in descending order
+  news.value.sort((a, b) => {
+    if (a.date[0] === b.date[0]) {
+      return b.date[1] - a.date[1];
+    } else {
+      return b.date[0] - a.date[0];
+    }
+  });
+};
+
+// Watch for locale changes
+watch(() => locale.value, () => {
+  updateNews();
 });
+
+// Initial update
+updateNews();
 </script>
 
 <style scoped>

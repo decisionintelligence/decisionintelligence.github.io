@@ -1,56 +1,30 @@
 <template>
   <q-page padding class="md:tw-w-2/3 tw-m-auto">
     <div class="tw-mt-5 tw-h-full">
-      <transition
-        appear
-        enter-active-class="animated  fadeInDown"
-        leave-active-class="animated  fadeOutUp"
-      >
-        <div
-          class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element"
-          style="color: #4e83fd"
-        >
-          导师
+      <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
+          {{ $t("mp1") }}
         </div>
       </transition>
-      <div
-        v-if="teacher"
-        class="tw-grid tw-grid-cols-1 tw-gap-6 md:tw-grid-cols-2 md:tw-justify-evenly tw-h-full"
-      >
+      <div v-if="teacher" class="tw-grid tw-grid-cols-1 tw-gap-6 md:tw-grid-cols-2 md:tw-justify-evenly tw-h-full">
         <div v-for="(item, idx) in teacher" :key="idx" id="teacher">
-          <my-card
-            class="tw-h-full"
-            :pic="item.pic"
-            :name="item.name"
-            :link="item.link"
-            :tag="item.tag.split(',')"
-            :desc="item.desc"
-          ></my-card>
+          <my-card class="tw-h-full" :pic="item.pic" :name="item.name" :link="item.link" :tag="item.tag.split(',')"
+            :desc="item.desc"></my-card>
         </div>
       </div>
-      <div
-        v-else
-        class="tw-grid tw-grid-cols-1 tw-gap-6 md:tw-flex md:tw-justify-evenly tw-h-full md:tw-w-full md:tw-relative"
-      >
+      <div v-else
+        class="tw-grid tw-grid-cols-1 tw-gap-6 md:tw-flex md:tw-justify-evenly tw-h-full md:tw-w-full md:tw-relative">
         <div v-for="(item, idx) in 2" :key="idx">
-          <div
-            class="tw-border tw-shadow tw-rounded-md tw-p-4 tw-max-w-sm tw-mx-auto"
-            style="width: 400px; height: 200px"
-          >
-            <div
-              class="tw-animate-pulse tw-flex tw-space-x-4 tw-w-full tw-h-full"
-            >
+          <div class="tw-border tw-shadow tw-rounded-md tw-p-4 tw-max-w-sm tw-mx-auto"
+            style="width: 400px; height: 200px">
+            <div class="tw-animate-pulse tw-flex tw-space-x-4 tw-w-full tw-h-full">
               <div class="tw-rounded tw-bg-slate-200 tw-h-2/3 tw-w-1/3"></div>
               <div class="tw-flex-1 tw-space-y-6 tw-py-1">
                 <div class="tw-grid tw-grid-cols-3 tw-gap-4">
-                  <div
-                    class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-1"
-                  ></div>
+                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-1"></div>
                 </div>
                 <div class="tw-grid tw-grid-cols-3 tw-gap-4">
-                  <div
-                    class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-2"
-                  ></div>
+                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-2"></div>
                 </div>
                 <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
                 <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
@@ -65,16 +39,9 @@
     <q-separator class="tw-m-10" />
 
     <div class="tw-mt-5">
-      <transition
-        appear
-        enter-active-class="animated  fadeInDown"
-        leave-active-class="animated  fadeOutUp"
-      >
-        <div
-          class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element"
-          style="color: #4e83fd"
-        >
-          博士生
+      <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
+          {{ $t("mp2") }}
         </div>
       </transition>
       <div v-if="doctor"
@@ -87,23 +54,15 @@
       </div>
       <div v-else class="tw-grid tw-grid-cols-4 tw-gap-5">
         <div v-for="(item, idx) in 3" :key="idx">
-          <div
-            class="tw-border tw-shadow tw-rounded-md tw-p-4 tw-max-w-sm tw-mx-auto"
-          >
-            <div
-              class="tw-animate-pulse tw-flex tw-space-x-4 tw-w-full tw-h-full"
-            >
+          <div class="tw-border tw-shadow tw-rounded-md tw-p-4 tw-max-w-sm tw-mx-auto">
+            <div class="tw-animate-pulse tw-flex tw-space-x-4 tw-w-full tw-h-full">
               <div class="tw-rounded tw-bg-slate-200 tw-w-1/2"></div>
               <div class="tw-flex-1 tw-space-y-6 tw-py-1">
                 <div class="tw-grid tw-grid-cols-3 tw-gap-4">
-                  <div
-                    class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-1"
-                  ></div>
+                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-1"></div>
                 </div>
                 <div class="tw-grid tw-grid-cols-3 tw-gap-4">
-                  <div
-                    class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-2"
-                  ></div>
+                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-2"></div>
                 </div>
                 <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
                 <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
@@ -116,16 +75,9 @@
     </div>
     <q-separator class="tw-m-10" />
     <div class="tw-mt-5">
-      <transition
-        appear
-        enter-active-class="animated  fadeInDown"
-        leave-active-class="animated  fadeOutUp"
-      >
-        <div
-          class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element"
-          style="color: #4e83fd"
-        >
-          硕士生
+      <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
+          {{ $t("mp3") }}
         </div>
       </transition>
       <div v-if="master"
@@ -137,23 +89,15 @@
       </div>
       <div v-else class="tw-grid tw-grid-cols-4 tw-gap-5">
         <div v-for="(item, idx) in 5" :key="idx">
-          <div
-            class="tw-border tw-shadow tw-rounded-md tw-p-4 tw-max-w-sm tw-mx-auto"
-          >
-            <div
-              class="tw-animate-pulse tw-flex tw-space-x-4 tw-w-full tw-h-full"
-            >
+          <div class="tw-border tw-shadow tw-rounded-md tw-p-4 tw-max-w-sm tw-mx-auto">
+            <div class="tw-animate-pulse tw-flex tw-space-x-4 tw-w-full tw-h-full">
               <div class="tw-rounded tw-bg-slate-200 tw-w-1/2"></div>
               <div class="tw-flex-1 tw-space-y-6 tw-py-1">
                 <div class="tw-grid tw-grid-cols-3 tw-gap-4">
-                  <div
-                    class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-1"
-                  ></div>
+                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-1"></div>
                 </div>
                 <div class="tw-grid tw-grid-cols-3 tw-gap-4">
-                  <div
-                    class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-2"
-                  ></div>
+                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-2"></div>
                 </div>
                 <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
                 <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
@@ -168,15 +112,8 @@
     <q-separator class="tw-m-10" />
 
     <div class="tw-mt-5">
-      <transition
-        appear
-        enter-active-class="animated  fadeInDown"
-        leave-active-class="animated  fadeOutUp"
-      >
-        <div
-          class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element"
-          style="color: #4e83fd"
-        >
+      <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
           alumni
         </div>
       </transition>
@@ -209,11 +146,14 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import MyCard from "../components/MyCard";
 import { api } from "boot/axios";
 import { useQuasar } from "quasar";
 import * as data from "../assets/member_table.json";
+import * as data_en from "../assets/member_table_en.json";
+import { useI18n } from "vue-i18n";
+const { t, locale } = useI18n();
 let $q = useQuasar();
 let screen = $q.screen;
 let teacher = ref(null);
@@ -222,6 +162,22 @@ let doctor = ref(null);
 let alumni = ref(null);
 
 let res = data.default;
+
+const updateNews = () => {
+  if (locale.value === "en") {
+    res = data_en.default;
+  } else {
+    res = data.default;
+  }
+}
+// Watch for locale changes
+watch(() => locale.value, () => {
+  updateNews();
+});
+
+// Initial update
+updateNews();
+
 teacher.value = res.filter((item) => {
   return item.type === "teacher";
 });
@@ -273,7 +229,8 @@ alumni.value = res.filter((item) => {
 //     // })
 //   })
 
-onMounted(() => {});
+
+onMounted(() => { });
 </script>
 <style scoped>
 .my-element {
