@@ -102,7 +102,8 @@ const { t } = useI18n();
 const $q = useQuasar();
 let screen = $q.screen;
 const { locale } = useI18n({ useScope: "global" });
-locale.value = "en";
+// locale.value = "en";
+locale.value = "zh-CN";
 const localeOptions = ref([
   { value: "en-US", label: "English" },
   { value: "zh-CN", label: "中文" },
