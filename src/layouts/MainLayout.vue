@@ -103,7 +103,15 @@ const $q = useQuasar();
 let screen = $q.screen;
 const { locale } = useI18n({ useScope: "global" });
 // locale.value = "en";
-locale.value = "zh-CN";
+// locale.value = "zh-CN";
+// Set initial locale based on browser language
+const browserLang = (navigator.language || navigator.browserLanguage).toLowerCase();
+if (browserLang.startsWith('zh')) {
+  locale.value = 'zh-CN';
+} else {
+  locale.value = 'en';
+}
+
 const localeOptions = ref([
   { value: "en-US", label: "English" },
   { value: "zh-CN", label: "中文" },
