@@ -166,5 +166,13 @@
   {
     "new_time":"2025年2月",
     "content":"Enhancing Diversity for Data-free Quantization 被CVPR 2025（CCF-A）录用。从样本数据多样性的角度提出了一种基于生成器架构的无数据模型量化方式，提升了量化模型的精度。"
+  },
+  {
+    "new_time":"2025年3月",
+    "content":"AimTS: Augmented Series and Image Contrastive Learning for Time Series Classification 被ICDE 2025（CCF-A）录用。提出了一种基于Prototype和时序-图像对比学习的预训练框架，在不同的下游时序分类数据实现了良好的分类效果。"
+  },
+  {
+    "new_time":"2025年3月",
+    "content":"AID-SQL: Adaptive In-Context Learning of Text-to-SQL with Difficulty-Aware Instruction and Retrieval-Augmented Generation 被ICDE 2025（CCF-A）录用。从动态自适应上下文学习的角度提出了一种基于检索增强生成的大语言模型Text-to-SQL任务解决方案，增强了生成SQL的精度。"
   }
 ]
