@@ -166,5 +166,13 @@
   {
     "new_time":"February 2025",
     "content":"[CVPR 2025] Enhancing Diversity for Data-free Quantization."
+  },
+  {
+    "new_time":"March 2025",
+    "content":"[ICDE 2025] AimTS: Augmented Series and Image Contrastive Learning for Time Series Classification."
+  },
+  {
+    "new_time":"March 2025",
+    "content":"[ICDE 2025] AID-SQL: Adaptive In-Context Learning of Text-to-SQL with Difficulty-Aware Instruction and Retrieval-Augmented Generation."
   }
 ]
