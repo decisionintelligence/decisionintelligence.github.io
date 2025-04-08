@@ -30,6 +30,10 @@
           active-class="tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">
           {{ $t("JoinPage") }}
         </router-link>
+        <a href="https://extremetracking.com/open?login=decision" target="_blank"
+          class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
+          active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">Tracker
+        </a>
       </q-tabs>
       <div v-else style="float: right">
         <q-fab flat external-label icon="menu" direction="down">
