@@ -174,5 +174,9 @@
   {
     "new_time":"2025年3月",
     "content":"AID-SQL: Adaptive In-Context Learning of Text-to-SQL with Difficulty-Aware Instruction and Retrieval-Augmented Generation 被ICDE 2025（CCF A类）录用。从动态自适应上下文学习的角度提出了一种基于检索增强生成的大语言模型Text-to-SQL任务解决方案，增强了生成SQL的精度。"
+  },
+  {
+    "new_time":"2025年5月",
+    "content":"K^2VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for Probabilistic Time Series Forecasting 被ICML 2025（CCF A类）录用。结合库普曼理论与卡尔曼滤波，提出了一种高效的变分自编码器，显著提升了长程时间序列概率预测的精度和效率。"
   }
 ]
