@@ -174,5 +174,9 @@
   {
     "new_time":"March 2025",
     "content":"[ICDE 2025] AID-SQL: Adaptive In-Context Learning of Text-to-SQL with Difficulty-Aware Instruction and Retrieval-Augmented Generation."
+  },
+  {
+    "new_time":"May 2025",
+    "content":"[ICML 2025] K^2VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for Probabilistic Time Series Forecasting."
   }
 ]
