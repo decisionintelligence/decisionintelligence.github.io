@@ -6,7 +6,7 @@ export default {
   JoinPage: "Join us",
   LabName: "Decision Intelligence Lab",
   desc_p1: "The Decision Intelligence Lab, part of the School of Data Science and Engineering at East China Normal University, conducts cutting-edge research on artificial intelligence and data analytics, with a fouse on enabling data-driven decision making. ",
-  desc_b1: "Innovating AI to impact business and society, and make AI accessible to all.",
+  desc_b1: "Innovating AI to impact business and society, and making AI accessible to all.",
   desc_p2: "Our research is guided by the AGREE principles—Automation, Generalization, Robustness, Explainability, and Efficiency, which we apply to fundamental tasks including, e.g., forecasting, anomaly detection, classification, ranking, searching, and decision making. These innovations have been successfully deployed across multiple domains, including Intelligent transportation, Digital energy, AI4DB, AIOps, Predictive maintainence, AI for Science, Smart ocean, Autoscaling, and Intelligent emergency response. ",
   l1: "Time Series Analytics",
   l2: "AutoML",
