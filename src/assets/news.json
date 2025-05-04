@@ -178,5 +178,9 @@
   {
     "new_time":"2025年5月",
     "content":"K²VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for Probabilistic Time Series Forecasting 被ICML 2025（CCF A类）录用。结合库普曼理论与卡尔曼滤波，提出了一种高效的变分自编码器，显著提升了长程时间序列概率预测的精度和效率。"
+  },
+  {
+    "new_time":"2025年5月",
+    "content":"LightGTS: A Lightweight General Time Series Forecasting Model 被ICML 2025（CCF A类）录用。该研究提出了一种创新的时序基础模型，通过周期tokenization和并行解码机制，有效融合时序数据的固有归纳偏置。在保持轻量化参数量级的前提下，模型在零样本预测任务中取得了当前最先进的性能表现。"
   }
 ]
