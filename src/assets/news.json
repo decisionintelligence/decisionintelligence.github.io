@@ -182,5 +182,9 @@
   {
     "new_time":"2025年5月",
     "content":"LightGTS: A Lightweight General Time Series Forecasting Model 被ICML 2025（CCF A类）录用。该研究提出了一种创新的时序基础模型，通过周期tokenization和并行解码机制，有效融合时序数据的固有归纳偏置。在保持轻量化参数量级的前提下，模型在零样本预测任务中取得了当前最先进的性能表现。"
+  },
+  {
+    "new_time":"2025年5月",
+    "content":"Towards a General Time Series Forecasting Model with Unified Representation and Adaptive Transfer 被ICML 2025（CCF A类）录用。结合分解频率掩码的预训练任务和时序寄存器，提出了一个有效的时序基础模型框架，显著提升了时序基础模型少样本和零样本的预测能力。"
   }
 ]
