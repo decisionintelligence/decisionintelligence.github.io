@@ -177,6 +177,6 @@
   },
   {
     "new_time":"2025年5月",
-    "content":"K^2VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for Probabilistic Time Series Forecasting 被ICML 2025（CCF A类）录用。结合库普曼理论与卡尔曼滤波，提出了一种高效的变分自编码器，显著提升了长程时间序列概率预测的精度和效率。"
+    "content":"K²VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for Probabilistic Time Series Forecasting 被ICML 2025（CCF A类）录用。结合库普曼理论与卡尔曼滤波，提出了一种高效的变分自编码器，显著提升了长程时间序列概率预测的精度和效率。"
   }
 ]
