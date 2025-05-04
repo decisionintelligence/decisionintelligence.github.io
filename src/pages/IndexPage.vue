@@ -35,7 +35,7 @@
 
         <div>
           <p v-if="locale === 'en'" class="tw-flex tw-justify-center tw-m-5 tw-text-lg">
-            <strong>Innovating AI to impact business and society, and make AI accessible to all.</strong>
+            <strong>Innovating AI to impact business and society, and making AI accessible to all.</strong>
           </p>
           <p v-if="locale === 'en'" class="tw-justify-center tw-m-5">
             The Decision Intelligence Lab, part of the School of Data Science and Engineering at East China Normal
