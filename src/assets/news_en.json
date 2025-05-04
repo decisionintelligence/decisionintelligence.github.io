@@ -182,5 +182,9 @@
   {
     "new_time":"May 2025",
     "content":"[ICML 2025] LightGTS: A Lightweight General Time Series Forecasting Model."
+  },
+  {
+    "new_time":"May 2025",
+    "content":"[ICML 2025] Towards a General Time Series Forecasting Model with Unified Representation and Adaptive Transfer."
   }
 ]
