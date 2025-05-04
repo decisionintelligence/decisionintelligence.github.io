@@ -178,5 +178,9 @@
   {
     "new_time":"May 2025",
     "content":"[ICML 2025] K²VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for Probabilistic Time Series Forecasting."
+  },
+  {
+    "new_time":"May 2025",
+    "content":"[ICML 2025] LightGTS: A Lightweight General Time Series Forecasting Model."
   }
 ]
