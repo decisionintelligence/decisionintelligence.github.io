@@ -25,8 +25,7 @@
           class="tw-m-4 tw-text-gray-400  hover:tw-text-blue-500   tw-w-14 tw-h-8 tw-text-center"
           active-class=" tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">OpenTS
         </a>
-        <router-link v-if="locale !== 'en'" to="/recruit"
-          class="tw-m-4 tw-text-gray-400 hover:tw-text-blue-500 tw-h-8 tw-text-center"
+        <router-link to="/recruit" class="tw-m-4 tw-text-gray-400 hover:tw-text-blue-500 tw-h-8 tw-text-center"
           active-class="tw-border-b-2 active-text-color tw-text-sky-600 tw-border-blue-500">
           {{ $t("JoinPage") }}
         </router-link>
@@ -36,7 +35,7 @@
           <q-fab-action class="tw-bg-white" :label="$t('IndexPage')" to="/index" />
           <q-fab-action class="tw-bg-white" :label="$t('publicationPage')" to="/papers" />
           <q-fab-action class="tw-bg-white" :label="$t('MemberPage')" to="/member" />
-          <q-fab-action class="tw-bg-white" :label="$t('ProjectPage')" to="/project" />
+          <q-fab-action v-if="locale !== 'en'" class="tw-bg-white" :label="$t('ProjectPage')" to="/project" />
           <q-fab-action class="tw-bg-white" label="OpenTS" href="https://decisionintelligence.github.io/OpenTS/"
             target="_blank" />
           <q-fab-action class="tw-bg-white" :label="$t('JoinPage')" to="/recruit" />
