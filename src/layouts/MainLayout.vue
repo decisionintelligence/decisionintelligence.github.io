@@ -37,6 +37,8 @@
           <q-fab-action class="tw-bg-white" :label="$t('publicationPage')" to="/papers" />
           <q-fab-action class="tw-bg-white" :label="$t('MemberPage')" to="/member" />
           <q-fab-action class="tw-bg-white" :label="$t('ProjectPage')" to="/project" />
+          <q-fab-action class="tw-bg-white" label="OpenTS" href="https://decisionintelligence.github.io/OpenTS/"
+            target="_blank" />
           <q-fab-action class="tw-bg-white" :label="$t('JoinPage')" to="/recruit" />
         </q-fab>
       </div>
