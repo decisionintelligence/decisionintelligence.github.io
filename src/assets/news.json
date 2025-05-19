@@ -190,5 +190,9 @@
   {
     "new_time":"2025年5月",
     "content":"Towards a General Time Series Forecasting Model with Unified Representation and Adaptive Transfer 被ICML 2025（CCF A类）录用。结合分解频率掩码的预训练任务和时序寄存器，提出了一个有效的时序基础模型框架，显著提升了时序基础模型少样本和零样本的预测能力。"
+  },
+  {
+    "new_time":"2025年5月",
+    "content":"TSFM-Bench: Comprehensive and Unified Benchmarking of Foundation Models for Time Series Forecasting 被KDD 2025（CCF A类）录用。提出了一套全面统一的时间序列预测基础模型的测评基准。"
   }
 ]
