@@ -181,7 +181,7 @@
   },
   {
     "new_time":"2025年5月",
-    "content":"Unsupervised Time Series Anomaly Prediction with Importance-based Generative Contrastive Learning 被KDD 2025（CCF A类）录用。结合Maximum Mean Discrepancy理论，提出了一种基于控制扩散过程的生成式对比学习，显著提升了时间序列异常预测预警的精度和效率。"
+    "content":"Unsupervised Time Series Anomaly Prediction with Importance-based Generative Contrastive Learning 被KDD 2025（CCF A类）录用。结合Maximum Mean Discrepancy理论，首次解决无监督时间序列异常预测问题，并提出了一种基于控制扩散过程的生成式对比学习，显著提升了精度和效率。"
   },
   {
     "new_time":"2025年5月",
