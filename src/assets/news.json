@@ -185,6 +185,10 @@
   },
   {
     "new_time":"2025年5月",
+    "content":"Unsupervised Time Series Anomaly Prediction with Importance-based Generative Contrastive Learning 被KDD 2025（CCF A类）录用。结合Maximum Mean Discrepancy理论，提出了一种基于控制扩散过程的生成式对比学习，显著提升了时间序列异常预测预警的精度和效率。"
+  },
+  {
+    "new_time":"2025年5月",
     "content":"SSD-TS: Exploring the potential of linear state space models for diffusion models in time series imputation被KDD 2025（CCF A类）录用。该研究基于状态空间模型提出了适用于扩散模型的有效骨干网络，显著提升了时间序列插补任务的精度。"
   },
   {
