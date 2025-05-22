@@ -181,6 +181,14 @@
   },
   {
     "new_time":"2025年5月",
+    "content":"TSFM-Bench: Comprehensive and Unified Benchmarking of Foundation Models for Time Series Forecasting 被KDD 2025（CCF A类）录用。提出了一套全面统一的时间序列预测基础模型的测评基准。"
+  },
+  {
+    "new_time":"2025年5月",
+    "content":"SSD-TS: Exploring the potential of linear state space models for diffusion models in time series imputation被KDD 2025（CCF A类）录用。该研究基于状态空间模型提出了适用于扩散模型的有效骨干网络，显著提升了时间序列插补任务的精度。"
+  },
+  {
+    "new_time":"2025年5月",
     "content":"K²VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for Probabilistic Time Series Forecasting 被ICML 2025（CCF A类）录用。结合库普曼理论与卡尔曼滤波，提出了一种高效的变分自编码器，显著提升了长程时间序列概率预测的精度和效率。"
   },
   {
@@ -190,9 +198,5 @@
   {
     "new_time":"2025年5月",
     "content":"Towards a General Time Series Forecasting Model with Unified Representation and Adaptive Transfer 被ICML 2025（CCF A类）录用。结合分解频率掩码的预训练任务和时序寄存器，提出了一个有效的时序基础模型框架，显著提升了时序基础模型少样本和零样本的预测能力。"
-  },
-  {
-    "new_time":"2025年5月",
-    "content":"TSFM-Bench: Comprehensive and Unified Benchmarking of Foundation Models for Time Series Forecasting 被KDD 2025（CCF A类）录用。提出了一套全面统一的时间序列预测基础模型的测评基准。"
   }
 ]
