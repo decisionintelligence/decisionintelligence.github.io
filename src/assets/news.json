@@ -181,11 +181,11 @@
   },
   {
     "new_time":"2025年5月",
-    "content":"TSFM-Bench: Comprehensive and Unified Benchmarking of Foundation Models for Time Series Forecasting 被KDD 2025（CCF A类）录用。提出了一套全面统一的时间序列预测基础模型的测评基准。"
+    "content":"Unsupervised Time Series Anomaly Prediction with Importance-based Generative Contrastive Learning 被KDD 2025（CCF A类）录用。结合Maximum Mean Discrepancy理论，提出了一种基于控制扩散过程的生成式对比学习，显著提升了时间序列异常预测预警的精度和效率。"
   },
   {
     "new_time":"2025年5月",
-    "content":"Unsupervised Time Series Anomaly Prediction with Importance-based Generative Contrastive Learning 被KDD 2025（CCF A类）录用。结合Maximum Mean Discrepancy理论，提出了一种基于控制扩散过程的生成式对比学习，显著提升了时间序列异常预测预警的精度和效率。"
+    "content":"TSFM-Bench: Comprehensive and Unified Benchmarking of Foundation Models for Time Series Forecasting 被KDD 2025（CCF A类）录用。提出了一套全面统一的时间序列预测基础模型的测评基准。"
   },
   {
     "new_time":"2025年5月",
