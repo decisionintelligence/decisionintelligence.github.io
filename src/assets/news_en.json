@@ -181,6 +181,14 @@
   },
   {
     "new_time":"May 2025",
+    "content":"[KDD 2025] TSFM-Bench: Comprehensive and Unified Benchmarking of Foundation Models for Time Series Forecasting."
+  },
+  {
+    "new_time":"May 2025",
+    "content":"[KDD 2025] SSD-TS: Exploring the potential of linear state space models for diffusion models in time series imputation."
+  },
+  {
+    "new_time":"May 2025",
     "content":"[ICML 2025] K²VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for Probabilistic Time Series Forecasting."
   },
   {
@@ -190,9 +198,5 @@
   {
     "new_time":"May 2025",
     "content":"[ICML 2025] Towards a General Time Series Forecasting Model with Unified Representation and Adaptive Transfer."
-  },
-  {
-    "new_time":"May 2025",
-    "content":"[KDD 2025] TSFM-Bench: Comprehensive and Unified Benchmarking of Foundation Models for Time Series Forecasting."
   }
 ]
