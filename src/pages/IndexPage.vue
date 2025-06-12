@@ -89,7 +89,7 @@ const { t, locale } = useI18n();
 let $q = useQuasar();
 let screen = ref($q.screen);
 let research = reactive([
-  { name: t("l1"), url: "papers#1", destination: "/paper/0", id: 0 },
+  { name: "l1", url: "papers#1", destination: "/paper/0", id: 0 },
   { name: "l4", url: "papers#2", destination: "/paper/1", id: 3 },
   { name: "l7", url: "papers#3", destination: "/paper/2", id: 6 },
   { name: "l2", url: "papers#4", destination: "/paper/3", id: 1 },
