@@ -55,7 +55,8 @@
           </p>
           <ol
             class="tw-list-disc md:tw-list-none md:tw-grid md:tw-grid-cols-5 md:tw-justify-center md:tw-w-full md:tw-m-auto">
-            <li class="tw-m-4 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(i, idx) in research" :key="idx">
+            <!-- 箭头版本 -->
+            <!-- <li class="tw-m-4 hover:tw-bg-slate-100 hover:tw-cursor-pointer" v-for="(i, idx) in research" :key="idx">
               <a :href="i.destination">
                 <div class="row">
                   <div class="col-6">
@@ -64,6 +65,13 @@
                   <div class="col-6 tw-m-0">
                     <q-icon :name="outlinedArrowRightAlt" color="primary" size="md" class="tw-m-2 arrow my-element" />
                   </div>
+                </div>
+              </a>
+            </li> -->
+            <li class="topic-card" v-for="(i, idx) in research" :key="idx">
+              <a :href="i.destination">
+                <div class="row">
+                  <div class="tw-pt-3">{{ $t(i.name) }}</div>
                 </div>
               </a>
             </li>
@@ -99,6 +107,10 @@ let research = reactive([
   { name: "l6", url: "papers#8", destination: "/paper/7", id: 5 },
   { name: "l9", url: "papers#9", destination: "/paper/8", id: 8 },
   { name: "l10", url: "papers#10", destination: "/paper/9", id: 9 },
+  { name: "l11", url: "papers#11", destination: "/paper/10", id: 10 },
+  { name: "l12", url: "papers#12", destination: "/paper/11", id: 11 },
+  { name: "l13", url: "papers#13", destination: "/paper/12", id: 12 },
+  { name: "l14", url: "papers#14", destination: "/paper/13", id: 13 },
 ]);
 // sort research by id
 research.sort((a, b) => a.id - b.id);
@@ -223,5 +235,26 @@ strong {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.topic-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.topic-card {
+  padding: 16px 24px;
+  font-weight: 500;
+  color: #3F51B5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+}
+
+.topic-card:hover {
+  background-color: #e3f2fd;
+  transform: scale(1.05);
+  box-shadow: 0 4px 14px rgba(25, 118, 210, 0.3);
 }
 </style>

@@ -18,6 +18,10 @@ export default {
   l8: "Model Compression",
   l9: "Intelligent Decision Making",
   l10: "Transfer Learning and Model Generalization",
+  l11: "Time Series Large Models",
+  l12: "Large Model Benchmark",
+  l13: "Multi-Agent",
+  l14: "Embodied Intelligence",
 
   ro: "Research Outcomes",
   roc: "Our research is applied in a variety of application domains, such as Intelligent Transportation, Digital Energy, AIOps, Smart Ocean, AI4DB, Predictive Maintenance, Intelligent emergency response, materials design, and drug discovery.",
@@ -56,6 +60,14 @@ export default {
   l10_tag:
     "",
   l10_desc: "Transfer Learning and Model Generalization",
+  l11_tag: "",
+  l11_desc: "",
+  l12_tag: "",
+  l12_desc: "",
+  l13_tag: "",
+  l13_desc: "",
+  l14_tag: "",
+  l14_desc: "",
 
   ls1_1: "1.1 Time Series Forecasting",
   ls1_2: "1.2 Time Series Anomaly Detection",
