@@ -97,19 +97,19 @@ const { t, locale } = useI18n();
 let $q = useQuasar();
 let screen = ref($q.screen);
 let research = reactive([
-  { name: "l1", url: "papers#1", destination: "/paper/0", id: 0 },
-  { name: "l4", url: "papers#2", destination: "/paper/1", id: 3 },
-  { name: "l7", url: "papers#3", destination: "/paper/2", id: 6 },
-  { name: "l2", url: "papers#4", destination: "/paper/3", id: 1 },
-  { name: "l5", url: "papers#5", destination: "/paper/4", id: 4 },
-  { name: "l8", url: "papers#6", destination: "/paper/5", id: 7 },
-  { name: "l3", url: "papers#7", destination: "/paper/6", id: 2 },
-  { name: "l6", url: "papers#8", destination: "/paper/7", id: 5 },
-  { name: "l9", url: "papers#9", destination: "/paper/8", id: 8 },
-  { name: "l10", url: "papers#10", destination: "/paper/9", id: 9 },
-  { name: "l11", url: "papers#11", destination: "/paper/10", id: 10 },
-  { name: "l12", url: "papers#12", destination: "/paper/11", id: 11 },
-  { name: "l13", url: "papers#13", destination: "/paper/12", id: 12 },
+  { name: "l1", url: "papers#1", destination: "/paper/0", id: 1 },
+  { name: "l4", url: "papers#2", destination: "/paper/1", id: 2 },
+  { name: "l7", url: "papers#3", destination: "/paper/2", id: 5 },
+  { name: "l2", url: "papers#4", destination: "/paper/3", id: 6 },
+  { name: "l5", url: "papers#5", destination: "/paper/4", id: 8 },
+  { name: "l8", url: "papers#6", destination: "/paper/5", id: 10 },
+  { name: "l3", url: "papers#7", destination: "/paper/6", id: 7 },
+  { name: "l6", url: "papers#8", destination: "/paper/7", id: 9 },
+  { name: "l9", url: "papers#9", destination: "/paper/8", id: 11 },
+  { name: "l10", url: "papers#10", destination: "/paper/9", id: 12 },
+  { name: "l11", url: "papers#11", destination: "/paper/10", id: 0 },
+  { name: "l12", url: "papers#12", destination: "/paper/11", id: 3 },
+  { name: "l13", url: "papers#13", destination: "/paper/12", id: 4 },
   { name: "l14", url: "papers#14", destination: "/paper/13", id: 13 },
 ]);
 // sort research by id
