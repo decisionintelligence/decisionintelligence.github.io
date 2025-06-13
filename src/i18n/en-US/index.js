@@ -65,9 +65,11 @@ export default {
   l12_tag: "",
   l12_desc: "",
   l13_tag: "",
-  l13_desc: "",
+  l13_desc: 
+    "Multi-agent systems, by simulating complex social interactions and autonomous decision-making, can effectively analyze collective behavior and system dynamics. Our research focuses on leveraging multi-agent simulation technologies to empower areas such as education policy evaluation, traffic scheduling, and resource allocation. Specifically, the research encompasses the construction of social simulators (e.g., forecasting the macro-level impact of education policies), collaborative decision-making algorithms (e.g., ride-hailing supply-demand matching and route optimization), and multi-agent reinforcement learning (e.g., dynamic scheduling of water reservoir usage), drawing on methodologies from game theory, distributed optimization, reinforcement learning, and mechanism design. The research outcomes will be applied in domestic education policy simulation platforms and smart city projects. For example: 1) The developed education policy simulator uses multi-agent modeling to quantify the impact of resource allocation on regional education equity, providing decision support for the National Institute of Education Policy Research; 2) The designed collaborative ride-hailing scheduling algorithm will be implemented in the dispatching system of one of China's top ten ride-hailing platforms; 3) The proposed multi-agent water resource allocation framework will be applied to address saline tide challenges at the Yangtze River water source in Shanghai.",
   l14_tag: "",
-  l14_desc: "",
+  l14_desc: 
+    "Embodied intelligence research focuses on developing algorithms for embodied intelligent devices such as quadruped robots and drones. By integrating reinforcement learning, motion control, and multi-agent collaboration technologies, the goal is to build efficient and robust ground-air integrated intelligent systems. Key research areas include: dynamic environment perception (e.g., adaptation to complex terrains and real-time obstacle avoidance), autonomous motion control (e.g., high-dynamic gait optimization for quadruped robots and precise hovering for drones), and cross-platform collaboration (e.g., joint search and task allocation between drones and ground robots). Core technologies involve bio-inspired motion modeling, multimodal sensor fusion, distributed reinforcement learning, and real-time path planning.",
 
   ls1_1: "Time Series Forecasting",
   ls1_2: "Time Series Anomaly Detection",
