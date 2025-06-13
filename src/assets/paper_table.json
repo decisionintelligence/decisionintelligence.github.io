@@ -574,7 +574,20 @@
                     "tag": "l11_tag",
                     "desc": "l11_desc",
                     "content": [
-                        
+                        {
+                            "content": [
+                                {
+                                    "title": "",
+                                    "papers": [
+                                        "Yihang Wang, Yuying Qiu, Peng Chen, Kai Zhao, Yang Shu, Zhongwen Rao, Lujia Pan, Bin Yang, Chenjuan Guo. Towards a General Time Series Forecasting Model with Unified Representation and Adaptive Transfer. ICML 2025.",
+                                        "Yihang Wang, Yuying Qiu, Peng Chen, Yang Shu, Zhongwen Rao, Lujia Pan, Bin Yang, Chenjuan Guo. LightGTS: A Lightweight General Time Series Forecasting Model. ICML 2025.",
+                                        "Qichao Shentu, Beibu Li, Kai Zhao, Yang Shu, Zhongwen Rao, Lujia Pan, Bin Yang, Chenjuan Guo. Towards a General Time Series Anomaly Detector with Adaptive Bottlenecks and Dual Adversarial Decoders. ICLR 2025.",
+                                        "Yuxuan Chen, Shanshan Huang, Yunyao Cheng, Peng Chen, Zhongwen Rao, Yang Shu, Bin Yang, Lujia Pan, Chenjuan Guo. AimTS: Augmented Series and Image Contrastive Learning for Time Series Classification. ICDE 2025."
+                                    ]
+                                }
+                            ],
+                            "subsection": ""
+                        }
                     ],
                     "section": "l11",
                     "id":"11"
@@ -583,7 +596,17 @@
                     "tag": "l12_tag",
                     "desc": "l12_desc",
                     "content": [
-                        
+                        {
+                            "content": [
+                                {
+                                    "title": "",
+                                    "papers": [
+                                        "Zhe Li, Xiangfei Qiu, Peng Chen, Yihang Wang, Hanyin Cheng, Yang Shu, Jilin Hu, Chenjuan Guo, Aoying Zhou, Christian S. Jensen, Bin Yang. FM4TS-Bench: A Comprehensive and Unified Benchmark of Foundation Models for Time Series Forecasting. KDD 2025."
+                                    ]
+                                }
+                            ],
+                            "subsection": ""
+                        }
                     ],
                     "section": "l12",
                     "id":"12"
