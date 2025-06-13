@@ -4,7 +4,8 @@
     <div v-if="data" class="md:tw-w-2/3 md:tw-m-auto">
       <div>
         <div class="tw-text-2xl tw-mt-10 tw-leading-10 tw-p-4 tw-my-4 tw-bg-gray-50 tw-border-l-4 tw-border-gray-300">
-          <span>{{ data.id }}. </span> {{ $t(data.section) }}
+          <!-- <span>{{ data.id }}. </span>  -->
+          {{ $t(data.section) }}
         </div>
 
         <p class="tw-m-5">
