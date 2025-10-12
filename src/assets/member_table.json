@@ -61,7 +61,7 @@
     "pic": "https://xwyzsn.site/picbed/syr.jpg",
     "description": "2022级硕士生",
     "tag": "AI for DB",
-    "type": "master",
+    "type": "alumni2025",
     "username": "syr",
     "link": null
   },
@@ -72,7 +72,7 @@
     "pic": "https://xwyzsn.site/picbed/why.jpg",
     "description": "2022级硕士生",
     "tag": "Incremental Leaning,Outlier Dectection",
-    "type": "master",
+    "type": "alumni2025",
     "username": "why",
     "link": null
   },
@@ -94,7 +94,7 @@
     "pic": "https://xwyzsn.site/picbed/wh.jpg",
     "description": "2022级硕士生",
     "tag": "in-database machine learning",
-    "type": "master",
+    "type": "alumni2025",
     "username": "wh",
     "link": null
   },
@@ -105,7 +105,7 @@
     "pic": "https://xwyzsn.site/picbed/zba_2.jpg",
     "description": "2022级硕士生",
     "tag": "AutoML,time series",
-    "type": "master",
+    "type": "alumni2025",
     "username": "zba",
     "link": null
   },
@@ -116,7 +116,7 @@
     "pic": "https://xwyzsn.site/picbed/zzh.jpg",
     "description": "2022级硕士生",
     "tag": "model compression",
-    "type": "master",
+    "type": "alumni2025",
     "username": "zzh",
     "link": null
   },
@@ -248,7 +248,7 @@
     "pic": "https://xwyzsn.site/picbed/cyx.jpg",
     "description": "2023级硕士生",
     "tag": "时序分类和迁移学习",
-    "type": "master",
+    "type": "master2023",
     "username": "cyx",
     "link": null
   },
@@ -259,7 +259,7 @@
     "pic": "https://xwyzsn.site/picbed/fyw.jpg",
     "description": "2023级硕士生",
     "tag": "时间序列",
-    "type": "master",
+    "type": "master2023",
     "username": "fyw",
     "link": null
   },
@@ -292,7 +292,7 @@
     "pic": "https://xwyzsn.site/picbed/hss.jpg",
     "description": "2023级硕士生",
     "tag": "时序分类",
-    "type": "master",
+    "type": "master2023",
     "username": "hss",
     "link": null
   },
@@ -303,7 +303,7 @@
     "pic": "https://xwyzsn.site/picbed/lbb.jpg",
     "description": "2023级硕士生",
     "tag": "时间序列异常检测",
-    "type": "master",
+    "type": "master2023",
     "username": "lbb",
     "link": null
   },
@@ -314,7 +314,7 @@
     "pic": "https://xwyzsn.site/picbed/lxw.jpg",
     "description": "2023级硕士生",
     "tag": "时间序列分析,AI4DB",
-    "type": "master",
+    "type": "master2023",
     "username": "lxw",
     "link": null
   },
@@ -336,7 +336,7 @@
     "pic": "https://xwyzsn.site/picbed/mjy.jpg",
     "description": "2023级硕士生",
     "tag": "Time Series,AI for science,Informed ML",
-    "type": "master",
+    "type": "master2023",
     "username": "mjy",
     "link": null
   },
@@ -347,7 +347,7 @@
     "pic": "https://xwyzsn.site/picbed/qxf.jpg",
     "description": "2023级硕士生",
     "tag": "Time Series Analysis & Benchmark",
-    "type": "master",
+    "type": "doctor",
     "username": "qxf",
     "link": "https://qiu69.github.io/"
   },
@@ -358,7 +358,7 @@
     "pic": "https://xwyzsn.site/picbed/qyy.jpg",
     "description": "2023级硕士生",
     "tag": "time series forecasting",
-    "type": "master",
+    "type": "master2023",
     "username": "qyy",
     "link": null
   },
@@ -369,7 +369,7 @@
     "pic": "https://xwyzsn.site/picbed/stqc.jpg",
     "description": "2023级硕士生",
     "tag": "时间序列",
-    "type": "master",
+    "type": "master2023",
     "username": "stqc",
     "link": null
   },
@@ -380,7 +380,7 @@
     "pic": "https://xwyzsn.site/picbed/whc.jpg",
     "description": "2023级硕士生",
     "tag": "时空数据",
-    "type": "master",
+    "type": "master2023",
     "username": "whc",
     "link": null
   },
@@ -391,7 +391,7 @@
     "pic": "https://xwyzsn.site/picbed/wyh.jpg",
     "description": "2023级硕士生",
     "tag": "Time series foundation model,Decision Intelligence",
-    "type": "master",
+    "type": "master2023",
     "username": "wyh",
     "link": null
   },
@@ -402,7 +402,7 @@
     "pic": "https://xwyzsn.site/picbed/wyf.jpg",
     "description": "2023级硕士生",
     "tag": "时空数据管理方向",
-    "type": "master",
+    "type": "master2023",
     "username": "wyf",
     "link": null
   },
@@ -446,7 +446,7 @@
     "pic": "https://xwyzsn.site/picbed/zxy.jpg",
     "description": "2023级硕士生",
     "tag": "AutoML,time series forecasting",
-    "type": "master",
+    "type": "master2023",
     "username": "zxy",
     "link": null
   },
@@ -457,7 +457,7 @@
     "pic": "https://xwyzsn.site/picbed/zpc.jpg",
     "description": "2023级硕士生",
     "tag": "时间序列异常检测,模型选择",
-    "type": "master",
+    "type": "master2023",
     "username": "zpc",
     "link": null
   },
@@ -468,7 +468,7 @@
     "pic": "https://xwyzsn.site/picbed/zqs.jpg",
     "description": "2023级硕士生",
     "tag": "AI for science",
-    "type": "master",
+    "type": "master2023",
     "username": "zqs",
     "link": null
   },
@@ -490,7 +490,7 @@
     "pic": "https://xwyzsn.site/picbed/金建新.jpg",
     "description": "2024级硕士生",
     "tag": "异常检测",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -501,7 +501,7 @@
     "pic": "https://xwyzsn.site/picbed/雷智.jpg",
     "description": "2024级硕士生",
     "tag": "时序预测",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -512,7 +512,7 @@
     "pic": "https://xwyzsn.site/picbed/李哲.png",
     "description": "2024级硕士生",
     "tag": "时空数据",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": "https://lizhez.github.io/"
   },
@@ -523,7 +523,7 @@
     "pic": "https://xwyzsn.site/picbed/李正宇.jpg",
     "description": "2024级硕士生",
     "tag": "时空预测",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -534,7 +534,7 @@
     "pic": "https://xwyzsn.site/picbed/裘王辉.png",
     "description": "2024级硕士生",
     "tag": "Time Series Data Analysis",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -545,7 +545,7 @@
     "pic": "https://xwyzsn.site/picbed/沈王梦.jpg",
     "description": "2024级硕士生",
     "tag": "时空数据",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -556,7 +556,7 @@
     "pic": "https://xwyzsn.site/picbed/汪思远.jpg",
     "description": "2024级硕士生",
     "tag": "时间序列",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -567,7 +567,7 @@
     "pic": "https://xwyzsn.site/picbed/徐鼎力.jpeg",
     "description": "2024级硕士生",
     "tag": "时空数据",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -578,7 +578,7 @@
     "pic": "https://xwyzsn.site/picbed/严思雨.jpg",
     "description": "2024级硕士生",
     "tag": "时间序列",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -589,7 +589,7 @@
     "pic": "https://xwyzsn.site/picbed/杨柳.jpg",
     "description": "2024级硕士生",
     "tag": "时间序列",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -600,7 +600,7 @@
     "pic": "https://xwyzsn.site/picbed/张旭.jpg",
     "description": "2024级硕士生",
     "tag": "强化学习",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -611,7 +611,7 @@
     "pic": "https://xwyzsn.site/picbed/郑兴泽.jpg",
     "description": "2024级硕士生",
     "tag": "时间序列",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -633,7 +633,7 @@
     "pic": "https://xwyzsn.site/picbed/钱睿澄.jpg",
     "description": "2024级硕士生",
     "tag": "LLM-Based Agent",
-    "type": "master",
+    "type": "master2024",
     "username": "zqs",
     "link": null
   },
@@ -644,7 +644,7 @@
     "pic": "https://xwyzsn.site/picbed/屠恒彦.jpeg",
     "description": "2025级硕士生",
     "tag": "时间序列分析",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -655,7 +655,7 @@
     "pic": "https://xwyzsn.site/picbed/郑一钒.png",
     "description": "2025级硕士生",
     "tag": "时间序列预测",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -666,7 +666,7 @@
     "pic": "https://xwyzsn.site/picbed/鲍啸天.jpg",
     "description": "2025级硕士生",
     "tag": "大语言模型",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -677,7 +677,7 @@
     "pic": "https://xwyzsn.site/picbed/陈亦楠.jpeg",
     "description": "2025级硕士生",
     "tag": "时空数据分析",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -688,7 +688,7 @@
     "pic": "https://xwyzsn.site/picbed/张睿桐.jpg",
     "description": "2025级硕士生",
     "tag": "非规则时间序列分析",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -699,7 +699,7 @@
     "pic": "https://xwyzsn.site/picbed/周孙睿.jpg",
     "description": "2025级硕士生",
     "tag": "智能体",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -710,7 +710,7 @@
     "pic": "https://xwyzsn.site/picbed/卢雨凝.jpg",
     "description": "2025级硕士生",
     "tag": "时间序列",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -721,7 +721,7 @@
     "pic": "https://xwyzsn.site/picbed/郝以婷.jpg",
     "description": "2025级硕士生",
     "tag": "时间序列异常检测",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -732,7 +732,7 @@
     "pic": "https://xwyzsn.site/picbed/丁逸飞.jpg",
     "description": "2025级硕士生",
     "tag": "时空预测",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -743,7 +743,7 @@
     "pic": "https://xwyzsn.site/picbed/汪琳丰.jpeg",
     "description": "2025级硕士生",
     "tag": "不规则时间序列，基础模型",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -765,7 +765,7 @@
     "pic": "https://xwyzsn.site/picbed/唐益.jpeg",
     "description": "2025级硕士生",
     "tag": "时序迁移",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -776,7 +776,7 @@
     "pic": "https://xwyzsn.site/picbed/晏康佳.jpg",
     "description": "2025级硕士生",
     "tag": "时间序列预测",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -787,7 +787,7 @@
     "pic": "https://xwyzsn.site/picbed/陆骏凯.jpg",
     "description": "2025级硕士生",
     "tag": "大语言模型, 智能体",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -798,7 +798,7 @@
     "pic": "https://xwyzsn.site/picbed/祝予晗.jpg",
     "description": "2025级硕士生",
     "tag": "时序预测",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   },
@@ -809,7 +809,7 @@
     "pic": "https://xwyzsn.site/picbed/郭东旭.jpg",
     "description": "2025级硕士生",
     "tag": "大模型智能体，多智能体系统",
-    "type": "master",
+    "type": "master2025",
     "username": "zqs",
     "link": null
   }
