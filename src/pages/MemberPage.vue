@@ -78,7 +78,12 @@
     <div class="tw-mt-5">
       <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
         <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
-          {{ $t("mp3") }} 2023
+          {{ $t("mp3") }}
+        </div>
+      </transition>
+      <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-2xl my-element" style="color: #4e83fd">
+          {{ $t("mp4") }}
         </div>
       </transition>
       <div v-if="master2023"
@@ -110,11 +115,11 @@
       </div>
     </div>
 
-    <q-separator class="tw-m-10" />
+    <!-- <q-separator class="tw-m-10" /> -->
     <div class="tw-mt-5">
       <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
-        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
-          {{ $t("mp3") }} 2024
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-2xl my-element" style="color: #4e83fd">
+          {{ $t("mp5") }}
         </div>
       </transition>
       <div v-if="master2024"
@@ -146,11 +151,11 @@
       </div>
     </div>
 
-    <q-separator class="tw-m-10" />
+    <!-- <q-separator class="tw-m-10" /> -->
     <div class="tw-mt-5">
       <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
-        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
-          {{ $t("mp3") }} 2025
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-2xl my-element" style="color: #4e83fd">
+          {{ $t("mp6") }}
         </div>
       </transition>
       <div v-if="master2025"

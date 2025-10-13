@@ -77,17 +77,6 @@
     "link": null
   },
   {
-    "id": 8,
-    "name": "田锦东",
-    "password": "tjd12345",
-    "pic": "https://xwyzsn.site/picbed/tjd.jpg",
-    "description": "2022级博士生",
-    "tag": "Dynamics and Decision-Making",
-    "type": "doctor",
-    "username": "tjd",
-    "link": "https://philosober.github.io/homepage/"
-  },
-  {
     "id": 9,
     "name": "王赫",
     "password": "wh12345",
@@ -119,17 +108,6 @@
     "type": "alumni2025",
     "username": "zzh",
     "link": null
-  },
-  {
-    "id": 12,
-    "name": "陈鹏",
-    "password": "cp12345",
-    "pic": "https://xwyzsn.site/picbed/cp.jpg",
-    "description": "2022级博士生",
-    "tag": "time series forecasting ",
-    "type": "doctor",
-    "username": "cp",
-    "link": "https://pengchen12.github.io/"
   },
   {
     "id": 13,
@@ -286,6 +264,17 @@
     "link": null
   },
   {
+    "id": 40,
+    "name": "徐榕荟",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/xrh.jpg",
+    "description": "2023级博士生",
+    "tag": "Spatial-temporal Data Analysis",
+    "type": "doctor",
+    "username": "xrh",
+    "link": "https://xrhics.github.io/homepage/"
+  },
+  {
     "id": 25,
     "name": "黄姗姗",
     "password": "cp12345",
@@ -327,6 +316,39 @@
     "tag": "时间序列分析,AI4DB",
     "type": "doctor",
     "username": "lsc",
+    "link": null
+  },
+  {
+    "id": 8,
+    "name": "田锦东",
+    "password": "tjd12345",
+    "pic": "https://xwyzsn.site/picbed/tjd.jpg",
+    "description": "2022级博士生",
+    "tag": "Dynamics and Decision-Making",
+    "type": "doctor",
+    "username": "tjd",
+    "link": "https://philosober.github.io/homepage/"
+  },
+  {
+    "id": 12,
+    "name": "陈鹏",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/cp.jpg",
+    "description": "2022级博士生",
+    "tag": "time series forecasting ",
+    "type": "doctor",
+    "username": "cp",
+    "link": "https://pengchen12.github.io/"
+  },
+  {
+    "id": 57,
+    "name": "朱林威",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/朱林威.jpg",
+    "description": "2024级博士生",
+    "tag": "Large Multimodal Models",
+    "type": "doctor",
+    "username": "zqs",
     "link": null
   },
   {
@@ -416,17 +438,6 @@
     "type": "doctor",
     "username": "wxj",
     "link": "https://ccloud0525.github.io/"
-  },
-  {
-    "id": 40,
-    "name": "徐榕荟",
-    "password": "cp12345",
-    "pic": "https://xwyzsn.site/picbed/xrh.jpg",
-    "description": "2023级博士生",
-    "tag": "Spatial-temporal Data Analysis",
-    "type": "doctor",
-    "username": "xrh",
-    "link": "https://xrhics.github.io/homepage/"
   },
   {
     "id": 41,
@@ -612,17 +623,6 @@
     "description": "2024级硕士生",
     "tag": "时间序列",
     "type": "master2024",
-    "username": "zqs",
-    "link": null
-  },
-  {
-    "id": 57,
-    "name": "朱林威",
-    "password": "cp12345",
-    "pic": "https://xwyzsn.site/picbed/朱林威.jpg",
-    "description": "2024级博士生",
-    "tag": "Large Multimodal Models",
-    "type": "doctor",
     "username": "zqs",
     "link": null
   },
