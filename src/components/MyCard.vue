@@ -63,8 +63,8 @@ export default {
   setup(props) {
     // let picUrl = props.pic.split("/").at(-1);
     // let picUrl = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img_low/" + props.pic.split("/").at(-1);
-    let lowResUrl = "https://github.com/decisionintelligence/decisionintelligence.github.io/blob/code/src/assets/img/low_" + props.pic.split("/").at(-1);
-    let highResUrl = 'https://github.com/decisionintelligence/decisionintelligence.github.io/blob/code/src/assets/img/' + props.pic.split("/").at(-1);
+    let lowResUrl = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img/low_" + props.pic.split("/").at(-1);
+    let highResUrl = 'https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img/' + props.pic.split("/").at(-1);
     const picUrl = ref(lowResUrl)
     // console.log(picUrl)
     function getAssets(url) {
