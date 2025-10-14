@@ -43,6 +43,8 @@
 </template>
 
 <script>
+import { ref } from 'vue'
+
 export default {
   // name: 'MyCard',
   props: {
@@ -60,20 +62,23 @@ export default {
 
   setup(props) {
     // let picUrl = props.pic.split("/").at(-1);
-    let picUrl = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img_low/" + props.pic.split("/").at(-1);
+    // let picUrl = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img_low/" + props.pic.split("/").at(-1);
     let lowResUrl = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img_low/" + props.pic.split("/").at(-1);
     let highResUrl = 'https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img/' + props.pic.split("/").at(-1);
-    console.log(picUrl)
+    const picUrl = ref(lowResUrl)
+    // console.log(picUrl)
     function getAssets(url) {
       return new URL(url, import.meta.url).href;
     }
     function onLoad() {
       // 如果当前加载的是 lowRes，就加载 highRes
-      if (picUrl === lowResUrl) {
+      console.log('高清图加载')
+      if (picUrl.value === lowResUrl) {
+        console.log('高清图加载成功')
         const img = new Image()
         img.src = highResUrl
         img.onload = () => {
-          picUrl = highResUrl
+          picUrl.value = highResUrl
         }
       }
     }
@@ -85,6 +90,7 @@ export default {
       goTo,
       picUrl,
       getAssets,
+      onLoad,
     };
   },
 };
