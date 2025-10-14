@@ -5,7 +5,7 @@
     <!--      <div class=" tw-grid tw-grid-rows-5">-->
     <div style="min-height: 220px" v-if="mode === 'horizontal'" @click="goTo(link)"
       class="tw-rounded-lg tw-border tw-border-gray-200 tw-h-full hover:tw-cursor-pointer">
-      <img :src="require('../assets/' + picUrl)" @load="onLoad" style="width: 150px; height: 200px"
+      <img :src="picUrl" @load="onLoad" style="width: 150px; height: 200px"
         class="tw-float-left tw-mr-4 tw-object-contain tw-mt-2" />
       <div class="row tw-mt-2 tw-mb-2 tw-text-xl tw-font-bold tw-tracking-tight tw-text-gray-900">
         {{ name }}
@@ -23,12 +23,10 @@
       class="tw-bg-white tw-m-auto  tw-h-full  tw-border tw-border-gray-200 tw-text-center" style="max-width: 230px;"
       @click="link ? goTo(link) : null">
       <img style="width:160px;height: 160px" v-if="type !== 'alumni'"
-        class="tw-object-contain tw-rounded-l-lg tw-m-auto tw-pt-1" :src="require('../assets/' + picUrl)"
-        @load="onLoad">
+        class="tw-object-contain tw-rounded-l-lg tw-m-auto tw-pt-1" :src="picUrl" @load="onLoad">
       <div>
+
         <!-- class="tw-object-contain tw-rounded-l-lg tw-m-auto tw-pt-1" :src="require('../assets/img/' + picUrl)"> -->
-
-
         <div class="tw-mt-1" :class="link ? 'tw-text-blue-500 hover:tw-cursor-pointer' : 'tw-text-gray-900'">
           {{ name }}
         </div>
@@ -65,12 +63,10 @@ export default {
   setup(props) {
     // let picUrl = props.pic.split("/").at(-1);
     // let picUrl = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img_low/" + props.pic.split("/").at(-1);
-    let lowResUrl = "img_low_new/" + props.pic.split("/").at(-1);
-    let highResUrl = "img/" + props.pic.split("/").at(-1);
-    // let lowResUrl = new URL('../assets/img_low_new/' + props.pic.split("/").at(-1), import.meta.url).href;
-    // let highResUrl = new URL('../assets/img/' + props.pic.split("/").at(-1), import.meta.url).href;
+    let lowResUrl = "https://github.com/decisionintelligence/decisionintelligence.github.io/blob/code/src/assets/img/low_" + props.pic.split("/").at(-1);
+    let highResUrl = 'https://github.com/decisionintelligence/decisionintelligence.github.io/blob/code/src/assets/img/' + props.pic.split("/").at(-1);
     const picUrl = ref(lowResUrl)
-    console.log(picUrl.value)
+    // console.log(picUrl)
     function getAssets(url) {
       return new URL(url, import.meta.url).href;
     }
@@ -89,11 +85,12 @@ export default {
     const goTo = (link) => {
       window.open(link, "_blank");
     };
+
     return {
       goTo,
       picUrl,
       getAssets,
-      // onLoad,
+      onLoad,
     };
   },
 };
