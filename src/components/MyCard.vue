@@ -5,7 +5,7 @@
     <!--      <div class=" tw-grid tw-grid-rows-5">-->
     <div style="min-height: 220px" v-if="mode === 'horizontal'" @click="goTo(link)"
       class="tw-rounded-lg tw-border tw-border-gray-200 tw-h-full hover:tw-cursor-pointer">
-      <img :src="picUrl" @load="onLoad" style="width: 150px; height: 200px"
+      <img :src="picUrl" :alt="name" @load="onLoad" @error="onError" style="width: 150px; height: 200px"
         class="tw-float-left tw-mr-4 tw-object-contain tw-mt-2" />
       <div class="row tw-mt-2 tw-mb-2 tw-text-xl tw-font-bold tw-tracking-tight tw-text-gray-900">
         {{ name }}
@@ -23,10 +23,9 @@
       class="tw-bg-white tw-m-auto  tw-h-full  tw-border tw-border-gray-200 tw-text-center" style="max-width: 230px;"
       @click="link ? goTo(link) : null">
       <img style="width:160px;height: 160px" v-if="type !== 'alumni'"
-        class="tw-object-contain tw-rounded-l-lg tw-m-auto tw-pt-1" :src="picUrl" @load="onLoad">
+        class="tw-object-contain tw-rounded-l-lg tw-m-auto tw-pt-1" :src="picUrl" :alt="name" @load="onLoad" @error="onError">
       <div>
 
-        <!-- class="tw-object-contain tw-rounded-l-lg tw-m-auto tw-pt-1" :src="require('../assets/img/' + picUrl)"> -->
         <div class="tw-mt-1" :class="link ? 'tw-text-blue-500 hover:tw-cursor-pointer' : 'tw-text-gray-900'">
           {{ name }}
         </div>
@@ -43,7 +42,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 
 export default {
   // name: 'MyCard',
@@ -61,25 +60,38 @@ export default {
   },
 
   setup(props) {
-    // let picUrl = props.pic.split("/").at(-1);
-    // let picUrl = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img_low/" + props.pic.split("/").at(-1);
-    let lowResUrl = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img/low_" + props.pic.split("/").at(-1);
-    let highResUrl = 'https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img/' + props.pic.split("/").at(-1);
-    const picUrl = ref(lowResUrl)
-    // console.log(picUrl)
-    function getAssets(url) {
-      return new URL(url, import.meta.url).href;
-    }
+    const filename = computed(() => props.pic.split("/").at(-1));
+    const localPicUrl = computed(() => require("../assets/img/" + filename.value));
+    const cdnBase = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img/";
+    const lowResUrl = computed(() => cdnBase + "low_" + filename.value);
+    const highResUrl = computed(() => cdnBase + filename.value);
+    const picUrl = ref(lowResUrl.value);
+
+    watch(lowResUrl, (url) => {
+      picUrl.value = url;
+    });
+
     function onLoad() {
-      // 如果当前加载的是 lowRes，就加载 highRes
-      console.log('高清图加载')
-      if (picUrl.value === lowResUrl) {
-        console.log('高清图加载成功')
-        const img = new Image()
-        img.src = highResUrl
+      if (picUrl.value === lowResUrl.value && lowResUrl.value !== highResUrl.value) {
+        const targetUrl = highResUrl.value;
+        const img = new Image();
         img.onload = () => {
-          picUrl.value = highResUrl
-        }
+          if (highResUrl.value === targetUrl) {
+            picUrl.value = targetUrl;
+          }
+        };
+        img.onerror = () => {
+          if (highResUrl.value === targetUrl && picUrl.value === lowResUrl.value) {
+            onError();
+          }
+        };
+        img.src = targetUrl;
+      }
+    }
+
+    function onError() {
+      if (picUrl.value !== localPicUrl.value) {
+        picUrl.value = localPicUrl.value;
       }
     }
     const goTo = (link) => {
@@ -89,8 +101,8 @@ export default {
     return {
       goTo,
       picUrl,
-      getAssets,
       onLoad,
+      onError,
     };
   },
 };
