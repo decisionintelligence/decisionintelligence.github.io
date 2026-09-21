@@ -65,9 +65,10 @@ export default {
     const cdnBase = "https://fastly.jsdelivr.net/gh/decisionintelligence/decisionintelligence.github.io@code/src/assets/img/";
     const lowResUrl = computed(() => cdnBase + "low_" + filename.value);
     const highResUrl = computed(() => cdnBase + filename.value);
-    const picUrl = ref(lowResUrl.value);
+    const initialPicUrl = computed(() => props.pic.includes("/") ? lowResUrl.value : localPicUrl.value);
+    const picUrl = ref(initialPicUrl.value);
 
-    watch(lowResUrl, (url) => {
+    watch(initialPicUrl, (url) => {
       picUrl.value = url;
     });
 

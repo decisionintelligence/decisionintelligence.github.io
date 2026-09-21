@@ -822,5 +822,225 @@
     "type": "master2025",
     "username": "zqs",
     "link": null
+  },
+  {
+    "id": 76,
+    "name": "胡志刚",
+    "pic": "胡志刚.png",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 77,
+    "name": "周祺家",
+    "pic": "周祺家.png",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 78,
+    "name": "毛晓一",
+    "pic": "毛晓一.png",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 79,
+    "name": "李禹佟",
+    "pic": "李禹佟.jpg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 80,
+    "name": "梁润昌",
+    "pic": "梁润昌.png",
+    "description": "2026级博士生",
+    "tag": "",
+    "type": "doctor",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 81,
+    "name": "唐凌",
+    "pic": "唐凌.png",
+    "description": "2026级博士生",
+    "tag": "",
+    "type": "doctor",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 82,
+    "name": "韩晨旭",
+    "pic": "韩晨旭.jpeg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 83,
+    "name": "郭力维",
+    "pic": "郭力维.png",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 84,
+    "name": "马银亭",
+    "pic": "马银亭.jpg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 85,
+    "name": "熊雨程",
+    "pic": "熊雨程.jpeg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 86,
+    "name": "胡辰瑜",
+    "pic": "胡辰瑜.png",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 87,
+    "name": "侯淳译",
+    "pic": "侯淳译.jpeg",
+    "description": "2026级博士生",
+    "tag": "",
+    "type": "doctor",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 88,
+    "name": "徐翔宇",
+    "pic": "徐翔宇.png",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 89,
+    "name": "刘欣潼",
+    "pic": "刘欣潼.jpeg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 90,
+    "name": "王晨浩",
+    "pic": "王晨浩.jpeg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 91,
+    "name": "丁辉煳",
+    "pic": "丁辉煳.png",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 92,
+    "name": "张丁元",
+    "pic": "张丁元.png",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 93,
+    "name": "孙召霞",
+    "pic": "孙召霞.jpeg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 94,
+    "name": "朱维清",
+    "pic": "朱维清.png",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 95,
+    "name": "陈稷豪",
+    "pic": "陈稷豪.jpg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 96,
+    "name": "王子博",
+    "pic": "王子博.jpg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 97,
+    "name": "白一凡",
+    "pic": "白一凡.jpeg",
+    "description": "2026级硕士生",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
   }
 ]

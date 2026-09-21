@@ -187,6 +187,42 @@
       </div>
     </div>
 
+    <!-- <q-separator class="tw-m-10" /> -->
+    <div class="tw-mt-5">
+      <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-2xl my-element" style="color: #4e83fd">
+          {{ $t("mp7") }}
+        </div>
+      </transition>
+      <div v-if="master2026"
+        class="tw-grid tw-grid-cols-1  tw-m-auto sm:tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-5 tw-relative">
+        <div v-for="(item, idx) in master2026" :key="idx + 5511" class="tw-h-72  tw-w-full">
+          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link"
+            :tag="item.tag.split(',')" :desc="item.description" mode="vertical"></my-card>
+        </div>
+      </div>
+      <div v-else class="tw-grid tw-grid-cols-4 tw-gap-5">
+        <div v-for="(item, idx) in 5" :key="idx">
+          <div class="tw-border tw-shadow tw-rounded-md tw-p-4 tw-max-w-sm tw-mx-auto">
+            <div class="tw-animate-pulse tw-flex tw-space-x-4 tw-w-full tw-h-full">
+              <div class="tw-rounded tw-bg-slate-200 tw-w-1/2"></div>
+              <div class="tw-flex-1 tw-space-y-6 tw-py-1">
+                <div class="tw-grid tw-grid-cols-3 tw-gap-4">
+                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-1"></div>
+                </div>
+                <div class="tw-grid tw-grid-cols-3 tw-gap-4">
+                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-2"></div>
+                </div>
+                <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
+                <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
+                <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <q-separator class="tw-m-10" />
 
     <div class="tw-mt-5">
@@ -269,6 +305,7 @@ let teacher = ref(null);
 let master2023 = ref(null);
 let master2024 = ref(null);
 let master2025 = ref(null);
+let master2026 = ref(null);
 let doctor = ref(null);
 let alumni = ref(null);
 let alumni2025 = ref(null);
@@ -296,6 +333,9 @@ const updateNews = () => {
   });
   master2025.value = res.filter((item) => {
     return item.type === "master2025";
+  });
+  master2026.value = res.filter((item) => {
+    return item.type === "master2026";
   });
   alumni.value = res.filter((item) => {
     return item.type === "alumni";
