@@ -822,5 +822,225 @@
     "type": "master2025",
     "username": "zqs",
     "link": null
+  },
+  {
+    "id": 76,
+    "name": "Zhigang Hu",
+    "pic": "胡志刚.png",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 77,
+    "name": "Qijia Zhou",
+    "pic": "周祺家.png",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 78,
+    "name": "Xiaoyi Mao",
+    "pic": "毛晓一.png",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 79,
+    "name": "Yutong Li",
+    "pic": "李禹佟.jpg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 80,
+    "name": "Runchang Liang",
+    "pic": "梁润昌.png",
+    "description": "PhD student, enrolled in 2026",
+    "tag": "",
+    "type": "doctor",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 81,
+    "name": "Ling Tang",
+    "pic": "唐凌.png",
+    "description": "PhD student, enrolled in 2026",
+    "tag": "",
+    "type": "doctor",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 82,
+    "name": "Chenxu Han",
+    "pic": "韩晨旭.jpeg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 83,
+    "name": "Liwei Guo",
+    "pic": "郭力维.png",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 84,
+    "name": "Yinting Ma",
+    "pic": "马银亭.jpg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 85,
+    "name": "Yucheng Xiong",
+    "pic": "熊雨程.jpeg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 86,
+    "name": "Chenyu Hu",
+    "pic": "胡辰瑜.png",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 87,
+    "name": "Chunyi Hou",
+    "pic": "侯淳译.jpeg",
+    "description": "PhD student, enrolled in 2026",
+    "tag": "",
+    "type": "doctor",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 88,
+    "name": "Xiangyu Xu",
+    "pic": "徐翔宇.png",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 89,
+    "name": "Xintong Liu",
+    "pic": "刘欣潼.jpeg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 90,
+    "name": "Chenhao Wang",
+    "pic": "王晨浩.jpeg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 91,
+    "name": "Huihu Ding",
+    "pic": "丁辉煳.png",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 92,
+    "name": "Dingyuan Zhang",
+    "pic": "张丁元.png",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 93,
+    "name": "Zhaoxia Sun",
+    "pic": "孙召霞.jpeg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 94,
+    "name": "Weiqing Zhu",
+    "pic": "朱维清.png",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 95,
+    "name": "Jihao Chen",
+    "pic": "陈稷豪.jpg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 96,
+    "name": "Zibo Wang",
+    "pic": "王子博.jpg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
+  },
+  {
+    "id": 97,
+    "name": "Yifan Bai",
+    "pic": "白一凡.jpeg",
+    "description": "Master's student, enrolled in 2026",
+    "tag": "",
+    "type": "master2026",
+    "username": null,
+    "link": null
   }
 ]

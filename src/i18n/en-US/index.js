@@ -168,4 +168,5 @@ export default {
   mp4: "Students admitted in 2023",
   mp5: "Students admitted in 2024",
   mp6: "Students admitted in 2025",
+  mp7: "Students admitted in 2026",
 };
