@@ -60,7 +60,7 @@
     "pic": "https://xwyzsn.site/picbed/ouyang.jpg",
     "description": "2022级博士生",
     "tag": "AI for DB, AIOps",
-    "type": "doctor",
+    "type": "alumni2026",
     "username": "oyb",
     "link": "https://oyb98.github.io/homepage/"
   },
@@ -236,7 +236,7 @@
     "pic": "https://xwyzsn.site/picbed/cyx.jpg",
     "description": "2023级硕士生",
     "tag": "时序分类和迁移学习",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "cyx",
     "link": null
   },
@@ -247,7 +247,7 @@
     "pic": "https://xwyzsn.site/picbed/fyw.jpg",
     "description": "2023级硕士生",
     "tag": "时间序列",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "fyw",
     "link": null
   },
@@ -291,19 +291,8 @@
     "pic": "https://xwyzsn.site/picbed/hss.jpg",
     "description": "2023级硕士生",
     "tag": "时序分类",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "hss",
-    "link": null
-  },
-  {
-    "id": 26,
-    "name": "李北步",
-    "password": "cp12345",
-    "pic": "https://xwyzsn.site/picbed/lbb.jpg",
-    "description": "2023级硕士生",
-    "tag": "时间序列异常检测",
-    "type": "master2023",
-    "username": "lbb",
     "link": null
   },
   {
@@ -313,7 +302,7 @@
     "pic": "https://xwyzsn.site/picbed/lxw.jpg",
     "description": "2023级硕士生",
     "tag": "时间序列分析,AI4DB",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "lxw",
     "link": null
   },
@@ -368,7 +357,7 @@
     "pic": "https://xwyzsn.site/picbed/mjy.jpg",
     "description": "2023级硕士生",
     "tag": "Time Series,AI for science,Informed ML",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "mjy",
     "link": null
   },
@@ -390,19 +379,8 @@
     "pic": "https://xwyzsn.site/picbed/qyy.jpg",
     "description": "2023级硕士生",
     "tag": "time series forecasting",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "qyy",
-    "link": null
-  },
-  {
-    "id": 34,
-    "name": "申屠琦超",
-    "password": "cp12345",
-    "pic": "https://xwyzsn.site/picbed/stqc.jpg",
-    "description": "2023级硕士生",
-    "tag": "时间序列",
-    "type": "master2023",
-    "username": "stqc",
     "link": null
   },
   {
@@ -412,7 +390,7 @@
     "pic": "https://xwyzsn.site/picbed/whc.jpg",
     "description": "2023级硕士生",
     "tag": "时空数据",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "whc",
     "link": null
   },
@@ -423,7 +401,7 @@
     "pic": "https://xwyzsn.site/picbed/wyh.jpg",
     "description": "2023级硕士生",
     "tag": "Time series foundation model,Decision Intelligence",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "wyh",
     "link": null
   },
@@ -434,7 +412,7 @@
     "pic": "https://xwyzsn.site/picbed/wyf.jpg",
     "description": "2023级硕士生",
     "tag": "时空数据管理方向",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "wyf",
     "link": null
   },
@@ -467,7 +445,7 @@
     "pic": "https://xwyzsn.site/picbed/zxy.jpg",
     "description": "2023级硕士生",
     "tag": "AutoML,time series forecasting",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "zxy",
     "link": null
   },
@@ -478,7 +456,7 @@
     "pic": "https://xwyzsn.site/picbed/zpc.jpg",
     "description": "2023级硕士生",
     "tag": "时间序列异常检测,模型选择",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "zpc",
     "link": null
   },
@@ -489,7 +467,7 @@
     "pic": "https://xwyzsn.site/picbed/zqs.jpg",
     "description": "2023级硕士生",
     "tag": "AI for science",
-    "type": "master2023",
+    "type": "alumni2026",
     "username": "zqs",
     "link": null
   },
@@ -1041,6 +1019,28 @@
     "tag": "",
     "type": "master2026",
     "username": null,
+    "link": null
+  },
+  {
+    "id": 34,
+    "name": "申屠琦超",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/stqc.jpg",
+    "description": "博士生",
+    "tag": "时间序列",
+    "type": "doctor",
+    "username": "stqc",
+    "link": null
+  },
+  {
+    "id": 26,
+    "name": "李北步",
+    "password": "cp12345",
+    "pic": "https://xwyzsn.site/picbed/lbb.jpg",
+    "description": "博士生",
+    "tag": "时间序列异常检测",
+    "type": "doctor",
+    "username": "lbb",
     "link": null
   }
 ]
