@@ -81,38 +81,6 @@
           {{ $t("mp3") }}
         </div>
       </transition>
-      <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
-        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-2xl my-element" style="color: #4e83fd">
-          {{ $t("mp4") }}
-        </div>
-      </transition>
-      <div v-if="master2023"
-        class="tw-grid tw-grid-cols-1  tw-m-auto sm:tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-5 tw-relative">
-        <div v-for="(item, idx) in master2023" :key="idx + 5511" class="tw-h-72  tw-w-full">
-          <my-card class="tw-w-full tw-h-full" :pic="item.pic" :name="item.name" :link="item.link"
-            :tag="item.tag.split(',')" :desc="item.desc" mode="vertical"></my-card>
-        </div>
-      </div>
-      <div v-else class="tw-grid tw-grid-cols-4 tw-gap-5">
-        <div v-for="(item, idx) in 5" :key="idx">
-          <div class="tw-border tw-shadow tw-rounded-md tw-p-4 tw-max-w-sm tw-mx-auto">
-            <div class="tw-animate-pulse tw-flex tw-space-x-4 tw-w-full tw-h-full">
-              <div class="tw-rounded tw-bg-slate-200 tw-w-1/2"></div>
-              <div class="tw-flex-1 tw-space-y-6 tw-py-1">
-                <div class="tw-grid tw-grid-cols-3 tw-gap-4">
-                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-1"></div>
-                </div>
-                <div class="tw-grid tw-grid-cols-3 tw-gap-4">
-                  <div class="tw-h-2 tw-bg-slate-200 tw-rounded tw-col-span-2"></div>
-                </div>
-                <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
-                <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
-                <div class="tw-h-2 tw-bg-slate-200 tw-rounded"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- <q-separator class="tw-m-10" /> -->
@@ -287,6 +255,36 @@
         </div>
       </div>
     </div>
+
+    <q-separator class="tw-m-10" />
+
+    <div class="tw-mt-5">
+      <transition appear enter-active-class="animated  fadeInDown" leave-active-class="animated  fadeOutUp">
+        <div class="tw-flex tw-justify-center tw-mb-5 tw-font-bold tw-text-3xl my-element" style="color: #4e83fd">
+          alumni 2026
+        </div>
+      </transition>
+      <div v-if="alumni2026" class="tw-grid tw-grid-cols-1 tw-gap-4 md:tw-pl-10">
+        <div v-for="(item, idx) in alumni2026" :key="idx + 1214" class="tw-h-full">
+          <div class="tw-text-lg tw-font-semibold">
+            <span class="tw-text-lg">{{ item.name }}</span>
+          </div>
+          <div v-if="item.tag">
+            <p v-if="item.link">{{ item.link }}</p>
+            <p>{{ item.tag.split(",").join(" | ") }}</p>
+          </div>
+        </div>
+      </div>
+      <div v-else>
+        <div v-for="(item, idx) in 4" :key="idx + 7424" style="height: 100px">
+          <div class="tw-grid tw-grid-rows-3 tw-gap-3">
+            <div class="tw-row-span-1 tw-bg-slate-100 tw-w-1/12 tw-h-2"></div>
+            <div class="tw-row-span-1 tw-bg-slate-100 tw-w-1/3"></div>
+            <div class="tw-row-span-1 tw-bg-slate-100 tw-w-2/3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </q-page>
 </template>
 
@@ -302,13 +300,13 @@ const { t, locale } = useI18n();
 let $q = useQuasar();
 let screen = $q.screen;
 let teacher = ref(null);
-let master2023 = ref(null);
 let master2024 = ref(null);
 let master2025 = ref(null);
 let master2026 = ref(null);
 let doctor = ref(null);
 let alumni = ref(null);
 let alumni2025 = ref(null);
+let alumni2026 = ref(null);
 
 let res = data.default;
 
@@ -325,9 +323,6 @@ const updateNews = () => {
   doctor.value = res.filter((item) => {
     return item.type === "doctor";
   });
-  master2023.value = res.filter((item) => {
-    return item.type === "master2023";
-  });
   master2024.value = res.filter((item) => {
     return item.type === "master2024";
   });
@@ -342,6 +337,9 @@ const updateNews = () => {
   });
   alumni2025.value = res.filter((item) => {
     return item.type === "alumni2025";
+  });
+  alumni2026.value = res.filter((item) => {
+    return item.type === "alumni2026";
   });
 }
 // Watch for locale changes
