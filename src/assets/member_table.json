@@ -1026,9 +1026,9 @@
     "name": "申屠琦超",
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/stqc.jpg",
-    "description": "博士生",
+    "description": "2023级硕士生",
     "tag": "时间序列",
-    "type": "doctor",
+    "type": "alumni2026",
     "username": "stqc",
     "link": null
   },
@@ -1037,9 +1037,9 @@
     "name": "李北步",
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/lbb.jpg",
-    "description": "博士生",
+    "description": "2023级硕士生",
     "tag": "时间序列异常检测",
-    "type": "doctor",
+    "type": "alumni2026",
     "username": "lbb",
     "link": null
   }

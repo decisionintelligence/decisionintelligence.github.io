@@ -1026,9 +1026,9 @@
     "name": "QiChao Shentu",
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/stqc.jpg",
-    "description": "PhD student",
+    "description": "2023级硕士生",
     "tag": "Time series",
-    "type": "doctor",
+    "type": "alumni2026",
     "username": "stqc",
     "link": null
   },
@@ -1037,9 +1037,9 @@
     "name": "Beibu Li",
     "password": "cp12345",
     "pic": "https://xwyzsn.site/picbed/lbb.jpg",
-    "description": "PhD student",
+    "description": "2023级硕士生",
     "tag": "Time series anomaly detection",
-    "type": "doctor",
+    "type": "alumni2026",
     "username": "lbb",
     "link": null
   }
